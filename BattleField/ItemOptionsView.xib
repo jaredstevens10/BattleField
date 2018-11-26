@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ItemOptionsView" id="iN0-l3-epB" customClass="ItemOptionsView" customModule="BattleField" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-z7-U3R">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="07H-4I-4Mf" appends="YES" id="hVW-5K-eQW"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVu-20-D7I">
+                    <rect key="frame" x="0.0" y="497" width="375" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5T-fK-lRV">
+                            <rect key="frame" x="148" y="10" width="80" height="80"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond100" translatesAutoresizingMaskIntoConstraints="NO" id="5yd-Hq-oPJ">
+                                    <rect key="frame" x="35" y="5" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="0qv-XM-p1c"/>
+                                        <constraint firstAttribute="width" constant="40" id="GQ2-rt-Q1a"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade Now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-Ym-84G">
+                                    <rect key="frame" x="10" y="45" width="60" height="30"/>
+                                    <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Nzk-tO-IsS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m22-uW-Sy9">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="UpgradeNowBT:" destination="iN0-l3-epB" eventType="touchUpInside" id="GV3-u1-PJt"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itM-hm-sXS">
+                                    <rect key="frame" x="0.0" y="5" width="40" height="39"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Eb8-Ym-84G" firstAttribute="leading" secondItem="Q5T-fK-lRV" secondAttribute="leading" constant="10" id="5jW-K2-db4"/>
+                                <constraint firstItem="Eb8-Ym-84G" firstAttribute="top" secondItem="5yd-Hq-oPJ" secondAttribute="bottom" id="6i3-GQ-S1F"/>
+                                <constraint firstAttribute="bottom" secondItem="Eb8-Ym-84G" secondAttribute="bottom" constant="5" id="C2r-Lv-dvO"/>
+                                <constraint firstItem="5yd-Hq-oPJ" firstAttribute="top" secondItem="Q5T-fK-lRV" secondAttribute="top" constant="5" id="Kgx-pP-tTg"/>
+                                <constraint firstAttribute="width" constant="80" id="OQn-cF-cQf"/>
+                                <constraint firstAttribute="trailing" secondItem="Eb8-Ym-84G" secondAttribute="trailing" constant="10" id="Z2q-9f-L1L"/>
+                                <constraint firstAttribute="trailing" secondItem="5yd-Hq-oPJ" secondAttribute="trailing" constant="5" id="bZ3-Er-nND"/>
+                                <constraint firstAttribute="height" constant="80" id="fFd-aJ-YVz"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="6i3-GQ-S1F"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6P-ub-8hR">
+                            <rect key="frame" x="148" y="10" width="80" height="80"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldCoin" translatesAutoresizingMaskIntoConstraints="NO" id="emO-79-TxX">
+                                    <rect key="frame" x="5" y="20" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="CpS-8j-6Hc"/>
+                                        <constraint firstAttribute="width" constant="20" id="K99-bS-DyT"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7S-gB-XY7">
+                                    <rect key="frame" x="8" y="50" width="64" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="0.65098039220000004" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="mIx-OZ-Wjs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw4-5u-Eb2">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="OOc-cq-KlS"/>
+                                        <constraint firstAttribute="width" constant="80" id="xa4-pS-Rvl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="UpgradeBTN:" destination="iN0-l3-epB" eventType="touchUpInside" id="1AO-Xv-dio"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSE-cz-95U">
+                                    <rect key="frame" x="23" y="15" width="57" height="28"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="emO-79-TxX" firstAttribute="top" secondItem="h6P-ub-8hR" secondAttribute="top" constant="20" id="1kI-RE-nTT"/>
+                                <constraint firstAttribute="bottom" secondItem="I7S-gB-XY7" secondAttribute="bottom" constant="5" id="E5M-hU-Kbq"/>
+                                <constraint firstAttribute="width" constant="80" id="EVb-lF-T1e"/>
+                                <constraint firstItem="QSE-cz-95U" firstAttribute="leading" secondItem="emO-79-TxX" secondAttribute="trailing" constant="-2" id="NLZ-1O-KEu"/>
+                                <constraint firstAttribute="bottom" secondItem="cw4-5u-Eb2" secondAttribute="bottom" id="XQO-eg-kFF"/>
+                                <constraint firstItem="emO-79-TxX" firstAttribute="leading" secondItem="h6P-ub-8hR" secondAttribute="leading" constant="5" id="eKf-ox-crG"/>
+                                <constraint firstItem="cw4-5u-Eb2" firstAttribute="leading" secondItem="h6P-ub-8hR" secondAttribute="leading" id="fux-I1-DnI"/>
+                                <constraint firstItem="QSE-cz-95U" firstAttribute="top" secondItem="h6P-ub-8hR" secondAttribute="top" constant="15" id="gYo-a6-Udf"/>
+                                <constraint firstAttribute="trailing" secondItem="I7S-gB-XY7" secondAttribute="trailing" constant="8" id="gfL-A0-Vig"/>
+                                <constraint firstAttribute="height" constant="80" id="gmg-vv-Jg9"/>
+                                <constraint firstItem="I7S-gB-XY7" firstAttribute="top" secondItem="QSE-cz-95U" secondAttribute="bottom" constant="7" id="hdz-pI-T82"/>
+                                <constraint firstItem="I7S-gB-XY7" firstAttribute="leading" secondItem="h6P-ub-8hR" secondAttribute="leading" constant="8" id="kLl-Yp-SGe"/>
+                                <constraint firstAttribute="trailing" secondItem="QSE-cz-95U" secondAttribute="trailing" id="qX4-2C-V42"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RGm-lG-5gw">
+                            <rect key="frame" x="248" y="-100" width="80" height="80"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoldCoin" translatesAutoresizingMaskIntoConstraints="NO" id="dEk-RW-jaX">
+                                    <rect key="frame" x="20" y="5" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer To Base" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYJ-0H-wIb">
+                                    <rect key="frame" x="5" y="47" width="70" height="30"/>
+                                    <color key="backgroundColor" red="0.19406929612159729" green="0.5561898946762085" blue="0.77779293060302734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="gFb-lm-V6r"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFO-21-5qr">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="kzd-sD-ULM"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="TransferBTN:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Gj-FU-ZNU"/>
+                                    </connections>
+                                </button>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVQ-NX-pCO">
+                                    <rect key="frame" x="8" y="21" width="30" height="39"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="nYJ-0H-wIb" firstAttribute="leading" secondItem="RGm-lG-5gw" secondAttribute="leading" constant="5" id="2DI-W0-oFI"/>
+                                <constraint firstAttribute="bottom" secondItem="WFO-21-5qr" secondAttribute="bottom" id="55H-y0-1aU"/>
+                                <constraint firstAttribute="trailing" secondItem="WFO-21-5qr" secondAttribute="trailing" id="5Zf-K0-Qrv"/>
+                                <constraint firstAttribute="trailing" secondItem="nYJ-0H-wIb" secondAttribute="trailing" constant="5" id="are-Bj-8c9"/>
+                                <constraint firstAttribute="bottom" secondItem="nYJ-0H-wIb" secondAttribute="bottom" constant="3" id="jl5-qK-ezJ"/>
+                                <constraint firstItem="WFO-21-5qr" firstAttribute="leading" secondItem="RGm-lG-5gw" secondAttribute="leading" id="oJc-lY-JY4"/>
+                                <constraint firstAttribute="width" constant="80" id="q3J-WQ-XDr"/>
+                                <constraint firstAttribute="height" constant="80" id="w9j-CC-Sjj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owM-rx-c7H">
+                            <rect key="frame" x="248" y="10" width="80" height="80"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoldCoin" translatesAutoresizingMaskIntoConstraints="NO" id="nfF-7r-AAF">
+                                    <rect key="frame" x="20" y="5" width="40" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anp-Re-l0F">
+                                    <rect key="frame" x="8" y="52" width="64" height="25"/>
+                                    <color key="backgroundColor" red="0.19406929612159729" green="0.5561898946762085" blue="0.77779293060302734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="lH6-ur-Zio"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul1-VM-oOc">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="75l-6e-o10"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="CollectGoldBTN:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jpe-0f-GvG"/>
+                                    </connections>
+                                </button>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrZ-WH-VaG">
+                                    <rect key="frame" x="8" y="21" width="30" height="39"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="anp-Re-l0F" secondAttribute="bottom" constant="3" id="AV5-vS-b1K"/>
+                                <constraint firstAttribute="trailing" secondItem="Ul1-VM-oOc" secondAttribute="trailing" id="Gp7-ZM-fO0"/>
+                                <constraint firstItem="anp-Re-l0F" firstAttribute="leading" secondItem="owM-rx-c7H" secondAttribute="leading" constant="8" id="JoX-Ia-fJU"/>
+                                <constraint firstAttribute="width" constant="80" id="TK4-yV-lQd"/>
+                                <constraint firstAttribute="height" constant="80" id="b6P-xs-NOe"/>
+                                <constraint firstAttribute="bottom" secondItem="Ul1-VM-oOc" secondAttribute="bottom" id="btN-vb-IFw"/>
+                                <constraint firstItem="Ul1-VM-oOc" firstAttribute="leading" secondItem="owM-rx-c7H" secondAttribute="leading" id="jsP-dI-WwH"/>
+                                <constraint firstAttribute="trailing" secondItem="anp-Re-l0F" secondAttribute="trailing" constant="8" id="yHz-gG-w3l"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gS3-ch-t2f">
+                            <rect key="frame" x="48" y="10" width="80" height="80"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoGreen" translatesAutoresizingMaskIntoConstraints="NO" id="VlR-yH-Ubo">
+                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="29J-f9-QBR"/>
+                                        <constraint firstAttribute="height" constant="40" id="AMB-DR-8ab"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ra-OH-Q0V">
+                                    <rect key="frame" x="0.0" y="50" width="80" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="10"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7L-9B-TOP">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="InfoBTN:" destination="iN0-l3-epB" eventType="touchUpInside" id="cPx-Wr-UuG"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdE-HW-6Nf">
+                                    <rect key="frame" x="8" y="21" width="30" height="39"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="EXC-rL-krq"/>
+                                <constraint firstItem="VlR-yH-Ubo" firstAttribute="leading" secondItem="gS3-ch-t2f" secondAttribute="leading" constant="20" id="JSx-cK-zk5"/>
+                                <constraint firstAttribute="height" constant="80" id="cem-7q-2hT"/>
+                                <constraint firstItem="VlR-yH-Ubo" firstAttribute="top" secondItem="gS3-ch-t2f" secondAttribute="top" constant="20" id="iyt-qm-8JU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="5MN-Db-kji"/>
+                        <constraint firstItem="owM-rx-c7H" firstAttribute="top" secondItem="cVu-20-D7I" secondAttribute="top" constant="10" id="5Rb-LN-hz8"/>
+                        <constraint firstItem="gS3-ch-t2f" firstAttribute="leading" secondItem="cVu-20-D7I" secondAttribute="leading" constant="20" id="7QE-NA-4zW"/>
+                        <constraint firstItem="h6P-ub-8hR" firstAttribute="top" secondItem="cVu-20-D7I" secondAttribute="top" constant="10" id="CZe-ls-lbQ"/>
+                        <constraint firstItem="RGm-lG-5gw" firstAttribute="centerX" secondItem="cVu-20-D7I" secondAttribute="centerX" id="Ics-eW-a2u"/>
+                        <constraint firstItem="gS3-ch-t2f" firstAttribute="top" secondItem="cVu-20-D7I" secondAttribute="top" constant="10" id="N7m-FQ-Jw3"/>
+                        <constraint firstItem="RGm-lG-5gw" firstAttribute="top" secondItem="cVu-20-D7I" secondAttribute="top" constant="10" id="P9V-aF-QKx"/>
+                        <constraint firstItem="RGm-lG-5gw" firstAttribute="leading" secondItem="gS3-ch-t2f" secondAttribute="trailing" constant="120" id="Rrt-Ty-9n4"/>
+                        <constraint firstItem="Q5T-fK-lRV" firstAttribute="top" secondItem="cVu-20-D7I" secondAttribute="top" constant="10" id="Snb-8d-gA0"/>
+                        <constraint firstItem="h6P-ub-8hR" firstAttribute="leading" secondItem="RGm-lG-5gw" secondAttribute="trailing" constant="20" id="TQq-eL-pKY"/>
+                        <constraint firstItem="owM-rx-c7H" firstAttribute="leading" secondItem="gS3-ch-t2f" secondAttribute="trailing" constant="120" id="Thv-uR-yRH"/>
+                        <constraint firstItem="h6P-ub-8hR" firstAttribute="leading" secondItem="gS3-ch-t2f" secondAttribute="trailing" constant="20" id="VlB-wC-JBx"/>
+                        <constraint firstItem="Q5T-fK-lRV" firstAttribute="leading" secondItem="RGm-lG-5gw" secondAttribute="trailing" constant="20" id="aBX-Oq-GS0"/>
+                        <constraint firstItem="gS3-ch-t2f" firstAttribute="centerX" secondItem="cVu-20-D7I" secondAttribute="centerX" constant="-100" id="djH-UJ-Crc"/>
+                        <constraint firstItem="Q5T-fK-lRV" firstAttribute="leading" secondItem="gS3-ch-t2f" secondAttribute="trailing" constant="20" id="gRw-Dz-gj7"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="7QE-NA-4zW"/>
+                            <exclude reference="aBX-Oq-GS0"/>
+                            <exclude reference="TQq-eL-pKY"/>
+                            <exclude reference="Ics-eW-a2u"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Qw1-z7-U3R" secondAttribute="bottom" id="5um-5O-ckg"/>
+                <constraint firstItem="cVu-20-D7I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QAS-UB-z6D"/>
+                <constraint firstItem="Qw1-z7-U3R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wge-QE-FWJ"/>
+                <constraint firstItem="Qw1-z7-U3R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pj4-ap-z5w"/>
+                <constraint firstAttribute="trailing" secondItem="Qw1-z7-U3R" secondAttribute="trailing" id="v6q-ci-OLn"/>
+                <constraint firstAttribute="trailing" secondItem="cVu-20-D7I" secondAttribute="trailing" id="vUZ-Dn-P7w"/>
+                <constraint firstAttribute="bottom" secondItem="cVu-20-D7I" secondAttribute="bottom" constant="70" id="yjG-mJ-0Le"/>
+            </constraints>
+            <connections>
+                <outlet property="BGView" destination="Qw1-z7-U3R" id="g6W-Lx-ztp"/>
+                <outlet property="View1" destination="gS3-ch-t2f" id="cYh-V1-lSX"/>
+                <outlet property="View1X" destination="djH-UJ-Crc" id="hbT-yB-MFa"/>
+                <outlet property="View2" destination="h6P-ub-8hR" id="AFL-fr-gHF"/>
+                <outlet property="View2BTN" destination="cw4-5u-Eb2" id="Hkq-eU-AF0"/>
+                <outlet property="View2LBL" destination="I7S-gB-XY7" id="67X-Og-Ea3"/>
+                <outlet property="View2LBLamount" destination="QSE-cz-95U" id="g12-wR-Sau"/>
+                <outlet property="View2_2" destination="Q5T-fK-lRV" id="H2h-DU-LA3"/>
+                <outlet property="View2_2LBL" destination="Eb8-Ym-84G" id="NrF-YK-vO5"/>
+                <outlet property="View2_2LBLamount" destination="itM-hm-sXS" id="VVI-6T-A0X"/>
+                <outlet property="View3" destination="RGm-lG-5gw" id="zbf-Dh-Nm3"/>
+                <outlet property="View3LBL" destination="nYJ-0H-wIb" id="0Je-4w-2aw"/>
+                <outlet property="View3_2" destination="owM-rx-c7H" id="PX3-1W-wHo"/>
+                <outlet property="View3_2LBL" destination="anp-Re-l0F" id="aHj-nK-R2c"/>
+                <outlet property="closeViewTap" destination="07H-4I-4Mf" id="h8v-0J-WKT"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="07H-4I-4Mf">
+            <connections>
+                <action selector="closeViewTap:" destination="iN0-l3-epB" id="vm9-T9-ALF"/>
+                <outlet property="delegate" destination="Qw1-z7-U3R" id="xLr-DX-sEm"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="GoldCoin" width="48" height="48"/>
+        <image name="diamond100" width="96" height="96"/>
+        <image name="infoGreen" width="80" height="80"/>
+    </resources>
+</document>

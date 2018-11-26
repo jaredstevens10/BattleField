@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.77.0 commit date:2016-04-05, commit time:18:12, hash:abf6f08</authoring_tool>
+    </contributor>
+    <created>2017-02-15T12:17:11</created>
+    <modified>2017-02-15T12:17:11</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects/>
+  <library_animations>
+    <animation>
+      <source id="basicRig_clavicle_R_pose_matrix-input">
+        <float_array id="basicRig_clavicle_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_clavicle_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_clavicle_R_pose_matrix-output">
+        <float_array id="basicRig_clavicle_R_pose_matrix-output-array" count="32">0.3928989 -0.897912 0.1984561 -0.228301 0.8592364 0.4353541 0.2686623 -0.488821 -0.3276337 0.06496363 0.9425688 11.97279 0 0 0 1 0.3928989 -0.897912 0.1984561 -0.228301 0.8592364 0.4353541 0.2686623 -0.488821 -0.3276337 0.06496363 0.9425688 11.97279 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_clavicle_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_clavicle_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_clavicle_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_clavicle_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_clavicle_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_clavicle_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_clavicle_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_clavicle_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_clavicle_R_pose_matrix-sampler" target="clavicle_R/transform"/>
+      <source id="basicRig_deltoid_R_pose_matrix-input">
+        <float_array id="basicRig_deltoid_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_deltoid_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_deltoid_R_pose_matrix-output">
+        <float_array id="basicRig_deltoid_R_pose_matrix-output-array" count="32">0.8107672 0.3957595 0.4313137 -1.43051e-6 -0.5668223 0.3467751 0.7473015 1.129053 0.1461826 -0.8503655 0.5054793 9.53674e-7 0 0 0 1 0.8107672 0.3957595 0.4313137 -1.43051e-6 -0.5668223 0.3467751 0.7473015 1.129053 0.1461826 -0.8503655 0.5054793 9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_deltoid_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_deltoid_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_deltoid_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_deltoid_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_deltoid_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_deltoid_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_deltoid_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_deltoid_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_deltoid_R_pose_matrix-sampler" target="deltoid_R/transform"/>
+      <source id="basicRig_upper_arm_R_pose_matrix-input">
+        <float_array id="basicRig_upper_arm_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_upper_arm_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_upper_arm_R_pose_matrix-output">
+        <float_array id="basicRig_upper_arm_R_pose_matrix-output-array" count="32">-0.8338385 0.1272123 -0.5371506 -4.76837e-7 0.3815396 0.8360438 -0.3942822 0.8140211 0.3989239 -0.5337126 -0.7456616 0 0 0 0 1 -0.8338385 0.1272123 -0.5371506 -4.76837e-7 0.3815396 0.8360438 -0.3942822 0.8140211 0.3989239 -0.5337126 -0.7456616 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_upper_arm_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_upper_arm_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_upper_arm_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_upper_arm_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_upper_arm_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_upper_arm_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_upper_arm_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_upper_arm_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_upper_arm_R_pose_matrix-sampler" target="upper_arm_R/transform"/>
+      <source id="basicRig_forearm_R_pose_matrix-input">
+        <float_array id="basicRig_forearm_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_R_pose_matrix-output">
+        <float_array id="basicRig_forearm_R_pose_matrix-output-array" count="32">0.9388608 -0.3290116 0.10145 5.96046e-8 0.09784362 -0.02754322 -0.9948201 2.449137 0.3301019 0.9439242 0.006332457 -7.15256e-7 0 0 0 1 0.9388608 -0.3290116 0.10145 5.96046e-8 0.09784362 -0.02754322 -0.9948201 2.449137 0.3301019 0.9439242 0.006332457 -7.15256e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_forearm_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_forearm_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_forearm_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_forearm_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_forearm_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_forearm_R_pose_matrix-sampler" target="forearm_R/transform"/>
+      <source id="basicRig_clavicle_L_pose_matrix-input">
+        <float_array id="basicRig_clavicle_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_clavicle_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_clavicle_L_pose_matrix-output">
+        <float_array id="basicRig_clavicle_L_pose_matrix-output-array" count="32">-0.1314556 0.9337234 0.3329864 0.228301 -0.9687616 -0.04974721 -0.2429527 -0.488821 -0.2102854 -0.354522 0.911095 11.97279 0 0 0 1 -0.1314556 0.9337234 0.3329864 0.228301 -0.9687616 -0.04974721 -0.2429527 -0.488821 -0.2102854 -0.354522 0.911095 11.97279 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_clavicle_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_clavicle_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_clavicle_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_clavicle_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_clavicle_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_clavicle_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_clavicle_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_clavicle_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_clavicle_L_pose_matrix-sampler" target="clavicle_L/transform"/>
+      <source id="basicRig_deltoid_L_pose_matrix-input">
+        <float_array id="basicRig_deltoid_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_deltoid_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_deltoid_L_pose_matrix-output">
+        <float_array id="basicRig_deltoid_L_pose_matrix-output-array" count="32">0.744814 -0.1825022 -0.6418295 0 0.6475791 0.4296553 0.6293151 1.129053 0.1609143 -0.8843583 0.438198 9.53674e-7 0 0 0 1 0.744814 -0.1825022 -0.6418295 0 0.6475791 0.4296553 0.6293151 1.129053 0.1609143 -0.8843583 0.438198 9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_deltoid_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_deltoid_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_deltoid_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_deltoid_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_deltoid_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_deltoid_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_deltoid_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_deltoid_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_deltoid_L_pose_matrix-sampler" target="deltoid_L/transform"/>
+      <source id="basicRig_upper_arm_L_pose_matrix-input">
+        <float_array id="basicRig_upper_arm_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_upper_arm_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_upper_arm_L_pose_matrix-output">
+        <float_array id="basicRig_upper_arm_L_pose_matrix-output-array" count="32">-0.6692538 0.0446264 0.7416915 -3.57628e-7 0.01996998 0.9989152 -0.04208231 0.8140221 -0.7427642 -0.0133521 -0.6694199 -9.53674e-7 0 0 0 1 -0.6692538 0.0446264 0.7416915 -3.57628e-7 0.01996998 0.9989152 -0.04208231 0.8140221 -0.7427642 -0.0133521 -0.6694199 -9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_upper_arm_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_upper_arm_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_upper_arm_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_upper_arm_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_upper_arm_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_upper_arm_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_upper_arm_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_upper_arm_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_upper_arm_L_pose_matrix-sampler" target="upper_arm_L/transform"/>
+      <source id="basicRig_forearm_L_pose_matrix-input">
+        <float_array id="basicRig_forearm_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_L_pose_matrix-output">
+        <float_array id="basicRig_forearm_L_pose_matrix-output-array" count="32">0.9105578 -0.4062894 -0.07624371 9.53674e-7 0.07256766 0.3386764 -0.9381005 2.449138 0.4069625 0.848662 0.3378678 -2.38419e-7 0 0 0 1 0.9105578 -0.4062894 -0.07624371 9.53674e-7 0.07256766 0.3386764 -0.9381005 2.449138 0.4069625 0.848662 0.3378678 -2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_forearm_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_forearm_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_forearm_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_forearm_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_forearm_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_forearm_L_pose_matrix-sampler" target="forearm_L/transform"/>
+      <source id="basicRig_forearm_R_001_pose_matrix-input">
+        <float_array id="basicRig_forearm_R_001_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_R_001_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_R_001_pose_matrix-output">
+        <float_array id="basicRig_forearm_R_001_pose_matrix-output-array" count="32">0.900591 -0.434425 -0.01452104 -0.6033173 0.3169219 0.6791299 -0.6620748 -2.632434 0.2974835 0.5916566 0.749297 9.410478 0 0 0 1 0.900591 -0.434425 -0.01452104 -0.6033173 0.3169219 0.6791299 -0.6620748 -2.632434 0.2974835 0.5916566 0.749297 9.410478 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_R_001_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_R_001_pose_matrix-interpolation">
+        <Name_array id="basicRig_forearm_R_001_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_R_001_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_forearm_R_001_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_forearm_R_001_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_forearm_R_001_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_forearm_R_001_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_forearm_R_001_pose_matrix-sampler" target="forearm_R_001/transform"/>
+      <source id="basicRig_hand_R_pose_matrix-input">
+        <float_array id="basicRig_hand_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_hand_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_hand_R_pose_matrix-output">
+        <float_array id="basicRig_hand_R_pose_matrix-output-array" count="32">0.2765564 0.04511607 0.9599379 -2.38419e-7 0.7315967 -0.6575823 -0.1798659 -4.76837e-7 0.6231236 0.7520305 -0.2148655 0 0 0 0 1 0.2765564 0.04511607 0.9599379 -2.38419e-7 0.7315967 -0.6575823 -0.1798659 -4.76837e-7 0.6231236 0.7520305 -0.2148655 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_hand_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_hand_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_hand_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_hand_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_hand_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_hand_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_hand_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_hand_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_hand_R_pose_matrix-sampler" target="hand_R/transform"/>
+      <source id="basicRig_palm_pinky_R_pose_matrix-input">
+        <float_array id="basicRig_palm_pinky_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_pinky_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_pinky_R_pose_matrix-output">
+        <float_array id="basicRig_palm_pinky_R_pose_matrix-output-array" count="32">0.8348722 -0.4714595 0.2841033 -0.2475829 0.4574596 0.8813339 0.1182416 0.401649 -0.3061362 0.03124888 0.9514745 -0.05194867 0 0 0 1 0.8348722 -0.4714595 0.2841033 -0.2475829 0.4574596 0.8813339 0.1182416 0.401649 -0.3061362 0.03124888 0.9514745 -0.05194867 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_pinky_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_pinky_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_pinky_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_pinky_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_pinky_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_pinky_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_pinky_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_pinky_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_pinky_R_pose_matrix-sampler" target="palm_pinky_R/transform"/>
+      <source id="basicRig_f_pinky_01_R_pose_matrix-input">
+        <float_array id="basicRig_f_pinky_01_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_01_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_01_R_pose_matrix-output">
+        <float_array id="basicRig_f_pinky_01_R_pose_matrix-output-array" count="32">0.9998837 -0.009420067 0.01200134 -9.53674e-7 0.01490031 0.4339066 -0.9008344 0.5319889 0.003278822 0.9009087 0.4339966 -9.53674e-7 0 0 0 1 0.9998837 -0.009420067 0.01200134 -9.53674e-7 0.01490031 0.4339066 -0.9008344 0.5319889 0.003278822 0.9009087 0.4339966 -9.53674e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_01_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_01_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_pinky_01_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_01_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_pinky_01_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_pinky_01_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_pinky_01_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_pinky_01_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_pinky_01_R_pose_matrix-sampler" target="f_pinky_01_R/transform"/>
+      <source id="basicRig_f_pinky_02_R_pose_matrix-input">
+        <float_array id="basicRig_f_pinky_02_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_02_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_02_R_pose_matrix-output">
+        <float_array id="basicRig_f_pinky_02_R_pose_matrix-output-array" count="32">0.9998614 0.01307932 -0.01029524 0 -0.01326901 0.2528886 -0.9674044 0.2362709 -0.01004946 0.9674071 0.253027 -2.38419e-7 0 0 0 1 0.9998614 0.01307932 -0.01029524 0 -0.01326901 0.2528886 -0.9674044 0.2362709 -0.01004946 0.9674071 0.253027 -2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_02_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_02_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_pinky_02_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_02_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_pinky_02_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_pinky_02_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_pinky_02_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_pinky_02_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_pinky_02_R_pose_matrix-sampler" target="f_pinky_02_R/transform"/>
+      <source id="basicRig_f_pinky_03_R_pose_matrix-input">
+        <float_array id="basicRig_f_pinky_03_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_03_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_03_R_pose_matrix-output">
+        <float_array id="basicRig_f_pinky_03_R_pose_matrix-output-array" count="32">0.9995614 -0.0286929 -0.00730443 -9.53674e-7 0.02565059 0.9624051 -0.2704041 0.1559843 0.01478848 0.2700981 0.9627196 1.43051e-6 0 0 0 1 0.9995614 -0.0286929 -0.00730443 -9.53674e-7 0.02565059 0.9624051 -0.2704041 0.1559843 0.01478848 0.2700981 0.9627196 1.43051e-6 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_03_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_03_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_pinky_03_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_03_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_pinky_03_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_pinky_03_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_pinky_03_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_pinky_03_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_pinky_03_R_pose_matrix-sampler" target="f_pinky_03_R/transform"/>
+      <source id="basicRig_palm_middle_R_pose_matrix-input">
+        <float_array id="basicRig_palm_middle_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_middle_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_middle_R_pose_matrix-output">
+        <float_array id="basicRig_palm_middle_R_pose_matrix-output-array" count="32">0.9863129 -0.1631879 0.02359915 -0.01628685 0.1647398 0.9813102 -0.09945343 0.3708982 -0.006928474 0.1019796 0.9947622 -0.04330719 0 0 0 1 0.9863129 -0.1631879 0.02359915 -0.01628685 0.1647398 0.9813102 -0.09945343 0.3708982 -0.006928474 0.1019796 0.9947622 -0.04330719 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_middle_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_middle_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_middle_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_middle_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_middle_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_middle_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_middle_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_middle_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_middle_R_pose_matrix-sampler" target="palm_middle_R/transform"/>
+      <source id="basicRig_f_middle_01_R_pose_matrix-input">
+        <float_array id="basicRig_f_middle_01_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_01_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_01_R_pose_matrix-output">
+        <float_array id="basicRig_f_middle_01_R_pose_matrix-output-array" count="32">0.987498 -0.0458931 0.1508056 -9.53674e-7 0.155376 0.4447296 -0.8820848 0.7084732 -0.02658603 0.8944883 0.4463003 -2.98023e-7 0 0 0 1 0.987498 -0.0458931 0.1508056 -9.53674e-7 0.155376 0.4447296 -0.8820848 0.7084732 -0.02658603 0.8944883 0.4463003 -2.98023e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_01_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_01_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_middle_01_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_01_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_middle_01_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_middle_01_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_middle_01_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_middle_01_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_middle_01_R_pose_matrix-sampler" target="f_middle_01_R/transform"/>
+      <source id="basicRig_f_middle_02_R_pose_matrix-input">
+        <float_array id="basicRig_f_middle_02_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_02_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_02_R_pose_matrix-output">
+        <float_array id="basicRig_f_middle_02_R_pose_matrix-output-array" count="32">0.9999104 0.002261102 -0.01319319 0 -0.01132745 -0.3822055 -0.9240078 0.3502576 -0.007131696 0.9240746 -0.3821457 0 0 0 0 1 0.9999104 0.002261102 -0.01319319 0 -0.01132745 -0.3822055 -0.9240078 0.3502576 -0.007131696 0.9240746 -0.3821457 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_02_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_02_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_middle_02_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_02_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_middle_02_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_middle_02_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_middle_02_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_middle_02_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_middle_02_R_pose_matrix-sampler" target="f_middle_02_R/transform"/>
+      <source id="basicRig_f_middle_03_R_pose_matrix-input">
+        <float_array id="basicRig_f_middle_03_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_03_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_03_R_pose_matrix-output">
+        <float_array id="basicRig_f_middle_03_R_pose_matrix-output-array" count="32">0.9996404 -0.02678424 -0.001057029 0 0.02524763 0.95407 -0.2985183 0.2745285 0.009003967 0.2983845 0.9544033 0 0 0 0 1 0.9996404 -0.02678424 -0.001057029 0 0.02524763 0.95407 -0.2985183 0.2745285 0.009003967 0.2983845 0.9544033 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_03_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_03_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_middle_03_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_03_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_middle_03_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_middle_03_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_middle_03_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_middle_03_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_middle_03_R_pose_matrix-sampler" target="f_middle_03_R/transform"/>
+      <source id="basicRig_palm_ring_R_pose_matrix-input">
+        <float_array id="basicRig_palm_ring_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_ring_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_ring_R_pose_matrix-output">
+        <float_array id="basicRig_palm_ring_R_pose_matrix-output-array" count="32">0.9732717 -0.2296388 0.002942502 -0.1651139 0.2293801 0.9726459 0.03667177 0.3804636 -0.0112834 -0.03501691 0.9993229 -0.04384625 0 0 0 1 0.9732717 -0.2296388 0.002942502 -0.1651139 0.2293801 0.9726459 0.03667177 0.3804636 -0.0112834 -0.03501691 0.9993229 -0.04384625 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_ring_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_ring_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_ring_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_ring_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_ring_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_ring_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_ring_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_ring_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_ring_R_pose_matrix-sampler" target="palm_ring_R/transform"/>
+      <source id="basicRig_f_ring_01_R_pose_matrix-input">
+        <float_array id="basicRig_f_ring_01_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_01_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_01_R_pose_matrix-output">
+        <float_array id="basicRig_f_ring_01_R_pose_matrix-output-array" count="32">0.9720041 -0.03501064 0.2323403 0 0.2291853 0.3592071 -0.9046788 0.6302552 -0.05178499 0.9326008 0.3571749 -2.38419e-7 0 0 0 1 0.9720041 -0.03501064 0.2323403 0 0.2291853 0.3592071 -0.9046788 0.6302552 -0.05178499 0.9326008 0.3571749 -2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_01_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_01_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_ring_01_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_01_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_ring_01_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_ring_01_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_ring_01_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_ring_01_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_ring_01_R_pose_matrix-sampler" target="f_ring_01_R/transform"/>
+      <source id="basicRig_f_ring_02_R_pose_matrix-input">
+        <float_array id="basicRig_f_ring_02_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_02_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_02_R_pose_matrix-output">
+        <float_array id="basicRig_f_ring_02_R_pose_matrix-output-array" count="32">0.9996419 0.0185013 -0.01933828 9.53674e-7 -0.02433521 0.3276374 -0.9444901 0.3091545 -0.01113827 0.9446225 0.3279703 0 0 0 0 1 0.9996419 0.0185013 -0.01933828 9.53674e-7 -0.02433521 0.3276374 -0.9444901 0.3091545 -0.01113827 0.9446225 0.3279703 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_02_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_02_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_ring_02_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_02_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_ring_02_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_ring_02_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_ring_02_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_ring_02_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_ring_02_R_pose_matrix-sampler" target="f_ring_02_R/transform"/>
+      <source id="basicRig_f_ring_03_R_pose_matrix-input">
+        <float_array id="basicRig_f_ring_03_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_03_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_03_R_pose_matrix-output">
+        <float_array id="basicRig_f_ring_03_R_pose_matrix-output-array" count="32">0.9986186 -0.0514612 0.0106259 9.53674e-7 0.05160453 0.9223278 -0.3829466 0.2602048 0.009906232 0.382966 0.9237094 -4.76837e-7 0 0 0 1 0.9986186 -0.0514612 0.0106259 9.53674e-7 0.05160453 0.9223278 -0.3829466 0.2602048 0.009906232 0.382966 0.9237094 -4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_03_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_03_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_ring_03_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_03_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_ring_03_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_ring_03_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_ring_03_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_ring_03_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_ring_03_R_pose_matrix-sampler" target="f_ring_03_R/transform"/>
+      <source id="basicRig_thumb_01_R_pose_matrix-input">
+        <float_array id="basicRig_thumb_01_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_01_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_01_R_pose_matrix-output">
+        <float_array id="basicRig_thumb_01_R_pose_matrix-output-array" count="32">-0.07635607 0.273461 -0.958848 0.2447181 -0.8782421 0.4368627 0.1945292 0.4210029 0.4720811 0.8569539 0.2068075 -0.004724383 0 0 0 1 -0.07635607 0.273461 -0.958848 0.2447181 -0.8782421 0.4368627 0.1945292 0.4210029 0.4720811 0.8569539 0.2068075 -0.004724383 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_01_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_01_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_thumb_01_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_01_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_thumb_01_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_thumb_01_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_thumb_01_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_thumb_01_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_thumb_01_R_pose_matrix-sampler" target="thumb_01_R/transform"/>
+      <source id="basicRig_thumb_02_R_pose_matrix-input">
+        <float_array id="basicRig_thumb_02_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_02_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_02_R_pose_matrix-output">
+        <float_array id="basicRig_thumb_02_R_pose_matrix-output-array" count="32">0.8906947 -0.4499555 0.0648284 -4.76837e-7 0.3558333 0.6013024 -0.7154144 0.3279891 0.2829232 0.6602842 0.6956862 -4.76837e-7 0 0 0 1 0.8906947 -0.4499555 0.0648284 -4.76837e-7 0.3558333 0.6013024 -0.7154144 0.3279891 0.2829232 0.6602842 0.6956862 -4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_02_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_02_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_thumb_02_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_02_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_thumb_02_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_thumb_02_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_thumb_02_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_thumb_02_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_thumb_02_R_pose_matrix-sampler" target="thumb_02_R/transform"/>
+      <source id="basicRig_thumb_03_R_pose_matrix-input">
+        <float_array id="basicRig_thumb_03_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_03_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_03_R_pose_matrix-output">
+        <float_array id="basicRig_thumb_03_R_pose_matrix-output-array" count="32">0.9982775 0.04875869 -0.03263006 -4.76837e-7 -0.05367102 0.5343167 -0.8435785 0.3949277 -0.02369693 0.8438769 0.5360132 0 0 0 0 1 0.9982775 0.04875869 -0.03263006 -4.76837e-7 -0.05367102 0.5343167 -0.8435785 0.3949277 -0.02369693 0.8438769 0.5360132 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_03_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_03_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_thumb_03_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_03_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_thumb_03_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_thumb_03_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_thumb_03_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_thumb_03_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_thumb_03_R_pose_matrix-sampler" target="thumb_03_R/transform"/>
+      <source id="basicRig_palm_index_R_pose_matrix-input">
+        <float_array id="basicRig_palm_index_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_index_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_index_R_pose_matrix-output">
+        <float_array id="basicRig_palm_index_R_pose_matrix-output-array" count="32">0.9618212 0.1257364 -0.2430863 0.09991169 -0.06699616 0.9693629 0.2363194 0.3515563 0.2653528 -0.2110114 0.9407772 -0.001229405 0 0 0 1 0.9618212 0.1257364 -0.2430863 0.09991169 -0.06699616 0.9693629 0.2363194 0.3515563 0.2653528 -0.2110114 0.9407772 -0.001229405 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_index_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_index_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_index_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_index_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_index_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_index_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_index_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_index_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_index_R_pose_matrix-sampler" target="palm_index_R/transform"/>
+      <source id="basicRig_f_index_01_R_pose_matrix-input">
+        <float_array id="basicRig_f_index_01_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_01_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_01_R_pose_matrix-output">
+        <float_array id="basicRig_f_index_01_R_pose_matrix-output-array" count="32">0.9998258 -0.01554012 -0.01032439 4.76837e-7 0.01183513 0.9560654 -0.2929143 0.7588892 0.01442263 0.2927411 0.9560829 2.38419e-7 0 0 0 1 0.9998258 -0.01554012 -0.01032439 4.76837e-7 0.01183513 0.9560654 -0.2929143 0.7588892 0.01442263 0.2927411 0.9560829 2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_01_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_01_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_index_01_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_01_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_index_01_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_index_01_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_index_01_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_index_01_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_index_01_R_pose_matrix-sampler" target="f_index_01_R/transform"/>
+      <source id="basicRig_f_index_02_R_pose_matrix-input">
+        <float_array id="basicRig_f_index_02_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_02_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_02_R_pose_matrix-output">
+        <float_array id="basicRig_f_index_02_R_pose_matrix-output-array" count="32">0.9999622 -0.005347461 -0.006818324 0 0.002165467 0.9161277 -0.4008807 0.2772493 0.008390225 0.4008507 0.9161047 2.38419e-7 0 0 0 1 0.9999622 -0.005347461 -0.006818324 0 0.002165467 0.9161277 -0.4008807 0.2772493 0.008390225 0.4008507 0.9161047 2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_02_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_02_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_index_02_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_02_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_index_02_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_index_02_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_index_02_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_index_02_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_index_02_R_pose_matrix-sampler" target="f_index_02_R/transform"/>
+      <source id="basicRig_f_index_03_R_pose_matrix-input">
+        <float_array id="basicRig_f_index_03_R_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_03_R_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_03_R_pose_matrix-output">
+        <float_array id="basicRig_f_index_03_R_pose_matrix-output-array" count="32">0.9998614 0.01556963 -0.005928263 4.76837e-7 -0.007360771 0.0936321 -0.9955798 0.2487297 -0.01494575 0.995485 0.09373374 0 0 0 0 1 0.9998614 0.01556963 -0.005928263 4.76837e-7 -0.007360771 0.0936321 -0.9955798 0.2487297 -0.01494575 0.995485 0.09373374 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_03_R_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_03_R_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_index_03_R_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_03_R_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_index_03_R_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_index_03_R_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_index_03_R_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_index_03_R_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_index_03_R_pose_matrix-sampler" target="f_index_03_R/transform"/>
+      <source id="basicRig_forearm_L_001_pose_matrix-input">
+        <float_array id="basicRig_forearm_L_001_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_L_001_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_L_001_pose_matrix-output">
+        <float_array id="basicRig_forearm_L_001_pose_matrix-output-array" count="32">0.4240591 0.6151271 0.6646751 2.61049 0.005674294 0.732114 -0.6811587 -1.405061 -0.905617 0.292623 0.3069692 7.029176 0 0 0 1 0.4240591 0.6151271 0.6646751 2.61049 0.005674294 0.732114 -0.6811587 -1.405061 -0.905617 0.292623 0.3069692 7.029176 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_L_001_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_forearm_L_001_pose_matrix-interpolation">
+        <Name_array id="basicRig_forearm_L_001_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_forearm_L_001_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_forearm_L_001_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_forearm_L_001_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_forearm_L_001_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_forearm_L_001_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_forearm_L_001_pose_matrix-sampler" target="forearm_L_001/transform"/>
+      <source id="basicRig_hand_L_pose_matrix-input">
+        <float_array id="basicRig_hand_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_hand_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_hand_L_pose_matrix-output">
+        <float_array id="basicRig_hand_L_pose_matrix-output-array" count="32">0.3570533 0.2605937 -0.8969969 -4.76837e-7 -0.6780148 -0.588227 -0.4407773 2.38419e-7 -0.6425018 0.7655584 -0.03334188 0 0 0 0 1 0.3570533 0.2605937 -0.8969969 -4.76837e-7 -0.6780148 -0.588227 -0.4407773 2.38419e-7 -0.6425018 0.7655584 -0.03334188 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_hand_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_hand_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_hand_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_hand_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_hand_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_hand_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_hand_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_hand_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_hand_L_pose_matrix-sampler" target="hand_L/transform"/>
+      <source id="basicRig_palm_pinky_L_pose_matrix-input">
+        <float_array id="basicRig_palm_pinky_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_pinky_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_pinky_L_pose_matrix-output">
+        <float_array id="basicRig_palm_pinky_L_pose_matrix-output-array" count="32">0.9299148 0.3674803 -0.01473567 0.2217898 -0.3584244 0.9145193 0.1875814 0.4042826 0.08240867 -0.1691531 0.9821385 -0.05963874 0 0 0 1 0.9299148 0.3674803 -0.01473567 0.2217898 -0.3584244 0.9145193 0.1875814 0.4042826 0.08240867 -0.1691531 0.9821385 -0.05963874 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_pinky_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_pinky_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_pinky_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_pinky_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_pinky_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_pinky_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_pinky_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_pinky_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_pinky_L_pose_matrix-sampler" target="palm_pinky_L/transform"/>
+      <source id="basicRig_f_pinky_01_L_pose_matrix-input">
+        <float_array id="basicRig_f_pinky_01_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_01_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_01_L_pose_matrix-output">
+        <float_array id="basicRig_f_pinky_01_L_pose_matrix-output-array" count="32">0.9995592 -0.02302524 0.01874219 0 0.02886137 0.6056039 -0.7952427 0.5448756 0.006960541 0.7954329 0.6060015 2.38419e-7 0 0 0 1 0.9995592 -0.02302524 0.01874219 0 0.02886137 0.6056039 -0.7952427 0.5448756 0.006960541 0.7954329 0.6060015 2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_01_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_01_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_pinky_01_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_01_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_pinky_01_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_pinky_01_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_pinky_01_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_pinky_01_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_pinky_01_L_pose_matrix-sampler" target="f_pinky_01_L/transform"/>
+      <source id="basicRig_f_pinky_02_L_pose_matrix-input">
+        <float_array id="basicRig_f_pinky_02_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_02_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_02_L_pose_matrix-output">
+        <float_array id="basicRig_f_pinky_02_L_pose_matrix-output-array" count="32">0.999862 -0.003000662 0.01635513 0 0.01327619 -0.4481023 -0.8938838 0.2383323 0.01001126 0.8939772 -0.4480003 0 0 0 0 1 0.999862 -0.003000662 0.01635513 0 0.01327619 -0.4481023 -0.8938838 0.2383323 0.01001126 0.8939772 -0.4480003 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_02_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_02_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_pinky_02_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_02_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_pinky_02_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_pinky_02_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_pinky_02_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_pinky_02_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_pinky_02_L_pose_matrix-sampler" target="f_pinky_02_L/transform"/>
+      <source id="basicRig_f_pinky_03_L_pose_matrix-input">
+        <float_array id="basicRig_f_pinky_03_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_03_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_03_L_pose_matrix-output">
+        <float_array id="basicRig_f_pinky_03_L_pose_matrix-output-array" count="32">0.9995618 0.02734429 0.01133436 4.76837e-7 -0.02563731 0.9911515 -0.1302379 0.1573458 -0.01479489 0.1298902 0.9914184 4.76837e-7 0 0 0 1 0.9995618 0.02734429 0.01133436 4.76837e-7 -0.02563731 0.9911515 -0.1302379 0.1573458 -0.01479489 0.1298902 0.9914184 4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_03_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_pinky_03_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_pinky_03_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_pinky_03_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_pinky_03_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_pinky_03_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_pinky_03_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_pinky_03_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_pinky_03_L_pose_matrix-sampler" target="f_pinky_03_L/transform"/>
+      <source id="basicRig_palm_index_L_pose_matrix-input">
+        <float_array id="basicRig_palm_index_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_index_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_index_L_pose_matrix-output">
+        <float_array id="basicRig_palm_index_L_pose_matrix-output-array" count="32">0.9414821 -0.1544725 0.2995834 -0.1006637 0.1317484 0.9867447 0.09475102 0.3546896 -0.3102485 -0.04973689 0.9493537 -0.001106501 0 0 0 1 0.9414821 -0.1544725 0.2995834 -0.1006637 0.1317484 0.9867447 0.09475102 0.3546896 -0.3102485 -0.04973689 0.9493537 -0.001106501 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_index_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_index_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_index_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_index_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_index_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_index_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_index_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_index_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_index_L_pose_matrix-sampler" target="palm_index_L/transform"/>
+      <source id="basicRig_f_index_01_L_pose_matrix-input">
+        <float_array id="basicRig_f_index_01_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_01_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_01_L_pose_matrix-output">
+        <float_array id="basicRig_f_index_01_L_pose_matrix-output-array" count="32">0.9998198 0.01890349 0.001819491 0 -0.01156205 0.681899 -0.731355 0.7654972 -0.01506568 0.7312015 0.681995 1.49012e-7 0 0 0 1 0.9998198 0.01890349 0.001819491 0 -0.01156205 0.681899 -0.731355 0.7654972 -0.01506568 0.7312015 0.681995 1.49012e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_01_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_01_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_index_01_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_01_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_index_01_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_index_01_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_index_01_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_index_01_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_index_01_L_pose_matrix-sampler" target="f_index_01_L/transform"/>
+      <source id="basicRig_f_index_02_L_pose_matrix-input">
+        <float_array id="basicRig_f_index_02_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_02_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_02_L_pose_matrix-output">
+        <float_array id="basicRig_f_index_02_L_pose_matrix-output-array" count="32">0.9999646 0.006400734 -0.00540331 0 -0.002469838 -0.3910639 -0.9203598 0.279623 -0.008004144 0.920341 -0.3910345 4.76837e-7 0 0 0 1 0.9999646 0.006400734 -0.00540331 0 -0.002469838 -0.3910639 -0.9203598 0.279623 -0.008004144 0.920341 -0.3910345 4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_02_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_02_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_index_02_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_02_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_index_02_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_index_02_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_index_02_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_index_02_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_index_02_L_pose_matrix-sampler" target="f_index_02_L/transform"/>
+      <source id="basicRig_f_index_03_L_pose_matrix-input">
+        <float_array id="basicRig_f_index_03_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_03_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_03_L_pose_matrix-output">
+        <float_array id="basicRig_f_index_03_L_pose_matrix-output-array" count="32">0.9998592 -0.01469609 -0.00809449 0 0.007565022 0.8255358 -0.5642992 0.2509375 0.01497525 0.5641589 0.8255308 -4.76837e-7 0 0 0 1 0.9998592 -0.01469609 -0.00809449 0 0.007565022 0.8255358 -0.5642992 0.2509375 0.01497525 0.5641589 0.8255308 -4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_03_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_index_03_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_index_03_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_index_03_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_index_03_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_index_03_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_index_03_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_index_03_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_index_03_L_pose_matrix-sampler" target="f_index_03_L/transform"/>
+      <source id="basicRig_palm_ring_L_pose_matrix-input">
+        <float_array id="basicRig_palm_ring_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_ring_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_ring_L_pose_matrix-output">
+        <float_array id="basicRig_palm_ring_L_pose_matrix-output-array" count="32">0.9808338 0.1945766 0.01027857 0.135601 -0.1948191 0.9784081 0.06901619 0.381979 0.00337255 -0.06969604 0.9975626 -0.04998016 0 0 0 1 0.9808338 0.1945766 0.01027857 0.135601 -0.1948191 0.9784081 0.06901619 0.381979 0.00337255 -0.06969604 0.9975626 -0.04998016 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_ring_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_ring_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_ring_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_ring_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_ring_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_ring_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_ring_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_ring_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_ring_L_pose_matrix-sampler" target="palm_ring_L/transform"/>
+      <source id="basicRig_f_ring_01_L_pose_matrix-input">
+        <float_array id="basicRig_f_ring_01_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_01_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_01_L_pose_matrix-output">
+        <float_array id="basicRig_f_ring_01_L_pose_matrix-output-array" count="32">0.9825952 0.1154572 -0.1455227 0 -0.1821422 0.7527041 -0.6326613 0.6394415 0.03648996 0.6481557 0.7606331 1.19209e-7 0 0 0 1 0.9825952 0.1154572 -0.1455227 0 -0.1821422 0.7527041 -0.6326613 0.6394415 0.03648996 0.6481557 0.7606331 1.19209e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_01_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_01_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_ring_01_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_01_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_ring_01_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_ring_01_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_ring_01_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_ring_01_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_ring_01_L_pose_matrix-sampler" target="f_ring_01_L/transform"/>
+      <source id="basicRig_f_ring_02_L_pose_matrix-input">
+        <float_array id="basicRig_f_ring_02_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_02_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_02_L_pose_matrix-output">
+        <float_array id="basicRig_f_ring_02_L_pose_matrix-output-array" count="32">0.9996411 0.002282783 0.02669385 0 0.02435556 -0.4925389 -0.8699496 0.3118563 0.01116194 0.8702878 -0.4924172 2.38419e-7 0 0 0 1 0.9996411 0.002282783 0.02669385 0 0.02435556 -0.4925389 -0.8699496 0.3118563 0.01116194 0.8702878 -0.4924172 2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_02_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_02_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_ring_02_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_02_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_ring_02_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_ring_02_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_ring_02_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_ring_02_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_ring_02_L_pose_matrix-sampler" target="f_ring_02_L/transform"/>
+      <source id="basicRig_f_ring_03_L_pose_matrix-input">
+        <float_array id="basicRig_f_ring_03_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_03_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_03_L_pose_matrix-output">
+        <float_array id="basicRig_f_ring_03_L_pose_matrix-output-array" count="32">0.9986193 0.04399472 -0.02867791 0 -0.05159023 0.7197045 -0.6923603 0.2624822 -0.009820521 0.6928852 0.7209817 -4.76837e-7 0 0 0 1 0.9986193 0.04399472 -0.02867791 0 -0.05159023 0.7197045 -0.6923603 0.2624822 -0.009820521 0.6928852 0.7209817 -4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_03_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_ring_03_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_ring_03_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_ring_03_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_ring_03_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_ring_03_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_ring_03_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_ring_03_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_ring_03_L_pose_matrix-sampler" target="f_ring_03_L/transform"/>
+      <source id="basicRig_palm_middle_L_pose_matrix-input">
+        <float_array id="basicRig_palm_middle_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_middle_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_middle_L_pose_matrix-output">
+        <float_array id="basicRig_palm_middle_L_pose_matrix-output-array" count="32">0.9901054 0.05440402 0.1293508 0.01651287 -0.06717339 0.9930645 0.09649462 0.374156 -0.1232038 -0.104229 0.9868929 -0.04352427 0 0 0 1 0.9901054 0.05440402 0.1293508 0.01651287 -0.06717339 0.9930645 0.09649462 0.374156 -0.1232038 -0.104229 0.9868929 -0.04352427 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_middle_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_palm_middle_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_palm_middle_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_palm_middle_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_palm_middle_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_palm_middle_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_palm_middle_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_palm_middle_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_palm_middle_L_pose_matrix-sampler" target="palm_middle_L/transform"/>
+      <source id="basicRig_f_middle_01_L_pose_matrix-input">
+        <float_array id="basicRig_f_middle_01_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_01_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_01_L_pose_matrix-output">
+        <float_array id="basicRig_f_middle_01_L_pose_matrix-output-array" count="32">0.9874933 0.09135744 -0.1284925 9.53674e-7 -0.1553881 0.7018061 -0.6952143 0.7146435 0.02666378 0.7064859 0.7072245 -2.38419e-7 0 0 0 1 0.9874933 0.09135744 -0.1284925 9.53674e-7 -0.1553881 0.7018061 -0.6952143 0.7146435 0.02666378 0.7064859 0.7072245 -2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_01_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_01_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_middle_01_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_01_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_middle_01_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_middle_01_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_middle_01_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_middle_01_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_middle_01_L_pose_matrix-sampler" target="f_middle_01_L/transform"/>
+      <source id="basicRig_f_middle_02_L_pose_matrix-input">
+        <float_array id="basicRig_f_middle_02_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_02_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_02_L_pose_matrix-output">
+        <float_array id="basicRig_f_middle_02_L_pose_matrix-output-array" count="32">0.9999106 0.00178656 0.013237 0 0.01133606 -0.6376144 -0.7702725 0.353322 0.007063895 0.7703537 -0.6375775 4.76837e-7 0 0 0 1 0.9999106 0.00178656 0.013237 0 0.01133606 -0.6376144 -0.7702725 0.353322 0.007063895 0.7703537 -0.6375775 4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_02_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_02_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_middle_02_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_02_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_middle_02_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_middle_02_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_middle_02_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_middle_02_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_middle_02_L_pose_matrix-sampler" target="f_middle_02_L/transform"/>
+      <source id="basicRig_f_middle_03_L_pose_matrix-input">
+        <float_array id="basicRig_f_middle_03_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_03_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_03_L_pose_matrix-output">
+        <float_array id="basicRig_f_middle_03_L_pose_matrix-output-array" count="32">0.999641 0.02678022 5.16027e-4 -4.76837e-7 -0.02519411 0.9466155 -0.321379 0.2769308 -0.009095222 0.3212504 0.9469505 2.38419e-7 0 0 0 1 0.999641 0.02678022 5.16027e-4 -4.76837e-7 -0.02519411 0.9466155 -0.321379 0.2769308 -0.009095222 0.3212504 0.9469505 2.38419e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_03_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_f_middle_03_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_f_middle_03_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_f_middle_03_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_f_middle_03_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_f_middle_03_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_f_middle_03_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_f_middle_03_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_f_middle_03_L_pose_matrix-sampler" target="f_middle_03_L/transform"/>
+      <source id="basicRig_thumb_01_L_pose_matrix-input">
+        <float_array id="basicRig_thumb_01_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_01_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_01_L_pose_matrix-output">
+        <float_array id="basicRig_thumb_01_L_pose_matrix-output-array" count="32">0.03045915 -0.3452345 0.9380221 -0.2465534 0.8046963 0.5651444 0.1818685 0.4244947 -0.5929053 0.7492829 0.2950229 -0.003702879 0 0 0 1 0.03045915 -0.3452345 0.9380221 -0.2465534 0.8046963 0.5651444 0.1818685 0.4244947 -0.5929053 0.7492829 0.2950229 -0.003702879 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_01_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_01_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_thumb_01_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_01_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_thumb_01_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_thumb_01_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_thumb_01_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_thumb_01_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_thumb_01_L_pose_matrix-sampler" target="thumb_01_L/transform"/>
+      <source id="basicRig_thumb_02_L_pose_matrix-input">
+        <float_array id="basicRig_thumb_02_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_02_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_02_L_pose_matrix-output">
+        <float_array id="basicRig_thumb_02_L_pose_matrix-output-array" count="32">0.8921209 0.4517875 0.002909198 -4.76837e-7 -0.353453 0.7019268 -0.6183605 0.3303308 -0.2814097 0.5506238 0.7858896 0 0 0 0 1 0.8921209 0.4517875 0.002909198 -4.76837e-7 -0.353453 0.7019268 -0.6183605 0.3303308 -0.2814097 0.5506238 0.7858896 0 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_02_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_02_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_thumb_02_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_02_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_thumb_02_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_thumb_02_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_thumb_02_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_thumb_02_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_thumb_02_L_pose_matrix-sampler" target="thumb_02_L/transform"/>
+      <source id="basicRig_thumb_03_L_pose_matrix-input">
+        <float_array id="basicRig_thumb_03_L_pose_matrix-input-array" count="2">0 0.04166662</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_03_L_pose_matrix-input-array" count="2" stride="1">
+            <param name="TIME" type="float"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_03_L_pose_matrix-output">
+        <float_array id="basicRig_thumb_03_L_pose_matrix-output-array" count="32">0.999788 -0.02044633 -0.002388056 2.38419e-7 0.00631167 0.4148858 -0.9098513 0.3983693 0.01959392 0.9096435 0.4149267 4.76837e-7 0 0 0 1 0.999788 -0.02044633 -0.002388056 2.38419e-7 0.00631167 0.4148858 -0.9098513 0.3983693 0.01959392 0.9096435 0.4149267 4.76837e-7 0 0 0 1</float_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_03_L_pose_matrix-output-array" count="2" stride="16">
+            <param name="TRANSFORM" type="float4x4"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <source id="basicRig_thumb_03_L_pose_matrix-interpolation">
+        <Name_array id="basicRig_thumb_03_L_pose_matrix-interpolation-array" count="2">LINEAR LINEAR</Name_array>
+        <technique_common>
+          <accessor source="#basicRig_thumb_03_L_pose_matrix-interpolation-array" count="2" stride="1">
+            <param name="INTERPOLATION" type="name"/>
+          </accessor>
+        </technique_common>
+      </source>
+      <sampler id="basicRig_thumb_03_L_pose_matrix-sampler">
+        <input semantic="INPUT" source="#basicRig_thumb_03_L_pose_matrix-input"/>
+        <input semantic="OUTPUT" source="#basicRig_thumb_03_L_pose_matrix-output"/>
+        <input semantic="INTERPOLATION" source="#basicRig_thumb_03_L_pose_matrix-interpolation"/>
+      </sampler>
+      <channel source="#basicRig_thumb_03_L_pose_matrix-sampler" target="thumb_03_L/transform"/>
+  </animation>
+</library_animations>  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="basicRig" name="basicRig" type="NODE">
+        <translate sid="location">0 0 0</translate>
+        <rotate sid="rotationZ">0 0 1 0</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 0</rotate>
+        <scale sid="scale">0.07 0.07 0.07</scale>
+        <node id="clavicle_R" name="clavicle.R" sid="clavicle_R" type="JOINT">
+          <matrix sid="transform">0.08284545 -0.9812373 0.1740974 -0.228301 0.9812373 0.04979748 -0.1862618 -0.488821 0.1740974 0.1862618 0.9669522 11.97279 0 0 0 1</matrix>
+          <node id="deltoid_R" name="deltoid.R" sid="deltoid_R" type="JOINT">
+            <matrix sid="transform">0.6671858 0.1392085 0.7317678 -1.19209e-7 -0.6594574 0.5672005 0.4933553 1.129053 -0.3463799 -0.8117294 0.4702302 0 0 0 0 1</matrix>
+            <node id="upper_arm_R" name="upper_arm.R" sid="upper_arm_R" type="JOINT">
+              <matrix sid="transform">-0.6339679 -0.1443555 -0.7597673 4.76837e-7 0.1366335 0.9460637 -0.2937622 0.8140221 0.7611933 -0.2900456 -0.5800497 -9.53674e-7 0 0 0 1</matrix>
+              <node id="forearm_R" name="forearm.R" sid="forearm_R" type="JOINT">
+                <matrix sid="transform">1 -9.17912e-6 5.91576e-5 0 4.89354e-5 0.6912103 -0.7226535 2.449138 -3.43286e-5 0.7226536 0.6912104 0 0 0 0 1</matrix>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="clavicle_L" name="clavicle.L" sid="clavicle_L" type="JOINT">
+          <matrix sid="transform">0.08284545 0.9812373 -0.1740974 0.228301 -0.9812373 0.04979748 -0.1862618 -0.488821 -0.1740974 0.1862618 0.9669522 11.97279 0 0 0 1</matrix>
+          <node id="deltoid_L" name="deltoid.L" sid="deltoid_L" type="JOINT">
+            <matrix sid="transform">0.6671858 -0.1392085 -0.7317678 1.19209e-7 0.6594574 0.5672005 0.4933553 1.129053 0.3463799 -0.8117294 0.4702302 0 0 0 0 1</matrix>
+            <node id="upper_arm_L" name="upper_arm.L" sid="upper_arm_L" type="JOINT">
+              <matrix sid="transform">-0.6337396 0.1443555 0.7599576 -4.76837e-7 -0.1367217 0.9460638 -0.2937211 0.8140221 -0.7613675 -0.2900455 -0.579821 -9.53674e-7 0 0 0 1</matrix>
+              <node id="forearm_L" name="forearm.L" sid="forearm_L" type="JOINT">
+                <matrix sid="transform">0.9999998 1.0848e-5 -5.31971e-5 9.53674e-7 -4.60744e-5 0.691154 -0.7227077 2.449139 2.8979e-5 0.7227075 0.6911538 -1.19209e-7 0 0 0 1</matrix>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="forearm_R_001" name="forearm.R.001" sid="forearm_R_001" type="JOINT">
+          <matrix sid="transform">1 0 0 -4.80212 0 0 -1 -2.0178 0 1 0 8.501193 0 0 0 1</matrix>
+          <node id="hand_R" name="hand.R" sid="hand_R" type="JOINT">
+            <matrix sid="transform">0.3569808 -0.2611907 0.8968523 0 0.6780595 -0.5879229 -0.4411142 0 0.642495 0.7655886 -0.03277437 2.38419e-7 0 0 0 1</matrix>
+            <node id="palm_pinky_R" name="palm_pinky.R" sid="palm_pinky_R" type="JOINT">
+              <matrix sid="transform">0.914535 -0.2967311 -0.2749113 -0.2475824 0.342882 0.9292374 0.1376583 0.401649 0.2146103 -0.2201555 0.9515641 -0.05194855 0 0 0 1</matrix>
+              <node id="f_pinky_01_R" name="f_pinky.01.R" sid="f_pinky_01_R" type="JOINT">
+                <matrix sid="transform">0.9998836 -0.01515159 0.001789048 0 0.01490036 0.944585 -0.3279284 0.5319893 0.003278792 0.3279168 0.944701 -9.53674e-7 0 0 0 1</matrix>
+                <node id="f_pinky_02_R" name="f_pinky.02.R" sid="f_pinky_02_R" type="JOINT">
+                  <matrix sid="transform">0.9998614 0.01451138 0.008153312 2.38419e-7 -0.01326895 0.9906299 -0.1359271 0.2362707 -0.01004931 0.1358 0.9906851 0 0 0 0 1</matrix>
+                  <node id="f_pinky_03_R" name="f_pinky.03.R" sid="f_pinky_03_R" type="JOINT">
+                    <matrix sid="transform">0.9995615 -0.02603853 -0.01409405 2.38419e-7 0.02565059 0.9993051 -0.02704403 0.1559844 0.01478847 0.0266706 0.9995348 0 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="palm_middle_R" name="palm_middle.R" sid="palm_middle_R" type="JOINT">
+              <matrix sid="transform">0.9999319 0.009722233 -0.006460667 -0.01628685 -0.009113163 0.9960424 0.08841079 0.370898 0.007294506 -0.08834584 0.9960634 -0.0433073 0 0 0 1</matrix>
+              <node id="f_middle_01_R" name="f_middle.01.R" sid="f_middle_01_R" type="JOINT">
+                <matrix sid="transform">0.9874976 -0.153225 0.03702012 0 0.1553757 0.9857376 -0.06465018 0.7084739 -0.02658615 0.06959397 0.9972211 0 0 0 0 1</matrix>
+                <node id="f_middle_02_R" name="f_middle.02.R" sid="f_middle_02_R" type="JOINT">
+                  <matrix sid="transform">0.9999104 0.01251888 0.004737824 0 -0.01132742 0.9799747 -0.1988005 0.3502576 -0.007131785 0.1987291 0.9800286 0 0 0 0 1</matrix>
+                  <node id="f_middle_03_R" name="f_middle.03.R" sid="f_middle_03_R" type="JOINT">
+                    <matrix sid="transform">0.9996407 -0.02518836 -0.00916785 0 0.02524745 0.999661 0.006383702 0.2745295 0.009003893 -0.006612912 0.9999377 -4.76837e-7 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="palm_ring_R" name="palm_ring.R" sid="palm_ring_R" type="JOINT">
+              <matrix sid="transform">0.9940645 -0.07040834 -0.08293548 -0.1651139 0.08397907 0.9812388 0.1735458 0.3804631 0.06916028 -0.1794805 0.9813275 -0.04384613 0 0 0 1</matrix>
+              <node id="f_ring_01_R" name="f_ring.01.R" sid="f_ring_01_R" type="JOINT">
+                <matrix sid="transform">0.9720042 -0.220824 0.08027741 -4.76837e-7 0.2291854 0.9663504 -0.1167949 0.6302556 -0.05178487 0.1319236 0.9899061 0 0 0 0 1</matrix>
+                <node id="f_ring_02_R" name="f_ring.02.R" sid="f_ring_02_R" type="JOINT">
+                  <matrix sid="transform">0.9996418 0.02616978 0.005603775 -4.76837e-7 -0.02433521 0.9759508 -0.2166274 0.3091547 -0.01113807 0.2164135 0.9762383 0 0 0 0 1</matrix>
+                  <node id="f_ring_03_R" name="f_ring.03.R" sid="f_ring_03_R" type="JOINT">
+                    <matrix sid="transform">0.9986185 -0.05142912 -0.01077996 4.76837e-7 0.05160457 0.9985282 0.01667812 0.260205 0.009906337 -0.01721135 0.9998027 0 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="thumb_01_R" name="thumb.01.R" sid="thumb_01_R" type="JOINT">
+              <matrix sid="transform">3.21046e-4 0.4520447 -0.8919953 0.2447181 -0.7876788 0.5496604 0.2782727 0.4210031 0.6160861 0.7025165 0.3562425 -0.004724503 0 0 0 1</matrix>
+              <node id="thumb_02_R" name="thumb.02.R" sid="thumb_02_R" type="JOINT">
+                <matrix sid="transform">0.8906949 -0.3798729 -0.2497185 2.38419e-7 0.355833 0.9244415 -0.1370805 0.3279886 0.2829232 0.03323889 0.9585664 0 0 0 0 1</matrix>
+                <node id="thumb_03_R" name="thumb.03.R" sid="thumb_03_R" type="JOINT">
+                  <matrix sid="transform">0.9997833 0.007771827 0.0193107 0 -0.006355971 0.9973607 -0.07232696 0.3949275 -0.01982179 0.07218856 0.9971941 -4.76837e-7 0 0 0 1</matrix>
+                </node>
+              </node>
+            </node>
+            <node id="palm_index_R" name="palm_index.R" sid="palm_index_R" type="JOINT">
+              <matrix sid="transform">0.9026918 0.2096194 -0.3757758 0.09991121 -0.1568751 0.9735304 0.1662188 0.3515558 0.4006717 -0.09109451 0.9116821 -0.001229286 0 0 0 1</matrix>
+              <node id="f_index_01_R" name="f_index.01.R" sid="f_index_01_R" type="JOINT">
+                <matrix sid="transform">0.9998258 -0.01439857 -0.01186442 1.19209e-7 0.01183519 0.9810749 -0.1932664 0.7588887 0.01442271 0.1930924 0.9810748 0 0 0 0 1</matrix>
+                <node id="f_index_02_R" name="f_index.02.R" sid="f_index_02_R" type="JOINT">
+                  <matrix sid="transform">0.9999624 -0.003791243 -0.007791907 1.19209e-7 0.002165705 0.9800155 -0.1989094 0.2772496 0.008390427 0.1988852 0.9799868 0 0 0 0 1</matrix>
+                  <node id="f_index_03_R" name="f_index.03.R" sid="f_index_03_R" type="JOINT">
+                    <matrix sid="transform">0.9998612 0.00783965 0.01470014 -1.19209e-7 -0.007360727 0.9994495 -0.03235373 0.2487302 -0.01494575 0.03224105 0.9993685 9.53674e-7 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="forearm_L_001" name="forearm.L.001" sid="forearm_L_001" type="JOINT">
+          <matrix sid="transform">1 0 0 4.80308 0 0 -1 -2.01874 0 1 0 8.501093 0 0 0 1</matrix>
+          <node id="hand_L" name="hand.L" sid="hand_L" type="JOINT">
+            <matrix sid="transform">0.3570533 0.2605939 -0.896997 0 -0.6780149 -0.5882271 -0.4407772 0 -0.6425019 0.7655584 -0.0333418 2.38419e-7 0 0 0 1</matrix>
+            <node id="palm_pinky_L" name="palm_pinky.L" sid="palm_pinky_L" type="JOINT">
+              <matrix sid="transform">0.8976367 0.3437755 0.2758024 0.2217894 -0.3845445 0.9166498 0.1089895 0.4042826 -0.2153463 -0.2038912 0.9550152 -0.05963898 0 0 0 1</matrix>
+              <node id="f_pinky_01_L" name="f_pinky.01.L" sid="f_pinky_01_L" type="JOINT">
+                <matrix sid="transform">0.9995593 -0.02961612 0.002076626 0 0.0288614 0.9529207 -0.3018428 0.5448755 0.006960526 0.3017696 0.9533556 9.53674e-7 0 0 0 1</matrix>
+                <node id="f_pinky_02_L" name="f_pinky.02.L" sid="f_pinky_02_L" type="JOINT">
+                  <matrix sid="transform">0.9998617 -0.01451316 -0.008115962 0 0.01327685 0.990644 -0.1358243 0.2383325 0.01001123 0.1356978 0.9906996 0 0 0 0 1</matrix>
+                  <node id="f_pinky_03_L" name="f_pinky.03.L" sid="f_pinky_03_L" type="JOINT">
+                    <matrix sid="transform">0.9995618 0.02602777 0.0140973 -2.38419e-7 -0.02563751 0.9993014 -0.02719074 0.1573458 -0.01479521 0.0268175 0.9995309 0 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="palm_index_L" name="palm_index.L" sid="palm_index_L" type="JOINT">
+              <matrix sid="transform">0.9027979 -0.2096063 0.3755278 -0.1006641 0.1566465 0.9734733 0.166768 0.3546903 -0.4005218 -0.09173268 0.9116837 -0.001106262 0 0 0 1</matrix>
+              <node id="f_index_01_L" name="f_index.01.L" sid="f_index_01_L" type="JOINT">
+                <matrix sid="transform">0.9998196 0.01425099 0.01255226 -2.38419e-7 -0.01156174 0.9811326 -0.1929902 0.765497 -0.01506579 0.1928105 0.9811204 0 0 0 0 1</matrix>
+                <node id="f_index_02_L" name="f_index.02.L" sid="f_index_02_L" type="JOINT">
+                  <matrix sid="transform">0.9999648 0.004015714 0.00735119 0 -0.002469957 0.9799314 -0.199319 0.2796239 -0.008004069 0.1992939 0.979907 0 0 0 0 1</matrix>
+                  <node id="f_index_03_L" name="f_index.03.L" sid="f_index_03_L" type="JOINT">
+                    <matrix sid="transform">0.9998592 -0.008041948 -0.01472524 0 0.007565498 0.999455 -0.03213376 0.2509375 0.01497567 0.03201777 0.999375 0 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="palm_ring_L" name="palm_ring.L" sid="palm_ring_L" type="JOINT">
+              <matrix sid="transform">0.9909237 0.1185872 0.06330508 0.1356006 -0.1275083 0.9783045 0.1632837 0.3819785 -0.04256833 -0.1698735 0.984546 -0.04998016 0 0 0 1</matrix>
+              <node id="f_ring_01_L" name="f_ring.01.L" sid="f_ring_01_L" type="JOINT">
+                <matrix sid="transform">0.9825951 0.1768965 -0.05669895 0 -0.1821416 0.9774323 -0.1070068 0.6394405 0.03649028 0.1154717 0.9926404 0 0 0 0 1</matrix>
+                <node id="f_ring_02_L" name="f_ring.02.L" sid="f_ring_02_L" type="JOINT">
+                  <matrix sid="transform">0.9996411 -0.02619484 -0.005622387 0 0.02435544 0.9759473 -0.2166417 0.311856 0.01116198 0.216427 0.976235 0 0 0 0 1</matrix>
+                  <node id="f_ring_03_L" name="f_ring.03.L" sid="f_ring_03_L" type="JOINT">
+                    <matrix sid="transform">0.9986199 0.05141661 0.01069224 0 -0.05159011 0.9985296 0.01664913 0.2624819 -0.009820417 -0.01717766 0.9998043 -4.76837e-7 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="palm_middle_L" name="palm_middle.L" sid="palm_middle_L" type="JOINT">
+              <matrix sid="transform">0.9999319 -0.009705067 0.006485075 0.01651239 0.009088546 0.9959772 0.08914518 0.3741558 -0.007324159 -0.08908017 0.9959974 -0.04352474 0 0 0 1</matrix>
+              <node id="f_middle_01_L" name="f_middle.01.L" sid="f_middle_01_L" type="JOINT">
+                <matrix sid="transform">0.9874936 0.153228 -0.03711715 -9.53674e-7 -0.1553885 0.9857281 -0.06476453 0.7146446 0.02666372 0.06972206 0.99721 0 0 0 0 1</matrix>
+                <node id="f_middle_02_L" name="f_middle.02.L" sid="f_middle_02_L" type="JOINT">
+                  <matrix sid="transform">0.9999108 -0.01251376 -0.004670173 0 0.01133567 0.9799726 -0.1988079 0.3533212 0.007064432 0.1987372 0.9800273 0 0 0 0 1</matrix>
+                  <node id="f_middle_03_L" name="f_middle.03.L" sid="f_middle_03_L" type="JOINT">
+                    <matrix sid="transform">0.9996412 0.02513319 0.00926125 0 -0.02519384 0.9996617 0.006483212 0.2769303 -0.009095192 -0.00671421 0.9999361 -9.53674e-7 0 0 0 1</matrix>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="thumb_01_L" name="thumb.01.L" sid="thumb_01_L" type="JOINT">
+              <matrix sid="transform">9.88096e-4 -0.4533378 0.8913383 -0.2465534 0.7857472 0.5516871 0.2797191 0.424495 -0.6185471 0.7000901 0.3567539 -0.003703117 0 0 0 1</matrix>
+              <node id="thumb_02_L" name="thumb.02.L" sid="thumb_02_L" type="JOINT">
+                <matrix sid="transform">0.8921208 0.3775678 0.2481191 -4.76837e-7 -0.3534532 0.9253303 -0.1372402 0.3303318 -0.2814098 0.03473628 0.9589589 -9.53674e-7 0 0 0 1</matrix>
+                <node id="thumb_03_L" name="thumb.03.L" sid="thumb_03_L" type="JOINT">
+                  <matrix sid="transform">0.9997882 -0.007713281 -0.01908574 4.76837e-7 0.006311566 0.9973527 -0.07244384 0.3983693 0.01959403 0.07230797 0.9971899 -4.76837e-7 0 0 0 1</matrix>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MyWeaponsView" preservesSuperviewLayoutMargins="YES" id="iN0-l3-epB" customClass="MyWeaponsView" customModule="BattleField" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iry-sE-hc2">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="230"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxL-c6-Xo0">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3p-6R-rSk">
+                            <rect key="frame" x="5" y="5" width="40" height="40"/>
+                            <color key="backgroundColor" red="0.2784313725" green="0.29411764709999999" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="IXL-h7-ZBc"/>
+                                <constraint firstAttribute="height" constant="40" id="Tm3-LS-12l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                            <state key="normal" title="All"/>
+                            <connections>
+                                <action selector="SortAll:" destination="iN0-l3-epB" eventType="touchUpInside" id="8d2-dx-vdd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E62-Q1-e1b">
+                            <rect key="frame" x="50" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="gYU-U8-16L"/>
+                                <constraint firstAttribute="height" constant="40" id="nVI-ya-WKF"/>
+                            </constraints>
+                            <connections>
+                                <action selector="SortKnife:" destination="iN0-l3-epB" eventType="touchUpInside" id="eWw-2W-4qi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJB-BS-NiP">
+                            <rect key="frame" x="95" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="61P-Qs-gbC"/>
+                                <constraint firstAttribute="height" constant="40" id="S1k-s8-Lbz"/>
+                            </constraints>
+                            <connections>
+                                <action selector="SortGun:" destination="iN0-l3-epB" eventType="touchUpInside" id="ndv-ib-qFf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="E62-Q1-e1b" firstAttribute="leading" secondItem="V3p-6R-rSk" secondAttribute="trailing" constant="5" id="NIv-Uf-1kg"/>
+                        <constraint firstItem="V3p-6R-rSk" firstAttribute="leading" secondItem="gxL-c6-Xo0" secondAttribute="leading" constant="5" id="O95-Ly-Wim"/>
+                        <constraint firstItem="V3p-6R-rSk" firstAttribute="top" secondItem="gxL-c6-Xo0" secondAttribute="top" constant="5" id="S5m-JO-PSe"/>
+                        <constraint firstAttribute="height" constant="50" id="UXq-Pw-NLl"/>
+                        <constraint firstItem="RJB-BS-NiP" firstAttribute="leading" secondItem="E62-Q1-e1b" secondAttribute="trailing" constant="5" id="WdQ-YH-Z0i"/>
+                        <constraint firstItem="E62-Q1-e1b" firstAttribute="top" secondItem="gxL-c6-Xo0" secondAttribute="top" constant="5" id="tAS-5c-CG2"/>
+                        <constraint firstItem="RJB-BS-NiP" firstAttribute="top" secondItem="gxL-c6-Xo0" secondAttribute="top" constant="5" id="utg-6v-N8B"/>
+                        <constraint firstItem="E62-Q1-e1b" firstAttribute="leading" secondItem="gxL-c6-Xo0" secondAttribute="leading" constant="50" id="vF5-vT-ujJ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vF5-vT-ujJ"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPp-jZ-ATh">
+                    <rect key="frame" x="0.0" y="50" width="600" height="180"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-KR-u8p">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qUA-wV-Ceg">
+                                <size key="itemSize" width="130" height="180"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="Vry-hy-RUc"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="Abj-7b-F8V"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="a2Q-KR-u8p" secondAttribute="bottom" id="3VA-DM-e3p"/>
+                        <constraint firstAttribute="height" constant="80" id="OuT-uz-Qag"/>
+                        <constraint firstItem="a2Q-KR-u8p" firstAttribute="top" secondItem="hPp-jZ-ATh" secondAttribute="top" id="lrv-LS-uqN"/>
+                        <constraint firstAttribute="trailing" secondItem="a2Q-KR-u8p" secondAttribute="trailing" id="muJ-NN-uJ4"/>
+                        <constraint firstItem="a2Q-KR-u8p" firstAttribute="leading" secondItem="hPp-jZ-ATh" secondAttribute="leading" id="og3-3m-CTK"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="OuT-uz-Qag"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gxL-c6-Xo0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9lg-7c-NPz"/>
+                <constraint firstItem="gxL-c6-Xo0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ahz-d7-urc"/>
+                <constraint firstItem="hPp-jZ-ATh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DM7-TT-iof"/>
+                <constraint firstAttribute="trailing" secondItem="hPp-jZ-ATh" secondAttribute="trailing" id="LIC-Dq-BLJ"/>
+                <constraint firstItem="hPp-jZ-ATh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="LX0-SH-oLM"/>
+                <constraint firstAttribute="bottom" secondItem="hPp-jZ-ATh" secondAttribute="bottom" id="PcP-D4-Nb8"/>
+                <constraint firstAttribute="trailing" secondItem="gxL-c6-Xo0" secondAttribute="trailing" id="e2e-o8-Ksu"/>
+                <constraint firstItem="Iry-sE-hc2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hvV-En-0EA"/>
+                <constraint firstItem="Iry-sE-hc2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jZQ-Y2-OfW"/>
+                <constraint firstAttribute="bottom" secondItem="Iry-sE-hc2" secondAttribute="bottom" id="klm-zW-zW1"/>
+                <constraint firstAttribute="trailing" secondItem="Iry-sE-hc2" secondAttribute="trailing" id="mfe-bZ-d6Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="BGView" destination="Iry-sE-hc2" id="Z53-lv-TW2"/>
+                <outlet property="allBTN" destination="V3p-6R-rSk" id="ye0-TI-eUy"/>
+                <outlet property="collectionView" destination="a2Q-KR-u8p" id="3tY-ze-lh7"/>
+                <outlet property="gunBTN" destination="RJB-BS-NiP" id="uIT-Tb-x9O"/>
+                <outlet property="itemsView" destination="hPp-jZ-ATh" id="vkl-aK-vh3"/>
+                <outlet property="knifeBTN" destination="E62-Q1-e1b" id="CIv-yq-dTZ"/>
+            </connections>
+        </view>
+    </objects>
+</document>

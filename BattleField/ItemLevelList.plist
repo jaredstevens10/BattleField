@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>armorItemData</key>
+	<dict>
+		<key>armor_body_level</key>
+		<dict>
+			<key>level</key>
+			<integer>1</integer>
+		</dict>
+		<key>armor_boots_level</key>
+		<dict>
+			<key>level</key>
+			<integer>1</integer>
+		</dict>
+		<key>armor_helmet_level</key>
+		<dict>
+			<key>level</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>weaponItemData</key>
+	<dict>
+		<key>weapon_fist_level</key>
+		<dict>
+			<key>level</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

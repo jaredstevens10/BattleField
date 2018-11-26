@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084ECE703E71E3F0D9A62388 /* Pods_BattleField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0373F73A824A63FC0688C5 /* Pods_BattleField.framework */; };
+		17150F8E1B69271300ECCDF7 /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F8D1B69271300ECCDF7 /* MoveButton.swift */; };
+		17150F901B69367900ECCDF7 /* WeaponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F8F1B69367900ECCDF7 /* WeaponsViewController.swift */; };
+		17150F921B693DFF00ECCDF7 /* ItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F911B693DFF00ECCDF7 /* ItemsCell.swift */; };
+		17150F941B69A11400ECCDF7 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F931B69A11400ECCDF7 /* StatsViewController.swift */; };
+		17150F961B69A39500ECCDF7 /* AllianceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F951B69A39500ECCDF7 /* AllianceViewController.swift */; };
+		17150F9A1B69A4F100ECCDF7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17150F991B69A4F100ECCDF7 /* SWRevealViewController.m */; };
+		17150F9C1B69A56B00ECCDF7 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F9B1B69A56B00ECCDF7 /* CharacterViewController.swift */; };
+		17150F9E1B69A9B700ECCDF7 /* ArmorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150F9D1B69A9B700ECCDF7 /* ArmorViewController.swift */; };
+		17150FA11B6ABCCA00ECCDF7 /* GetUserLoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FA01B6ABCCA00ECCDF7 /* GetUserLoc.swift */; };
+		17150FA31B6ABEE700ECCDF7 /* GetAllLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FA21B6ABEE700ECCDF7 /* GetAllLocations.swift */; };
+		17150FA51B6AC3DD00ECCDF7 /* SaveLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FA41B6AC3DD00ECCDF7 /* SaveLocation.swift */; };
+		17150FA71B6B04CF00ECCDF7 /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FA61B6B04CF00ECCDF7 /* ActionButtons.swift */; };
+		17150FA91B6B0FED00ECCDF7 /* AttackPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FA81B6B0FED00ECCDF7 /* AttackPlayer.swift */; };
+		17150FAB1B6B140B00ECCDF7 /* OppStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FAA1B6B140B00ECCDF7 /* OppStatsViewController.swift */; };
+		17150FAD1B6B1FAB00ECCDF7 /* RemoteNotificationDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FAC1B6B1FAB00ECCDF7 /* RemoteNotificationDeepLink.swift */; };
+		17150FAF1B6B228E00ECCDF7 /* PushAttackNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FAE1B6B228E00ECCDF7 /* PushAttackNotice.swift */; };
+		17150FB31B6B808800ECCDF7 /* BattleGame.sks in Resources */ = {isa = PBXBuildFile; fileRef = 17150FB21B6B808800ECCDF7 /* BattleGame.sks */; };
+		17150FB51B6B85E000ECCDF7 /* BattleGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17150FB41B6B85E000ECCDF7 /* BattleGame.swift */; };
 		173A04701B67785B00AA1711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A046F1B67785B00AA1711 /* AppDelegate.swift */; };
 		173A04731B67785B00AA1711 /* BattleField.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 173A04711B67785B00AA1711 /* BattleField.xcdatamodeld */; };
 		173A04751B67785B00AA1711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04741B67785B00AA1711 /* ViewController.swift */; };
@@ -14,6 +33,195 @@
 		173A047A1B67785B00AA1711 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173A04791B67785B00AA1711 /* Images.xcassets */; };
 		173A047D1B67785B00AA1711 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 173A047B1B67785B00AA1711 /* LaunchScreen.xib */; };
 		173A04891B67785C00AA1711 /* BattleFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04881B67785C00AA1711 /* BattleFieldTests.swift */; };
+		173A04931B6778A800AA1711 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04921B6778A800AA1711 /* SignupViewController.swift */; };
+		173A04951B6778C800AA1711 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04941B6778C800AA1711 /* LoginViewController.swift */; };
+		173A04981B67795600AA1711 /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04971B67795600AA1711 /* JSSAlertView.swift */; };
+		173A049A1B67798E00AA1711 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04991B67798E00AA1711 /* SwiftyJSON.swift */; };
+		173A049C1B6779B800AA1711 /* ConfirmNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A049B1B6779B800AA1711 /* ConfirmNetwork.swift */; };
+		173A04A01B690C4800AA1711 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A049F1B690C4800AA1711 /* MapViewController.swift */; };
+		173A04A21B690EB400AA1711 /* UserPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04A11B690EB400AA1711 /* UserPoints.swift */; };
+		173A04A81B69145D00AA1711 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A04A71B69145D00AA1711 /* VCMapView.swift */; };
+		17556B321B6F9F94007937B0 /* ItemLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17556B311B6F9F94007937B0 /* ItemLocations.swift */; };
+		17556B341B6FF304007937B0 /* ShieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17556B331B6FF304007937B0 /* ShieldViewController.swift */; };
+		17556B361B725C2A007937B0 /* AttackTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17556B351B725C29007937B0 /* AttackTimerViewController.swift */; };
+		17556B381B72F397007937B0 /* DBAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17556B371B72F397007937B0 /* DBAlertController.swift */; };
+		3D68355803B658991A49D646 /* Pods_BattleFieldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7014AC6CD4F950630CCD52EC /* Pods_BattleFieldTests.framework */; };
+		A60290D61CCE46D70071788F /* metal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A60290D51CCE46D70071788F /* metal.jpg */; };
+		A60290D81CCE46DF0071788F /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A60290D71CCE46DF0071788F /* wood.jpg */; };
+		A60290DD1CCE506D0071788F /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60290DC1CCE506D0071788F /* UserProfileViewController.swift */; };
+		A60290E11CCE767B0071788F /* MissionMapHammer.png in Resources */ = {isa = PBXBuildFile; fileRef = A60290E01CCE767B0071788F /* MissionMapHammer.png */; };
+		A604E1FA1CA9AEDC00E23AAD /* PlayerScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A604E1F91CA9AEDC00E23AAD /* PlayerScene.scn */; };
+		A6052BC31CB4142A006BB4EE /* ArmyGeneralIntroSpriteScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6052BC21CB4142A006BB4EE /* ArmyGeneralIntroSpriteScene.sks */; };
+		A6052BC51CB41520006BB4EE /* GeneralIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6052BC41CB41520006BB4EE /* GeneralIntroViewController.swift */; };
+		A60DFC631CAC16C6001B9070 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DFC621CAC16C6001B9070 /* Customer.swift */; };
+		A613D2511E573F560045803A /* AttributesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D2501E573F180045803A /* AttributesView.xib */; };
+		A613D2531E5743530045803A /* PlayerSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A613D2521E5743530045803A /* PlayerSubViews.swift */; };
+		A613D2551E5756EC0045803A /* AttributesItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D2541E5756EC0045803A /* AttributesItemCell.xib */; };
+		A613D2571E5B49D40045803A /* SkillsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D2561E5B49D00045803A /* SkillsView.xib */; };
+		A613D2591E5B72380045803A /* EditBodyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D2581E5B72380045803A /* EditBodyCell.xib */; };
+		A613D25B1E5B72770045803A /* EditBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A613D25A1E5B72770045803A /* EditBodyCell.swift */; };
+		A613D25D1E5B78DE0045803A /* EditBodyItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D25C1E5B78DE0045803A /* EditBodyItemCell.xib */; };
+		A613D25F1E5B901C0045803A /* SignUpAgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A613D25E1E5B901C0045803A /* SignUpAgentViewController.swift */; };
+		A613D2611E5CB71D0045803A /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D2601E5CB71B0045803A /* MessageView.xib */; };
+		A613D2631E5CED550045803A /* UserSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = A613D2621E5CED530045803A /* UserSkills.swift */; };
+		A613D2651E5DEEFD0045803A /* SkillsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A613D2641E5DEEFB0045803A /* SkillsItemCell.xib */; };
+		A614AC4A1E6725E100C8F22F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A614AC491E6725E100C8F22F /* GoogleService-Info.plist */; };
+		A614E4761CB545C70022A87B /* FireGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614E4751CB545C70022A87B /* FireGestureRecognizer.swift */; };
+		A614E47A1CB545FC0022A87B /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614E4791CB545FC0022A87B /* Tile.swift */; };
+		A614E47C1CB546100022A87B /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614E47B1CB546100022A87B /* Entity.swift */; };
+		A614E47E1CB546240022A87B /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614E47D1CB546240022A87B /* Map.swift */; };
+		A614E4811CB5468E0022A87B /* AttackMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A614E4801CB5468E0022A87B /* AttackMapViewController.swift */; };
+		A614E4841CB547240022A87B /* Map2.png in Resources */ = {isa = PBXBuildFile; fileRef = A614E4831CB547240022A87B /* Map2.png */; };
+		A614E4861CB547590022A87B /* buildingLightTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A614E4851CB547590022A87B /* buildingLightTexture.png */; };
+		A614E4881CB547640022A87B /* brickWallTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A614E4871CB547640022A87B /* brickWallTexture.png */; };
+		A614E48A1CB5476B0022A87B /* ceilingTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A614E4891CB5476B0022A87B /* ceilingTexture.png */; };
+		A61AC3C31CB5858400AC5A90 /* MapEditFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61AC3C21CB5858400AC5A90 /* MapEditFunctions.swift */; };
+		A61AC3C61CB6880A00AC5A90 /* box1.dae in Resources */ = {isa = PBXBuildFile; fileRef = A61AC3C51CB6880A00AC5A90 /* box1.dae */; };
+		A61AC3C81CB6881900AC5A90 /* DEFbox1.png in Resources */ = {isa = PBXBuildFile; fileRef = A61AC3C71CB6881900AC5A90 /* DEFbox1.png */; };
+		A61AC3CA1CB68C3600AC5A90 /* ItemsColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61AC3C91CB68C3600AC5A90 /* ItemsColorCode.swift */; };
+		A6259AE31E609C2100537019 /* MiscItemsMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6259AE21E609C2000537019 /* MiscItemsMenu.xib */; };
+		A62A34B51CBE6E6300007F75 /* TreasureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62A34B41CBE6E6300007F75 /* TreasureView.xib */; };
+		A62A34B91CBE70DC00007F75 /* TreasureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34B71CBE70DC00007F75 /* TreasureCollectionViewCell.swift */; };
+		A62A34BA1CBE70DC00007F75 /* TreasureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62A34B81CBE70DC00007F75 /* TreasureCollectionViewCell.xib */; };
+		A62A34BD1CBE73CF00007F75 /* TreasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34BB1CBE73CF00007F75 /* TreasureTableViewCell.swift */; };
+		A62A34BE1CBE73CF00007F75 /* TreasureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62A34BC1CBE73CF00007F75 /* TreasureTableViewCell.xib */; };
+		A62A34C01CBE9E3B00007F75 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62A34BF1CBE9E3B00007F75 /* StoreKit.framework */; };
+		A62A34C21CBEC91300007F75 /* CreatePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34C11CBEC91300007F75 /* CreatePlayerViewController.swift */; };
+		A62A34C51CBECEAA00007F75 /* PotionMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62A34C41CBECEAA00007F75 /* PotionMenu.xib */; };
+		A62A34C91CC111F600007F75 /* UserInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34C81CC111F600007F75 /* UserInventory.swift */; };
+		A62A34CB1CC5180E00007F75 /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34CA1CC5180E00007F75 /* YSSegmentedControl.swift */; };
+		A62A34CF1CC67F0200007F75 /* UserTerritories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34CE1CC67F0200007F75 /* UserTerritories.swift */; };
+		A62A34D11CC6AD8700007F75 /* CaptureTerritoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62A34D01CC6AD8700007F75 /* CaptureTerritoryView.xib */; };
+		A62A34D31CC7F2C200007F75 /* MissionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34D21CC7F2C200007F75 /* MissionListViewController.swift */; };
+		A62A34D71CC8051A00007F75 /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34D61CC8051A00007F75 /* ADVSegmentedControl.swift */; };
+		A62A34D91CC8101000007F75 /* UserMissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A34D81CC8101000007F75 /* UserMissions.swift */; };
+		A62BE7EB1CB7E44100B9B75A /* barrelExplosive.dae in Resources */ = {isa = PBXBuildFile; fileRef = A62BE7EA1CB7E44100B9B75A /* barrelExplosive.dae */; };
+		A62BE7F01CB7E73700B9B75A /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62BE7EE1CB7E73700B9B75A /* BasicCollectionViewCell.swift */; };
+		A62BE7F11CB7E73700B9B75A /* BasicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62BE7EF1CB7E73700B9B75A /* BasicCollectionViewCell.xib */; };
+		A62BE7F31CB819B700B9B75A /* barrelTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A62BE7F21CB819B700B9B75A /* barrelTexture.png */; };
+		A62BE7F51CB84DF900B9B75A /* box2.dae in Resources */ = {isa = PBXBuildFile; fileRef = A62BE7F41CB84DF900B9B75A /* box2.dae */; };
+		A62BE7F71CB899E700B9B75A /* EditMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62BE7F61CB899E700B9B75A /* EditMapViewController.swift */; };
+		A62BE7F91CBBE45F00B9B75A /* AttackLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62BE7F81CBBE45F00B9B75A /* AttackLoadingViewController.swift */; };
+		A62BEE7F1CCA65E70055FC24 /* ItemOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62BEE7E1CCA65E70055FC24 /* ItemOptionsView.xib */; };
+		A62BEE811CCBF5360055FC24 /* MessageInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62BEE801CCBF5360055FC24 /* MessageInfoView.xib */; };
+		A62CAFE21CA30E8A002E8F4A /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62CAFE11CA30E8A002E8F4A /* StartUpViewController.swift */; };
+		A62CAFE41CA310A6002E8F4A /* MapTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62CAFE31CA310A6002E8F4A /* MapTabBarViewController.swift */; };
+		A62CAFE61CA41B0D002E8F4A /* LocationUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62CAFE51CA41B0D002E8F4A /* LocationUpdateManager.swift */; };
+		A62CAFF01CA58693002E8F4A /* SVPulsingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A62CAFEF1CA58693002E8F4A /* SVPulsingAnnotationView.m */; };
+		A62F7B9E1CD772E500F4B735 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F7B9D1CD772E500F4B735 /* Solar.swift */; };
+		A62F7BA21CD7827200F4B735 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = A62F7BA01CD7827200F4B735 /* Rain.sks */; };
+		A62F7BA31CD7827200F4B735 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = A62F7BA11CD7827200F4B735 /* spark.png */; };
+		A62F7BA51CD78BDA00F4B735 /* EffectsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F7BA41CD78BDA00F4B735 /* EffectsOverlay.swift */; };
+		A62F7BA71CD78C0100F4B735 /* EffectsOverlay.sks in Resources */ = {isa = PBXBuildFile; fileRef = A62F7BA61CD78C0100F4B735 /* EffectsOverlay.sks */; };
+		A62F7BA91CD7982600F4B735 /* Snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = A62F7BA81CD7982600F4B735 /* Snow.sks */; };
+		A62F7BAB1CD914A900F4B735 /* MyCharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62F7BAA1CD914A900F4B735 /* MyCharacterView.xib */; };
+		A62F7BAD1CDA2E6900F4B735 /* CreatePlayerViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F7BAC1CDA2E6900F4B735 /* CreatePlayerViewController2.swift */; };
+		A62F7BAF1CDA375400F4B735 /* CreatePlayerCareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F7BAE1CDA375400F4B735 /* CreatePlayerCareerViewController.swift */; };
+		A63199651CAC290B0086E876 /* ItemLevelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63199641CAC290B0086E876 /* ItemLevelList.plist */; };
+		A63199671CAC2EF20086E876 /* UpdateItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63199661CAC2EF20086E876 /* UpdateItemData.swift */; };
+		A6345CB81E45272C007DAEAC /* bloodSplatter.png in Resources */ = {isa = PBXBuildFile; fileRef = A6345CB71E45272C007DAEAC /* bloodSplatter.png */; };
+		A6345CBA1E47DA1F007DAEAC /* gunTargetIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6345CB91E47DA1F007DAEAC /* gunTargetIcon.png */; };
+		A63A9EE21CD23AF900016F73 /* MissedItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63A9EE11CD23AF900016F73 /* MissedItemsView.xib */; };
+		A63A9EE51CD2444500016F73 /* MissedItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A9EE31CD2444500016F73 /* MissedItemsCell.swift */; };
+		A63A9EE61CD2444500016F73 /* MissedItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63A9EE41CD2444500016F73 /* MissedItemsCell.xib */; };
+		A63CEF0D1CAAD945007D131B /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CEF0C1CAAD945007D131B /* MKMapView+ZoomLevel.m */; };
+		A63CEF101CAAE7C9007D131B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CEF0F1CAAE7C9007D131B /* MKMapViewExtension.swift */; };
+		A63E59E81E24406900FA1E21 /* HitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E59E71E24406900FA1E21 /* HitListViewController.swift */; };
+		A63E59EA1E244F1E00FA1E21 /* UserTargets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63E59E91E244F1E00FA1E21 /* UserTargets.swift */; };
+		A654C0731E40D59B007A3049 /* bullet.dae in Resources */ = {isa = PBXBuildFile; fileRef = A654C0721E40D59B007A3049 /* bullet.dae */; };
+		A65D95431E28686C009E475B /* HomeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D95421E28686C009E475B /* HomeBaseViewController.swift */; };
+		A65D95451E2A712A009E475B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D95441E2A712A009E475B /* NewsViewController.swift */; };
+		A65D95481E2A97DD009E475B /* HowToView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A65D95471E2A97DD009E475B /* HowToView.xib */; };
+		A65D954A1E2A9806009E475B /* HowToViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D95491E2A9806009E475B /* HowToViews.swift */; };
+		A6814E141E328592007DAC17 /* MissionStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6814E131E328592007DAC17 /* MissionStatusView.xib */; };
+		A6814E321E370722007DAC17 /* WoodFence.png in Resources */ = {isa = PBXBuildFile; fileRef = A6814E311E370722007DAC17 /* WoodFence.png */; };
+		A6814E361E370FA1007DAC17 /* Map3.png in Resources */ = {isa = PBXBuildFile; fileRef = A6814E351E370FA1007DAC17 /* Map3.png */; };
+		A6826BA71E27DCEE00EED807 /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6826BA61E27DCEE00EED807 /* Pulsator.swift */; };
+		A690821D1E3BDBBA006B4276 /* grassTexture2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A690821C1E3BDBBA006B4276 /* grassTexture2.jpg */; };
+		A690821F1E3BE72A006B4276 /* skyTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A690821E1E3BE72A006B4276 /* skyTexture.jpg */; };
+		A691843B1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69184391CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.swift */; };
+		A691843C1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.xib in Resources */ = {isa = PBXBuildFile; fileRef = A691843A1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.xib */; };
+		A691843F1CB2F39D00A7BC9C /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691843D1CB2F39D00A7BC9C /* TableViewCell1.swift */; };
+		A69184401CB2F39D00A7BC9C /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A691843E1CB2F39D00A7BC9C /* TableViewCell1.xib */; };
+		A69184451CB2F97D00A7BC9C /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69184431CB2F97D00A7BC9C /* TableViewCell2.swift */; };
+		A69184461CB2F97D00A7BC9C /* TableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69184441CB2F97D00A7BC9C /* TableViewCell2.xib */; };
+		A69184491CB2F99600A7BC9C /* TableViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69184471CB2F99600A7BC9C /* TableViewCell3.swift */; };
+		A691844A1CB2F99600A7BC9C /* TableViewCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69184481CB2F99600A7BC9C /* TableViewCell3.xib */; };
+		A691844D1CB2F9AA00A7BC9C /* TableViewCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691844B1CB2F9AA00A7BC9C /* TableViewCell4.swift */; };
+		A691844E1CB2F9AA00A7BC9C /* TableViewCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = A691844C1CB2F9AA00A7BC9C /* TableViewCell4.xib */; };
+		A69184511CB2FF5F00A7BC9C /* ArmorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691844F1CB2FF5F00A7BC9C /* ArmorTableViewCell.swift */; };
+		A69184521CB2FF5F00A7BC9C /* ArmorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69184501CB2FF5F00A7BC9C /* ArmorTableViewCell.xib */; };
+		A69184551CB40F3900A7BC9C /* ArmyGeneralIntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69184541CB40F3900A7BC9C /* ArmyGeneralIntroScene.swift */; };
+		A69184571CB40FD000A7BC9C /* ArmyGeneralIntro.scn in Resources */ = {isa = PBXBuildFile; fileRef = A69184561CB40FD000A7BC9C /* ArmyGeneralIntro.scn */; };
+		A69184591CB40FF700A7BC9C /* ArmyGeneralIntro.sks in Resources */ = {isa = PBXBuildFile; fileRef = A69184581CB40FF700A7BC9C /* ArmyGeneralIntro.sks */; };
+		A691845B1CB4128000A7BC9C /* ArmyGeneralIntroSpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691845A1CB4128000A7BC9C /* ArmyGeneralIntroSpriteScene.swift */; };
+		A693B1A01CB4230800B34F71 /* GameFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A693B19F1CB4230800B34F71 /* GameFunctions.swift */; };
+		A6A0E8EA1CD0F87E002A8FA2 /* CharacterStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0E8E91CD0F87E002A8FA2 /* CharacterStatsViewController.swift */; };
+		A6A0E8F11CD10A1B002A8FA2 /* BasicItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0E8EF1CD10A1B002A8FA2 /* BasicItemCollectionViewCell.swift */; };
+		A6A0E8F21CD10A1B002A8FA2 /* BasicItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A0E8F01CD10A1B002A8FA2 /* BasicItemCollectionViewCell.xib */; };
+		A6AA764B1EB792D7003CFCD5 /* ServerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AA764A1EB792D7003CFCD5 /* ServerInfo.swift */; };
+		A6AD9CFD1CBD37F500112AD3 /* SignUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD9CFC1CBD37F500112AD3 /* SignUpTwoViewController.swift */; };
+		A6AD9CFF1CBD382000112AD3 /* SignUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD9CFE1CBD382000112AD3 /* SignUpThreeViewController.swift */; };
+		A6AD9D011CBD387100112AD3 /* SignUpViewControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD9D001CBD387100112AD3 /* SignUpViewControllerNew.swift */; };
+		A6AD9D031CBD3FAA00112AD3 /* FileFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD9D021CBD3FAA00112AD3 /* FileFunctions.swift */; };
+		A6AD9D071CBD4FCB00112AD3 /* EndUserAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AD9D061CBD4FCB00112AD3 /* EndUserAgreementViewController.swift */; };
+		A6AD9D091CBD560200112AD3 /* AbilitiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6AD9D081CBD560200112AD3 /* AbilitiesView.xib */; };
+		A6B0AFD81CCEB0EA00E09EFF /* hammer.dae in Resources */ = {isa = PBXBuildFile; fileRef = A6B0AFD71CCEB0EA00E09EFF /* hammer.dae */; };
+		A6B0AFDA1CCEB12400E09EFF /* hammertex1280000.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B0AFD91CCEB12400E09EFF /* hammertex1280000.png */; };
+		A6B0AFDC1CCFFF2700E09EFF /* grasstexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B0AFDB1CCFFF2700E09EFF /* grasstexture.png */; };
+		A6B0AFDF1CD0F23600E09EFF /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B0AFDE1CD0F23600E09EFF /* CharactersViewController.swift */; };
+		A6B1DD421CE0C370002EF9EB /* MyWeaponsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B1DD411CE0C370002EF9EB /* MyWeaponsView.xib */; };
+		A6B1DD441CE0C393002EF9EB /* CustomUIViewsCont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1DD431CE0C393002EF9EB /* CustomUIViewsCont.swift */; };
+		A6B1DD461CE0F263002EF9EB /* DistanceAttackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B1DD451CE0F263002EF9EB /* DistanceAttackView.xib */; };
+		A6B1DD481CE37F29002EF9EB /* AttackCompleteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B1DD471CE37F29002EF9EB /* AttackCompleteView.xib */; };
+		A6BA779E1E413F6900E585AF /* animate.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A6BA779D1E413F6900E585AF /* animate.scnassets */; };
+		A6BE41201CAC082400FAA1E7 /* PlayerOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE411F1CAC082400FAA1E7 /* PlayerOverlay.swift */; };
+		A6BE41231CAC0B3700FAA1E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE41221CAC0B3700FAA1E7 /* Constants.swift */; };
+		A6BE41251CAC0B6500FAA1E7 /* StockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE41241CAC0B6500FAA1E7 /* StockItem.swift */; };
+		A6BE41271CAC0B9900FAA1E7 /* GameStateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE41261CAC0B9900FAA1E7 /* GameStateDelegate.swift */; };
+		A6BE41291CAC0BB700FAA1E7 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE41281CAC0BB700FAA1E7 /* ProgressBar.swift */; };
+		A6BE412B1CAC0BCE00FAA1E7 /* DiscreteProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE412A1CAC0BCE00FAA1E7 /* DiscreteProgressBar.swift */; };
+		A6BE412D1CAC0BE300FAA1E7 /* ContinuousProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE412C1CAC0BE300FAA1E7 /* ContinuousProgressBar.swift */; };
+		A6BE412F1CAC0D0800FAA1E7 /* gamedata.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BE412E1CAC0D0800FAA1E7 /* gamedata.plist */; };
+		A6C0B02E1CA96C82003033B0 /* PlayerModel.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6C0B02D1CA96C82003033B0 /* PlayerModel.sks */; };
+		A6C0B0301CA96CA6003033B0 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0B02F1CA96CA6003033B0 /* PlayerModel.swift */; };
+		A6C0B0391CA974AC003033B0 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C0B0381CA974AC003033B0 /* SceneKit.framework */; };
+		A6C0B03B1CA976A6003033B0 /* UserPlayerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0B03A1CA976A6003033B0 /* UserPlayerScene.swift */; };
+		A6C0D77E1E4B5B31008A2350 /* MyPlayerScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A6C0D77D1E4B5B31008A2350 /* MyPlayerScene.scn */; };
+		A6C0D7801E4B7771008A2350 /* MyPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C0D77F1E4B7771008A2350 /* MyPlayerView.xib */; };
+		A6C0D7821E4B778F008A2350 /* CustomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D7811E4B778F008A2350 /* CustomPlayerView.swift */; };
+		A6C0D7841E4F9CE2008A2350 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D7831E4F9CE0008A2350 /* Character.swift */; };
+		A6C7A0941CAEA9360068E7F2 /* MoneyOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7A0931CAEA9360068E7F2 /* MoneyOverlay.swift */; };
+		A6C7A0961CAEA95D0068E7F2 /* MoneyOverlay.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6C7A0951CAEA95D0068E7F2 /* MoneyOverlay.sks */; };
+		A6C7A0981CAF0FFB0068E7F2 /* VerticalProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7A0971CAF0FFB0068E7F2 /* VerticalProgressView.swift */; };
+		A6C9829A1CB039CF00C5D9BF /* CustomUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C982991CB039CF00C5D9BF /* CustomUIViews.swift */; };
+		A6C9829C1CB03A6E00C5D9BF /* WeaponMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C9829B1CB03A6E00C5D9BF /* WeaponMenu.xib */; };
+		A6C9829E1CB03F7F00C5D9BF /* ItemAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C9829D1CB03F7F00C5D9BF /* ItemAnnotationView.xib */; };
+		A6C982A01CB03FA400C5D9BF /* PlayerAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C9829F1CB03FA400C5D9BF /* PlayerAnnotationView.xib */; };
+		A6C982A21CB03FF100C5D9BF /* ArmorMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C982A11CB03FF100C5D9BF /* ArmorMenu.xib */; };
+		A6C982A41CB0401000C5D9BF /* ShieldMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C982A31CB0401000C5D9BF /* ShieldMenu.xib */; };
+		A6C982A61CB0598300C5D9BF /* ItemAnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C982A51CB0598300C5D9BF /* ItemAnnotationViewController.swift */; };
+		A6C982A81CB1D78500C5D9BF /* CollectionCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C982A71CB1D78500C5D9BF /* CollectionCells.swift */; };
+		A6C982AB1CB1D93D00C5D9BF /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C982A91CB1D93D00C5D9BF /* ItemsCollectionViewCell.swift */; };
+		A6C982AC1CB1D93D00C5D9BF /* ItemsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C982AA1CB1D93D00C5D9BF /* ItemsCollectionViewCell.xib */; };
+		A6D1229E1E3B7F8800187A51 /* PlayerAttackScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = A6D1229D1E3B7F8800187A51 /* PlayerAttackScene.scn */; };
+		A6D122A01E3B806500187A51 /* PlayerAttackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D1229F1E3B806500187A51 /* PlayerAttackView.xib */; };
+		A6D122A21E3B80A200187A51 /* CustomPlayerAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D122A11E3B80A200187A51 /* CustomPlayerAttackView.swift */; };
+		A6D122A41E3B94A600187A51 /* PlayerAttackScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D122A31E3B94A600187A51 /* PlayerAttackScene.swift */; };
+		A6D810371E2D11D300A7DDB2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D810361E2D11D300A7DDB2 /* SettingsViewController.swift */; };
+		A6D810391E2D4B7000A7DDB2 /* TeamFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D810381E2D4B7000A7DDB2 /* TeamFunctions.swift */; };
+		A6D8103B1E2E7B4000A7DDB2 /* SwiftAccordionCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8103A1E2E7B4000A7DDB2 /* SwiftAccordionCells.swift */; };
+		A6D8103D1E31120000A7DDB2 /* TeamMembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8103C1E31120000A7DDB2 /* TeamMembersViewController.swift */; };
+		A6D8103F1E31499A00A7DDB2 /* TeamInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D8103E1E31499A00A7DDB2 /* TeamInfoView.xib */; };
+		A6E7946A1CADA41A002A3AA9 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E794691CADA41A002A3AA9 /* RightMenuViewController.swift */; };
+		A6E7946C1CADA765002A3AA9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7946B1CADA765002A3AA9 /* GameViewController.swift */; };
+		A6E7946F1CADA7C1002A3AA9 /* TrainingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7946E1CADA7C1002A3AA9 /* TrainingScene.swift */; };
+		A6E794711CADA820002A3AA9 /* TrainingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6E794701CADA820002A3AA9 /* TrainingScene.sks */; };
+		A6E794761CADA879002A3AA9 /* background-music.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A6E794731CADA879002A3AA9 /* background-music.aiff */; };
+		A6E794771CADA879002A3AA9 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = A6E794741CADA879002A3AA9 /* explosion.wav */; };
+		A6E794781CADA879002A3AA9 /* missile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6E794751CADA879002A3AA9 /* missile.mp3 */; };
+		A6FE54B71E522D250001EF2E /* EnemyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE54B61E522D250001EF2E /* EnemyPlayer.swift */; };
+		A6FE54B91E536F310001EF2E /* HeroPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE54B81E536F310001EF2E /* HeroPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +235,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06E4415F37612EB385CED316 /* Pods-BattleField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BattleField.release.xcconfig"; path = "Pods/Target Support Files/Pods-BattleField/Pods-BattleField.release.xcconfig"; sourceTree = "<group>"; };
+		17150F8D1B69271300ECCDF7 /* MoveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveButton.swift; sourceTree = "<group>"; };
+		17150F8F1B69367900ECCDF7 /* WeaponsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsViewController.swift; sourceTree = "<group>"; };
+		17150F911B693DFF00ECCDF7 /* ItemsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsCell.swift; sourceTree = "<group>"; };
+		17150F931B69A11400ECCDF7 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		17150F951B69A39500ECCDF7 /* AllianceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllianceViewController.swift; path = ../AllianceViewController.swift; sourceTree = "<group>"; };
+		17150F971B69A4F000ECCDF7 /* BattleField-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BattleField-Bridging-Header.h"; sourceTree = "<group>"; };
+		17150F981B69A4F100ECCDF7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../Google Drive/MENU/SWRevealViewController.h"; sourceTree = "<group>"; };
+		17150F991B69A4F100ECCDF7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../Google Drive/MENU/SWRevealViewController.m"; sourceTree = "<group>"; };
+		17150F9B1B69A56B00ECCDF7 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		17150F9D1B69A9B700ECCDF7 /* ArmorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorViewController.swift; sourceTree = "<group>"; };
+		17150FA01B6ABCCA00ECCDF7 /* GetUserLoc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserLoc.swift; sourceTree = "<group>"; };
+		17150FA21B6ABEE700ECCDF7 /* GetAllLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllLocations.swift; sourceTree = "<group>"; };
+		17150FA41B6AC3DD00ECCDF7 /* SaveLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLocation.swift; sourceTree = "<group>"; };
+		17150FA61B6B04CF00ECCDF7 /* ActionButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtons.swift; sourceTree = "<group>"; };
+		17150FA81B6B0FED00ECCDF7 /* AttackPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackPlayer.swift; sourceTree = "<group>"; };
+		17150FAA1B6B140B00ECCDF7 /* OppStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OppStatsViewController.swift; sourceTree = "<group>"; };
+		17150FAC1B6B1FAB00ECCDF7 /* RemoteNotificationDeepLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotificationDeepLink.swift; sourceTree = "<group>"; };
+		17150FAE1B6B228E00ECCDF7 /* PushAttackNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushAttackNotice.swift; path = ../PushAttackNotice.swift; sourceTree = "<group>"; };
+		17150FB21B6B808800ECCDF7 /* BattleGame.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BattleGame.sks; sourceTree = "<group>"; };
+		17150FB41B6B85E000ECCDF7 /* BattleGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleGame.swift; sourceTree = "<group>"; };
 		173A046A1B67785B00AA1711 /* BattleField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattleField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		173A046E1B67785B00AA1711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		173A046F1B67785B00AA1711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +267,202 @@
 		173A04821B67785B00AA1711 /* BattleFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BattleFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		173A04871B67785B00AA1711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		173A04881B67785C00AA1711 /* BattleFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleFieldTests.swift; sourceTree = "<group>"; };
+		173A04921B6778A800AA1711 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		173A04941B6778C800AA1711 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		173A04971B67795600AA1711 /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
+		173A04991B67798E00AA1711 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		173A049B1B6779B800AA1711 /* ConfirmNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmNetwork.swift; sourceTree = "<group>"; };
+		173A049F1B690C4800AA1711 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		173A04A11B690EB400AA1711 /* UserPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPoints.swift; sourceTree = "<group>"; };
+		173A04A71B69145D00AA1711 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCMapView.swift; path = BattleField.xcodeproj/../VCMapView.swift; sourceTree = SOURCE_ROOT; };
+		17556B311B6F9F94007937B0 /* ItemLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemLocations.swift; sourceTree = "<group>"; };
+		17556B331B6FF304007937B0 /* ShieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldViewController.swift; sourceTree = "<group>"; };
+		17556B351B725C29007937B0 /* AttackTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackTimerViewController.swift; sourceTree = "<group>"; };
+		17556B371B72F397007937B0 /* DBAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAlertController.swift; sourceTree = "<group>"; };
+		1A13853AFA141D3EE75F3CC2 /* Pods-BattleFieldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BattleFieldTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BattleFieldTests/Pods-BattleFieldTests.release.xcconfig"; sourceTree = "<group>"; };
+		2EF5BE33953722CFFA88D3EA /* Pods-BattleFieldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BattleFieldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BattleFieldTests/Pods-BattleFieldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7014AC6CD4F950630CCD52EC /* Pods_BattleFieldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BattleFieldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750CF4E46EA809DD9883B3B2 /* Pods-BattleField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BattleField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BattleField/Pods-BattleField.debug.xcconfig"; sourceTree = "<group>"; };
+		A60290D51CCE46D70071788F /* metal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = metal.jpg; path = "../../../IOS App Files/Battlefield/3D Models/Hammer/Hammer/Texture/metal.jpg"; sourceTree = "<group>"; };
+		A60290D71CCE46DF0071788F /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood.jpg; path = "../../../IOS App Files/Battlefield/3D Models/Hammer/Hammer/Texture/wood.jpg"; sourceTree = "<group>"; };
+		A60290DC1CCE506D0071788F /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A60290E01CCE767B0071788F /* MissionMapHammer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MissionMapHammer.png; path = "../../../IOS App Files/Battlefield/Maps/MissionMapHammer.png"; sourceTree = "<group>"; };
+		A604E1F91CA9AEDC00E23AAD /* PlayerScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PlayerScene.scn; sourceTree = "<group>"; };
+		A6052BC21CB4142A006BB4EE /* ArmyGeneralIntroSpriteScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ArmyGeneralIntroSpriteScene.sks; sourceTree = "<group>"; };
+		A6052BC41CB41520006BB4EE /* GeneralIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralIntroViewController.swift; sourceTree = "<group>"; };
+		A60DFC621CAC16C6001B9070 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		A613D2501E573F180045803A /* AttributesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributesView.xib; sourceTree = "<group>"; };
+		A613D2521E5743530045803A /* PlayerSubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSubViews.swift; sourceTree = "<group>"; };
+		A613D2541E5756EC0045803A /* AttributesItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributesItemCell.xib; sourceTree = "<group>"; };
+		A613D2561E5B49D00045803A /* SkillsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsView.xib; sourceTree = "<group>"; };
+		A613D2581E5B72380045803A /* EditBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBodyCell.xib; sourceTree = "<group>"; };
+		A613D25A1E5B72770045803A /* EditBodyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBodyCell.swift; sourceTree = "<group>"; };
+		A613D25C1E5B78DE0045803A /* EditBodyItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBodyItemCell.xib; sourceTree = "<group>"; };
+		A613D25E1E5B901C0045803A /* SignUpAgentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpAgentViewController.swift; sourceTree = "<group>"; };
+		A613D2601E5CB71B0045803A /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		A613D2621E5CED530045803A /* UserSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSkills.swift; sourceTree = "<group>"; };
+		A613D2641E5DEEFB0045803A /* SkillsItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillsItemCell.xib; sourceTree = "<group>"; };
+		A614AC491E6725E100C8F22F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A614E4751CB545C70022A87B /* FireGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireGestureRecognizer.swift; sourceTree = "<group>"; };
+		A614E4791CB545FC0022A87B /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		A614E47B1CB546100022A87B /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		A614E47D1CB546240022A87B /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		A614E4801CB5468E0022A87B /* AttackMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackMapViewController.swift; sourceTree = "<group>"; };
+		A614E4831CB547240022A87B /* Map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Map2.png; path = "../../../IOS App Files/Battlefield/Maps/Map2.png"; sourceTree = "<group>"; };
+		A614E4851CB547590022A87B /* buildingLightTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buildingLightTexture.png; path = "../../../IOS App Files/Battlefield/Textures/buildingLightTexture.png"; sourceTree = "<group>"; };
+		A614E4871CB547640022A87B /* brickWallTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brickWallTexture.png; path = "../../../IOS App Files/Battlefield/Textures/brickWallTexture.png"; sourceTree = "<group>"; };
+		A614E4891CB5476B0022A87B /* ceilingTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ceilingTexture.png; path = "../../../IOS App Files/Battlefield/Textures/ceilingTexture.png"; sourceTree = "<group>"; };
+		A61AC3C21CB5858400AC5A90 /* MapEditFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapEditFunctions.swift; sourceTree = "<group>"; };
+		A61AC3C51CB6880A00AC5A90 /* box1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = box1.dae; path = "../../../IOS App Files/Battlefield/3D Models/Box Model/box1.dae"; sourceTree = "<group>"; };
+		A61AC3C71CB6881900AC5A90 /* DEFbox1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DEFbox1.png; path = "../../../IOS App Files/Battlefield/3D Models/Box Model/box1_textures_1434286976/DEFbox1.png"; sourceTree = "<group>"; };
+		A61AC3C91CB68C3600AC5A90 /* ItemsColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsColorCode.swift; sourceTree = "<group>"; };
+		A6259AE21E609C2000537019 /* MiscItemsMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiscItemsMenu.xib; sourceTree = "<group>"; };
+		A62A34B41CBE6E6300007F75 /* TreasureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureView.xib; sourceTree = "<group>"; };
+		A62A34B71CBE70DC00007F75 /* TreasureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureCollectionViewCell.swift; sourceTree = "<group>"; };
+		A62A34B81CBE70DC00007F75 /* TreasureCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureCollectionViewCell.xib; sourceTree = "<group>"; };
+		A62A34BB1CBE73CF00007F75 /* TreasureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreasureTableViewCell.swift; sourceTree = "<group>"; };
+		A62A34BC1CBE73CF00007F75 /* TreasureTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreasureTableViewCell.xib; sourceTree = "<group>"; };
+		A62A34BF1CBE9E3B00007F75 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A62A34C11CBEC91300007F75 /* CreatePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlayerViewController.swift; sourceTree = "<group>"; };
+		A62A34C41CBECEAA00007F75 /* PotionMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PotionMenu.xib; sourceTree = "<group>"; };
+		A62A34C81CC111F600007F75 /* UserInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInventory.swift; sourceTree = "<group>"; };
+		A62A34CA1CC5180E00007F75 /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
+		A62A34CE1CC67F0200007F75 /* UserTerritories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTerritories.swift; sourceTree = "<group>"; };
+		A62A34D01CC6AD8700007F75 /* CaptureTerritoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureTerritoryView.xib; sourceTree = "<group>"; };
+		A62A34D21CC7F2C200007F75 /* MissionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionListViewController.swift; sourceTree = "<group>"; };
+		A62A34D61CC8051A00007F75 /* ADVSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVSegmentedControl.swift; sourceTree = "<group>"; };
+		A62A34D81CC8101000007F75 /* UserMissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMissions.swift; sourceTree = "<group>"; };
+		A62BE7EA1CB7E44100B9B75A /* barrelExplosive.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = barrelExplosive.dae; path = "../../../IOS App Files/Battlefield/3D Models/Barrel/barrelExplosive.dae"; sourceTree = "<group>"; };
+		A62BE7EE1CB7E73700B9B75A /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicCollectionViewCell.swift; path = ../BasicCollectionViewCell.swift; sourceTree = "<group>"; };
+		A62BE7EF1CB7E73700B9B75A /* BasicCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BasicCollectionViewCell.xib; path = ../BasicCollectionViewCell.xib; sourceTree = "<group>"; };
+		A62BE7F21CB819B700B9B75A /* barrelTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barrelTexture.png; path = "../../../IOS App Files/Battlefield/3D Models/Barrel/barrelTexture.png"; sourceTree = "<group>"; };
+		A62BE7F41CB84DF900B9B75A /* box2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = box2.dae; path = "../../../IOS App Files/Battlefield/3D Models/Box Model/box2.dae"; sourceTree = "<group>"; };
+		A62BE7F61CB899E700B9B75A /* EditMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMapViewController.swift; sourceTree = "<group>"; };
+		A62BE7F81CBBE45F00B9B75A /* AttackLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttackLoadingViewController.swift; sourceTree = "<group>"; };
+		A62BEE7E1CCA65E70055FC24 /* ItemOptionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemOptionsView.xib; sourceTree = "<group>"; };
+		A62BEE801CCBF5360055FC24 /* MessageInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageInfoView.xib; sourceTree = "<group>"; };
+		A62CAFE11CA30E8A002E8F4A /* StartUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		A62CAFE31CA310A6002E8F4A /* MapTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTabBarViewController.swift; sourceTree = "<group>"; };
+		A62CAFE51CA41B0D002E8F4A /* LocationUpdateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationUpdateManager.swift; path = ../LocationUpdateManager.swift; sourceTree = "<group>"; };
+		A62CAFEE1CA58693002E8F4A /* SVPulsingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPulsingAnnotationView.h; sourceTree = "<group>"; };
+		A62CAFEF1CA58693002E8F4A /* SVPulsingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPulsingAnnotationView.m; sourceTree = "<group>"; };
+		A62F7B9D1CD772E500F4B735 /* Solar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
+		A62F7BA01CD7827200F4B735 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		A62F7BA11CD7827200F4B735 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		A62F7BA41CD78BDA00F4B735 /* EffectsOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectsOverlay.swift; sourceTree = "<group>"; };
+		A62F7BA61CD78C0100F4B735 /* EffectsOverlay.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EffectsOverlay.sks; sourceTree = "<group>"; };
+		A62F7BA81CD7982600F4B735 /* Snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Snow.sks; sourceTree = "<group>"; };
+		A62F7BAA1CD914A900F4B735 /* MyCharacterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCharacterView.xib; sourceTree = "<group>"; };
+		A62F7BAC1CDA2E6900F4B735 /* CreatePlayerViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlayerViewController2.swift; sourceTree = "<group>"; };
+		A62F7BAE1CDA375400F4B735 /* CreatePlayerCareerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlayerCareerViewController.swift; sourceTree = "<group>"; };
+		A63199641CAC290B0086E876 /* ItemLevelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ItemLevelList.plist; sourceTree = "<group>"; };
+		A63199661CAC2EF20086E876 /* UpdateItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateItemData.swift; sourceTree = "<group>"; };
+		A6345CB71E45272C007DAEAC /* bloodSplatter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bloodSplatter.png; sourceTree = "<group>"; };
+		A6345CB91E47DA1F007DAEAC /* gunTargetIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gunTargetIcon.png; sourceTree = "<group>"; };
+		A63A9EE11CD23AF900016F73 /* MissedItemsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissedItemsView.xib; sourceTree = "<group>"; };
+		A63A9EE31CD2444500016F73 /* MissedItemsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissedItemsCell.swift; sourceTree = "<group>"; };
+		A63A9EE41CD2444500016F73 /* MissedItemsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissedItemsCell.xib; sourceTree = "<group>"; };
+		A63CEF0C1CAAD945007D131B /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		A63CEF0E1CAAD977007D131B /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		A63CEF0F1CAAE7C9007D131B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		A63E59DD1E1EC00E00FA1E21 /* BattleField.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BattleField.entitlements; sourceTree = "<group>"; };
+		A63E59E71E24406900FA1E21 /* HitListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitListViewController.swift; sourceTree = "<group>"; };
+		A63E59E91E244F1E00FA1E21 /* UserTargets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTargets.swift; sourceTree = "<group>"; };
+		A654C0721E40D59B007A3049 /* bullet.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = bullet.dae; path = "../../../IOS App Files/Battlefield/3D Models/Items/Bullets/9mil Bullet/bullet.dae"; sourceTree = "<group>"; };
+		A65D95421E28686C009E475B /* HomeBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBaseViewController.swift; sourceTree = "<group>"; };
+		A65D95441E2A712A009E475B /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A65D95471E2A97DD009E475B /* HowToView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowToView.xib; sourceTree = "<group>"; };
+		A65D95491E2A9806009E475B /* HowToViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToViews.swift; sourceTree = "<group>"; };
+		A6814E131E328592007DAC17 /* MissionStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MissionStatusView.xib; sourceTree = "<group>"; };
+		A6814E311E370722007DAC17 /* WoodFence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WoodFence.png; path = "../../../IOS App Files/Battlefield/Textures/WoodFence.png"; sourceTree = "<group>"; };
+		A6814E351E370FA1007DAC17 /* Map3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Map3.png; path = "../../../IOS App Files/Battlefield/Maps/Map3.png"; sourceTree = "<group>"; };
+		A6826BA61E27DCEE00EED807 /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
+		A690821C1E3BDBBA006B4276 /* grassTexture2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grassTexture2.jpg; path = "../../../IOS App Files/Battlefield/Textures/grassTexture2.jpg"; sourceTree = "<group>"; };
+		A690821E1E3BE72A006B4276 /* skyTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = skyTexture.jpg; path = "../../../IOS App Files/Battlefield/Textures/skyTexture.jpg"; sourceTree = "<group>"; };
+		A69184391CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsCollectionViewCellSmall.swift; path = ../ItemsCollectionViewCellSmall.swift; sourceTree = "<group>"; };
+		A691843A1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItemsCollectionViewCellSmall.xib; path = ../ItemsCollectionViewCellSmall.xib; sourceTree = "<group>"; };
+		A691843D1CB2F39D00A7BC9C /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell1.swift; path = ../TableViewCell1.swift; sourceTree = "<group>"; };
+		A691843E1CB2F39D00A7BC9C /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell1.xib; path = ../TableViewCell1.xib; sourceTree = "<group>"; };
+		A69184431CB2F97D00A7BC9C /* TableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
+		A69184441CB2F97D00A7BC9C /* TableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell2.xib; sourceTree = "<group>"; };
+		A69184471CB2F99600A7BC9C /* TableViewCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell3.swift; sourceTree = "<group>"; };
+		A69184481CB2F99600A7BC9C /* TableViewCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell3.xib; sourceTree = "<group>"; };
+		A691844B1CB2F9AA00A7BC9C /* TableViewCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell4.swift; sourceTree = "<group>"; };
+		A691844C1CB2F9AA00A7BC9C /* TableViewCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell4.xib; sourceTree = "<group>"; };
+		A691844F1CB2FF5F00A7BC9C /* ArmorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmorTableViewCell.swift; sourceTree = "<group>"; };
+		A69184501CB2FF5F00A7BC9C /* ArmorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArmorTableViewCell.xib; sourceTree = "<group>"; };
+		A69184541CB40F3900A7BC9C /* ArmyGeneralIntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmyGeneralIntroScene.swift; sourceTree = "<group>"; };
+		A69184561CB40FD000A7BC9C /* ArmyGeneralIntro.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ArmyGeneralIntro.scn; sourceTree = "<group>"; };
+		A69184581CB40FF700A7BC9C /* ArmyGeneralIntro.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ArmyGeneralIntro.sks; sourceTree = "<group>"; };
+		A691845A1CB4128000A7BC9C /* ArmyGeneralIntroSpriteScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmyGeneralIntroSpriteScene.swift; sourceTree = "<group>"; };
+		A693B19F1CB4230800B34F71 /* GameFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFunctions.swift; sourceTree = "<group>"; };
+		A6A0E8E91CD0F87E002A8FA2 /* CharacterStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterStatsViewController.swift; sourceTree = "<group>"; };
+		A6A0E8EF1CD10A1B002A8FA2 /* BasicItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6A0E8F01CD10A1B002A8FA2 /* BasicItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6AA764A1EB792D7003CFCD5 /* ServerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerInfo.swift; sourceTree = "<group>"; };
+		A6AD9CFC1CBD37F500112AD3 /* SignUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTwoViewController.swift; sourceTree = "<group>"; };
+		A6AD9CFE1CBD382000112AD3 /* SignUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpThreeViewController.swift; sourceTree = "<group>"; };
+		A6AD9D001CBD387100112AD3 /* SignUpViewControllerNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerNew.swift; sourceTree = "<group>"; };
+		A6AD9D021CBD3FAA00112AD3 /* FileFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileFunctions.swift; sourceTree = "<group>"; };
+		A6AD9D061CBD4FCB00112AD3 /* EndUserAgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndUserAgreementViewController.swift; sourceTree = "<group>"; };
+		A6AD9D081CBD560200112AD3 /* AbilitiesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbilitiesView.xib; sourceTree = "<group>"; };
+		A6B0AFD71CCEB0EA00E09EFF /* hammer.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = hammer.dae; path = "../../../IOS App Files/Battlefield/3D Models/Hammer/Hammer2/hammer.dae"; sourceTree = "<group>"; };
+		A6B0AFD91CCEB12400E09EFF /* hammertex1280000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hammertex1280000.png; path = "../../../IOS App Files/Battlefield/3D Models/Hammer/Hammer2/hammertex1280000.png"; sourceTree = "<group>"; };
+		A6B0AFDB1CCFFF2700E09EFF /* grasstexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grasstexture.png; path = "../../../IOS App Files/Battlefield/3D Models/grasstexture.png"; sourceTree = "<group>"; };
+		A6B0AFDE1CD0F23600E09EFF /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		A6B1DD411CE0C370002EF9EB /* MyWeaponsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyWeaponsView.xib; sourceTree = "<group>"; };
+		A6B1DD431CE0C393002EF9EB /* CustomUIViewsCont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIViewsCont.swift; sourceTree = "<group>"; };
+		A6B1DD451CE0F263002EF9EB /* DistanceAttackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistanceAttackView.xib; sourceTree = "<group>"; };
+		A6B1DD471CE37F29002EF9EB /* AttackCompleteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttackCompleteView.xib; path = ../AttackCompleteView.xib; sourceTree = "<group>"; };
+		A6BA779D1E413F6900E585AF /* animate.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = animate.scnassets; sourceTree = "<group>"; };
+		A6BE411F1CAC082400FAA1E7 /* PlayerOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerOverlay.swift; sourceTree = "<group>"; };
+		A6BE41221CAC0B3700FAA1E7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6BE41241CAC0B6500FAA1E7 /* StockItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockItem.swift; sourceTree = "<group>"; };
+		A6BE41261CAC0B9900FAA1E7 /* GameStateDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStateDelegate.swift; sourceTree = "<group>"; };
+		A6BE41281CAC0BB700FAA1E7 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		A6BE412A1CAC0BCE00FAA1E7 /* DiscreteProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscreteProgressBar.swift; sourceTree = "<group>"; };
+		A6BE412C1CAC0BE300FAA1E7 /* ContinuousProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinuousProgressBar.swift; sourceTree = "<group>"; };
+		A6BE412E1CAC0D0800FAA1E7 /* gamedata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gamedata.plist; path = "../../../IOS App Files/Battlefield/gamedata.plist"; sourceTree = "<group>"; };
+		A6C0B02D1CA96C82003033B0 /* PlayerModel.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerModel.sks; sourceTree = "<group>"; };
+		A6C0B02F1CA96CA6003033B0 /* PlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		A6C0B0381CA974AC003033B0 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		A6C0B03A1CA976A6003033B0 /* UserPlayerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPlayerScene.swift; sourceTree = "<group>"; };
+		A6C0D77D1E4B5B31008A2350 /* MyPlayerScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = MyPlayerScene.scn; sourceTree = "<group>"; };
+		A6C0D77F1E4B7771008A2350 /* MyPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPlayerView.xib; sourceTree = "<group>"; };
+		A6C0D7811E4B778F008A2350 /* CustomPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayerView.swift; sourceTree = "<group>"; };
+		A6C0D7831E4F9CE0008A2350 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A6C7A0931CAEA9360068E7F2 /* MoneyOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyOverlay.swift; sourceTree = "<group>"; };
+		A6C7A0951CAEA95D0068E7F2 /* MoneyOverlay.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MoneyOverlay.sks; sourceTree = "<group>"; };
+		A6C7A0971CAF0FFB0068E7F2 /* VerticalProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalProgressView.swift; sourceTree = "<group>"; };
+		A6C982991CB039CF00C5D9BF /* CustomUIViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomUIViews.swift; path = ../CustomUIViews.swift; sourceTree = "<group>"; };
+		A6C9829B1CB03A6E00C5D9BF /* WeaponMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeaponMenu.xib; sourceTree = "<group>"; };
+		A6C9829D1CB03F7F00C5D9BF /* ItemAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemAnnotationView.xib; sourceTree = "<group>"; };
+		A6C9829F1CB03FA400C5D9BF /* PlayerAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerAnnotationView.xib; path = ../PlayerAnnotationView.xib; sourceTree = "<group>"; };
+		A6C982A11CB03FF100C5D9BF /* ArmorMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArmorMenu.xib; path = ../ArmorMenu.xib; sourceTree = "<group>"; };
+		A6C982A31CB0401000C5D9BF /* ShieldMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShieldMenu.xib; path = ../ShieldMenu.xib; sourceTree = "<group>"; };
+		A6C982A51CB0598300C5D9BF /* ItemAnnotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAnnotationViewController.swift; sourceTree = "<group>"; };
+		A6C982A71CB1D78500C5D9BF /* CollectionCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCells.swift; sourceTree = "<group>"; };
+		A6C982A91CB1D93D00C5D9BF /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6C982AA1CB1D93D00C5D9BF /* ItemsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6D1229D1E3B7F8800187A51 /* PlayerAttackScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PlayerAttackScene.scn; sourceTree = "<group>"; };
+		A6D1229F1E3B806500187A51 /* PlayerAttackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerAttackView.xib; sourceTree = "<group>"; };
+		A6D122A11E3B80A200187A51 /* CustomPlayerAttackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlayerAttackView.swift; sourceTree = "<group>"; };
+		A6D122A31E3B94A600187A51 /* PlayerAttackScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerAttackScene.swift; sourceTree = "<group>"; };
+		A6D810361E2D11D300A7DDB2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A6D810381E2D4B7000A7DDB2 /* TeamFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamFunctions.swift; sourceTree = "<group>"; };
+		A6D8103A1E2E7B4000A7DDB2 /* SwiftAccordionCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftAccordionCells.swift; sourceTree = "<group>"; };
+		A6D8103C1E31120000A7DDB2 /* TeamMembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMembersViewController.swift; sourceTree = "<group>"; };
+		A6D8103E1E31499A00A7DDB2 /* TeamInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamInfoView.xib; sourceTree = "<group>"; };
+		A6E794691CADA41A002A3AA9 /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		A6E7946B1CADA765002A3AA9 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A6E7946E1CADA7C1002A3AA9 /* TrainingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainingScene.swift; path = ../TrainingScene.swift; sourceTree = "<group>"; };
+		A6E794701CADA820002A3AA9 /* TrainingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TrainingScene.sks; sourceTree = "<group>"; };
+		A6E794731CADA879002A3AA9 /* background-music.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = "background-music.aiff"; path = "../../../../Downloads/SimpleSwiftShootEmUp-master/ShootEmUp/Sounds/background-music.aiff"; sourceTree = "<group>"; };
+		A6E794741CADA879002A3AA9 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = explosion.wav; path = "../../../../Downloads/SimpleSwiftShootEmUp-master/ShootEmUp/Sounds/explosion.wav"; sourceTree = "<group>"; };
+		A6E794751CADA879002A3AA9 /* missile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = missile.mp3; path = "../../../../Downloads/SimpleSwiftShootEmUp-master/ShootEmUp/Sounds/missile.mp3"; sourceTree = "<group>"; };
+		A6FE54B61E522D250001EF2E /* EnemyPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyPlayer.swift; sourceTree = "<group>"; };
+		A6FE54B81E536F310001EF2E /* HeroPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroPlayer.swift; sourceTree = "<group>"; };
+		EF0373F73A824A63FC0688C5 /* Pods_BattleField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BattleField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +470,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C0B0391CA974AC003033B0 /* SceneKit.framework in Frameworks */,
+				A62A34C01CBE9E3B00007F75 /* StoreKit.framework in Frameworks */,
+				084ECE703E71E3F0D9A62388 /* Pods_BattleField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +480,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D68355803B658991A49D646 /* Pods_BattleFieldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17150F9F1B69A9D000ECCDF7 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				A6C982991CB039CF00C5D9BF /* CustomUIViews.swift */,
+				A6B1DD431CE0C393002EF9EB /* CustomUIViewsCont.swift */,
+				A6C982A11CB03FF100C5D9BF /* ArmorMenu.xib */,
+				A6B1DD471CE37F29002EF9EB /* AttackCompleteView.xib */,
+				A62A34D01CC6AD8700007F75 /* CaptureTerritoryView.xib */,
+				A62BEE801CCBF5360055FC24 /* MessageInfoView.xib */,
+				A63A9EE11CD23AF900016F73 /* MissedItemsView.xib */,
+				A6814E131E328592007DAC17 /* MissionStatusView.xib */,
+				A62A34C41CBECEAA00007F75 /* PotionMenu.xib */,
+				A6C982A31CB0401000C5D9BF /* ShieldMenu.xib */,
+				A6C9829B1CB03A6E00C5D9BF /* WeaponMenu.xib */,
+				A6259AE21E609C2000537019 /* MiscItemsMenu.xib */,
+				A6B1DD411CE0C370002EF9EB /* MyWeaponsView.xib */,
+				A6B1DD451CE0F263002EF9EB /* DistanceAttackView.xib */,
+				A6C982A91CB1D93D00C5D9BF /* ItemsCollectionViewCell.swift */,
+				A6C982AA1CB1D93D00C5D9BF /* ItemsCollectionViewCell.xib */,
+				A69184391CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.swift */,
+				A691843A1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.xib */,
+				A6C982A71CB1D78500C5D9BF /* CollectionCells.swift */,
+				17150F9D1B69A9B700ECCDF7 /* ArmorViewController.swift */,
+				A6C982A51CB0598300C5D9BF /* ItemAnnotationViewController.swift */,
+				17556B331B6FF304007937B0 /* ShieldViewController.swift */,
+				17150F8F1B69367900ECCDF7 /* WeaponsViewController.swift */,
+				A63199661CAC2EF20086E876 /* UpdateItemData.swift */,
+				A63A9EE31CD2444500016F73 /* MissedItemsCell.swift */,
+				A63A9EE41CD2444500016F73 /* MissedItemsCell.xib */,
+				A691843D1CB2F39D00A7BC9C /* TableViewCell1.swift */,
+				A691843E1CB2F39D00A7BC9C /* TableViewCell1.xib */,
+				A69184431CB2F97D00A7BC9C /* TableViewCell2.swift */,
+				A69184441CB2F97D00A7BC9C /* TableViewCell2.xib */,
+				A69184471CB2F99600A7BC9C /* TableViewCell3.swift */,
+				A69184481CB2F99600A7BC9C /* TableViewCell3.xib */,
+				A691844B1CB2F9AA00A7BC9C /* TableViewCell4.swift */,
+				A691844C1CB2F9AA00A7BC9C /* TableViewCell4.xib */,
+				A691844F1CB2FF5F00A7BC9C /* ArmorTableViewCell.swift */,
+				A69184501CB2FF5F00A7BC9C /* ArmorTableViewCell.xib */,
+				A6D8103E1E31499A00A7DDB2 /* TeamInfoView.xib */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
 		173A04611B67785B00AA1711 = {
 			isa = PBXGroup;
 			children = (
+				A62A34BF1CBE9E3B00007F75 /* StoreKit.framework */,
+				A6C0B0381CA974AC003033B0 /* SceneKit.framework */,
 				173A046C1B67785B00AA1711 /* BattleField */,
 				173A04851B67785B00AA1711 /* BattleFieldTests */,
 				173A046B1B67785B00AA1711 /* Products */,
+				51A0545FF0049BDBE9E2621C /* Pods */,
+				19AB49E28644C53847EEAC0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +556,58 @@
 		173A046C1B67785B00AA1711 /* BattleField */ = {
 			isa = PBXGroup;
 			children = (
+				A65D95461E2A97AB009E475B /* HowTo */,
+				A63E59DD1E1EC00E00FA1E21 /* BattleField.entitlements */,
+				A62BEE821CCE444B0055FC24 /* 3D Models */,
+				A614E4741CB545A00022A87B /* 3D Attack Files */,
+				A69184531CB40EAE00A7BC9C /* ArmyGeneralScene */,
+				A6B0AFDD1CD0F1F600E09EFF /* CharacterControllers */,
+				A62A34C31CBEC92600007F75 /* CreatePlayer */,
+				173A04961B67791500AA1711 /* Data */,
+				A62F7B9F1CD7824A00F4B735 /* Effects */,
+				17150F9F1B69A9D000ECCDF7 /* Items */,
+				A6C7A0921CAEA91A0068E7F2 /* MapOverlay */,
+				A63CEF0B1CAAD91E007D131B /* MKMapViewZoom */,
+				A6C0D77C1E4B5A19008A2350 /* MyPlayer */,
+				A6C0B02C1CA969F6003033B0 /* PlayerSceneKit.scnassets */,
+				A6BE41211CAC0B2000FAA1E7 /* PurchaseItemsData */,
+				A6AD9CFB1CBD36E900112AD3 /* SignUpControllers */,
+				A6E794721CADA86E002A3AA9 /* Sounds */,
+				A62CAFED1CA58693002E8F4A /* SVPulsingAnnotationView */,
+				A6E7946D1CADA786002A3AA9 /* TrainingView */,
+				A62A34B61CBE70A400007F75 /* TreasureData */,
 				173A046F1B67785B00AA1711 /* AppDelegate.swift */,
-				173A04741B67785B00AA1711 /* ViewController.swift */,
 				173A04761B67785B00AA1711 /* Main.storyboard */,
+				17150F951B69A39500ECCDF7 /* AllianceViewController.swift */,
+				A62BE7F81CBBE45F00B9B75A /* AttackLoadingViewController.swift */,
+				17556B351B725C29007937B0 /* AttackTimerViewController.swift */,
+				17150FB21B6B808800ECCDF7 /* BattleGame.sks */,
+				17150FB41B6B85E000ECCDF7 /* BattleGame.swift */,
+				17150F9B1B69A56B00ECCDF7 /* CharacterViewController.swift */,
+				A63E59E71E24406900FA1E21 /* HitListViewController.swift */,
+				A65D95421E28686C009E475B /* HomeBaseViewController.swift */,
+				A62CAFE31CA310A6002E8F4A /* MapTabBarViewController.swift */,
+				173A049F1B690C4800AA1711 /* MapViewController.swift */,
+				A62A34D21CC7F2C200007F75 /* MissionListViewController.swift */,
+				A65D95441E2A712A009E475B /* NewsViewController.swift */,
+				17150FAA1B6B140B00ECCDF7 /* OppStatsViewController.swift */,
+				A6E794691CADA41A002A3AA9 /* RightMenuViewController.swift */,
+				A6D810361E2D11D300A7DDB2 /* SettingsViewController.swift */,
+				A62CAFE11CA30E8A002E8F4A /* StartUpViewController.swift */,
+				17150F931B69A11400ECCDF7 /* StatsViewController.swift */,
+				A6D8103C1E31120000A7DDB2 /* TeamMembersViewController.swift */,
+				17150F981B69A4F100ECCDF7 /* SWRevealViewController.h */,
+				17150F991B69A4F100ECCDF7 /* SWRevealViewController.m */,
+				A60290DC1CCE506D0071788F /* UserProfileViewController.swift */,
+				173A04741B67785B00AA1711 /* ViewController.swift */,
 				173A04791B67785B00AA1711 /* Images.xcassets */,
+				173A04921B6778A800AA1711 /* SignupViewController.swift */,
+				173A04941B6778C800AA1711 /* LoginViewController.swift */,
 				173A047B1B67785B00AA1711 /* LaunchScreen.xib */,
 				173A04711B67785B00AA1711 /* BattleField.xcdatamodeld */,
+				A614AC491E6725E100C8F22F /* GoogleService-Info.plist */,
 				173A046D1B67785B00AA1711 /* Supporting Files */,
+				17150F971B69A4F000ECCDF7 /* BattleField-Bridging-Header.h */,
 			);
 			path = BattleField;
 			sourceTree = "<group>";
@@ -94,6 +616,7 @@
 			isa = PBXGroup;
 			children = (
 				173A046E1B67785B00AA1711 /* Info.plist */,
+				A6BE412E1CAC0D0800FAA1E7 /* gamedata.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +638,386 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		173A04961B67791500AA1711 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				17150FA61B6B04CF00ECCDF7 /* ActionButtons.swift */,
+				A62A34D61CC8051A00007F75 /* ADVSegmentedControl.swift */,
+				17150FA81B6B0FED00ECCDF7 /* AttackPlayer.swift */,
+				173A049B1B6779B800AA1711 /* ConfirmNetwork.swift */,
+				17556B371B72F397007937B0 /* DBAlertController.swift */,
+				A6AD9D021CBD3FAA00112AD3 /* FileFunctions.swift */,
+				A693B19F1CB4230800B34F71 /* GameFunctions.swift */,
+				17150FA21B6ABEE700ECCDF7 /* GetAllLocations.swift */,
+				17150FA01B6ABCCA00ECCDF7 /* GetUserLoc.swift */,
+				17150F911B693DFF00ECCDF7 /* ItemsCell.swift */,
+				A6A0E8EF1CD10A1B002A8FA2 /* BasicItemCollectionViewCell.swift */,
+				A6A0E8F01CD10A1B002A8FA2 /* BasicItemCollectionViewCell.xib */,
+				17556B311B6F9F94007937B0 /* ItemLocations.swift */,
+				173A04971B67795600AA1711 /* JSSAlertView.swift */,
+				A62CAFE51CA41B0D002E8F4A /* LocationUpdateManager.swift */,
+				17150F8D1B69271300ECCDF7 /* MoveButton.swift */,
+				A6826BA61E27DCEE00EED807 /* Pulsator.swift */,
+				17150FAE1B6B228E00ECCDF7 /* PushAttackNotice.swift */,
+				17150FAC1B6B1FAB00ECCDF7 /* RemoteNotificationDeepLink.swift */,
+				17150FA41B6AC3DD00ECCDF7 /* SaveLocation.swift */,
+				A6AA764A1EB792D7003CFCD5 /* ServerInfo.swift */,
+				A62F7B9D1CD772E500F4B735 /* Solar.swift */,
+				A6D8103A1E2E7B4000A7DDB2 /* SwiftAccordionCells.swift */,
+				173A04991B67798E00AA1711 /* SwiftyJSON.swift */,
+				A6D810381E2D4B7000A7DDB2 /* TeamFunctions.swift */,
+				A62A34C81CC111F600007F75 /* UserInventory.swift */,
+				A62A34D81CC8101000007F75 /* UserMissions.swift */,
+				A613D2621E5CED530045803A /* UserSkills.swift */,
+				A63E59E91E244F1E00FA1E21 /* UserTargets.swift */,
+				A62A34CE1CC67F0200007F75 /* UserTerritories.swift */,
+				173A04A11B690EB400AA1711 /* UserPoints.swift */,
+				173A04A71B69145D00AA1711 /* VCMapView.swift */,
+				A6C7A0971CAF0FFB0068E7F2 /* VerticalProgressView.swift */,
+				A62A34CA1CC5180E00007F75 /* YSSegmentedControl.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		19AB49E28644C53847EEAC0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF0373F73A824A63FC0688C5 /* Pods_BattleField.framework */,
+				7014AC6CD4F950630CCD52EC /* Pods_BattleFieldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51A0545FF0049BDBE9E2621C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				750CF4E46EA809DD9883B3B2 /* Pods-BattleField.debug.xcconfig */,
+				06E4415F37612EB385CED316 /* Pods-BattleField.release.xcconfig */,
+				2EF5BE33953722CFFA88D3EA /* Pods-BattleFieldTests.debug.xcconfig */,
+				1A13853AFA141D3EE75F3CC2 /* Pods-BattleFieldTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A60290D91CCE47850071788F /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				A60290E01CCE767B0071788F /* MissionMapHammer.png */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		A613D24F1E573EE20045803A /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A613D2501E573F180045803A /* AttributesView.xib */,
+				A613D2541E5756EC0045803A /* AttributesItemCell.xib */,
+				A613D2641E5DEEFB0045803A /* SkillsItemCell.xib */,
+				A613D2521E5743530045803A /* PlayerSubViews.swift */,
+				A613D2561E5B49D00045803A /* SkillsView.xib */,
+				A613D2581E5B72380045803A /* EditBodyCell.xib */,
+				A613D25A1E5B72770045803A /* EditBodyCell.swift */,
+				A613D25C1E5B78DE0045803A /* EditBodyItemCell.xib */,
+			);
+			name = SubViews;
+			sourceTree = "<group>";
+		};
+		A614E4741CB545A00022A87B /* 3D Attack Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA779D1E413F6900E585AF /* animate.scnassets */,
+				A64C80991E40C8D7005FC771 /* Weapons */,
+				A6D122A11E3B80A200187A51 /* CustomPlayerAttackView.swift */,
+				A6D1229F1E3B806500187A51 /* PlayerAttackView.xib */,
+				A6D1229C1E3B7F5D00187A51 /* Scenes */,
+				A61AC3C41CB6880100AC5A90 /* Objects */,
+				A614E4781CB545DD0022A87B /* Controllers */,
+				A614E4771CB545D00022A87B /* Model */,
+				A614E4821CB547100022A87B /* Resources */,
+				A614E47F1CB546410022A87B /* Textures */,
+				A6C0D7831E4F9CE0008A2350 /* Character.swift */,
+			);
+			name = "3D Attack Files";
+			sourceTree = "<group>";
+		};
+		A614E4771CB545D00022A87B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A614E4791CB545FC0022A87B /* Tile.swift */,
+				A61AC3C21CB5858400AC5A90 /* MapEditFunctions.swift */,
+				A614E47B1CB546100022A87B /* Entity.swift */,
+				A614E47D1CB546240022A87B /* Map.swift */,
+				A61AC3C91CB68C3600AC5A90 /* ItemsColorCode.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A614E4781CB545DD0022A87B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A614E4801CB5468E0022A87B /* AttackMapViewController.swift */,
+				A62BE7F61CB899E700B9B75A /* EditMapViewController.swift */,
+				A614E4751CB545C70022A87B /* FireGestureRecognizer.swift */,
+				A62BE7EE1CB7E73700B9B75A /* BasicCollectionViewCell.swift */,
+				A62BE7EF1CB7E73700B9B75A /* BasicCollectionViewCell.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A614E47F1CB546410022A87B /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				A61AC3C71CB6881900AC5A90 /* DEFbox1.png */,
+				A614E4851CB547590022A87B /* buildingLightTexture.png */,
+				A614E4871CB547640022A87B /* brickWallTexture.png */,
+				A614E4891CB5476B0022A87B /* ceilingTexture.png */,
+				A62BE7F21CB819B700B9B75A /* barrelTexture.png */,
+				A6814E311E370722007DAC17 /* WoodFence.png */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		A614E4821CB547100022A87B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A614E4831CB547240022A87B /* Map2.png */,
+				A6814E351E370FA1007DAC17 /* Map3.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A61AC3C41CB6880100AC5A90 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A6345CB71E45272C007DAEAC /* bloodSplatter.png */,
+				A6345CB91E47DA1F007DAEAC /* gunTargetIcon.png */,
+				A61AC3C51CB6880A00AC5A90 /* box1.dae */,
+				A62BE7EA1CB7E44100B9B75A /* barrelExplosive.dae */,
+				A62BE7F41CB84DF900B9B75A /* box2.dae */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		A62A34B61CBE70A400007F75 /* TreasureData */ = {
+			isa = PBXGroup;
+			children = (
+				A62A34B41CBE6E6300007F75 /* TreasureView.xib */,
+				A62A34B71CBE70DC00007F75 /* TreasureCollectionViewCell.swift */,
+				A62A34B81CBE70DC00007F75 /* TreasureCollectionViewCell.xib */,
+				A62A34BB1CBE73CF00007F75 /* TreasureTableViewCell.swift */,
+				A62A34BC1CBE73CF00007F75 /* TreasureTableViewCell.xib */,
+				A62BEE7E1CCA65E70055FC24 /* ItemOptionsView.xib */,
+			);
+			name = TreasureData;
+			sourceTree = "<group>";
+		};
+		A62A34C31CBEC92600007F75 /* CreatePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A62A34C11CBEC91300007F75 /* CreatePlayerViewController.swift */,
+				A62F7BAC1CDA2E6900F4B735 /* CreatePlayerViewController2.swift */,
+				A62F7BAE1CDA375400F4B735 /* CreatePlayerCareerViewController.swift */,
+				A62F7BAA1CD914A900F4B735 /* MyCharacterView.xib */,
+			);
+			name = CreatePlayer;
+			sourceTree = "<group>";
+		};
+		A62BEE821CCE444B0055FC24 /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				A60290D91CCE47850071788F /* Maps */,
+				A62BEE831CCE44590055FC24 /* Objects */,
+				A62BEE841CCE44610055FC24 /* Textures */,
+			);
+			name = "3D Models";
+			sourceTree = "<group>";
+		};
+		A62BEE831CCE44590055FC24 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A6B0AFD71CCEB0EA00E09EFF /* hammer.dae */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		A62BEE841CCE44610055FC24 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				A690821C1E3BDBBA006B4276 /* grassTexture2.jpg */,
+				A6B0AFDB1CCFFF2700E09EFF /* grasstexture.png */,
+				A6B0AFD91CCEB12400E09EFF /* hammertex1280000.png */,
+				A60290D51CCE46D70071788F /* metal.jpg */,
+				A690821E1E3BE72A006B4276 /* skyTexture.jpg */,
+				A60290D71CCE46DF0071788F /* wood.jpg */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		A62CAFED1CA58693002E8F4A /* SVPulsingAnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				A62CAFEE1CA58693002E8F4A /* SVPulsingAnnotationView.h */,
+				A62CAFEF1CA58693002E8F4A /* SVPulsingAnnotationView.m */,
+			);
+			name = SVPulsingAnnotationView;
+			path = "../../../../Downloads/SVPulsingAnnotationView-master/SVPulsingAnnotationView";
+			sourceTree = "<group>";
+		};
+		A62F7B9F1CD7824A00F4B735 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				A62F7BA41CD78BDA00F4B735 /* EffectsOverlay.swift */,
+				A62F7BA61CD78C0100F4B735 /* EffectsOverlay.sks */,
+				A62F7BA01CD7827200F4B735 /* Rain.sks */,
+				A62F7BA81CD7982600F4B735 /* Snow.sks */,
+				A62F7BA11CD7827200F4B735 /* spark.png */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		A63CEF0B1CAAD91E007D131B /* MKMapViewZoom */ = {
+			isa = PBXGroup;
+			children = (
+				A63CEF0C1CAAD945007D131B /* MKMapView+ZoomLevel.m */,
+				A63CEF0E1CAAD977007D131B /* MKMapView+ZoomLevel.h */,
+				A63CEF0F1CAAE7C9007D131B /* MKMapViewExtension.swift */,
+			);
+			name = MKMapViewZoom;
+			sourceTree = "<group>";
+		};
+		A64C80991E40C8D7005FC771 /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				A654C0721E40D59B007A3049 /* bullet.dae */,
+			);
+			name = Weapons;
+			sourceTree = "<group>";
+		};
+		A65D95461E2A97AB009E475B /* HowTo */ = {
+			isa = PBXGroup;
+			children = (
+				A65D95471E2A97DD009E475B /* HowToView.xib */,
+				A65D95491E2A9806009E475B /* HowToViews.swift */,
+				A613D2601E5CB71B0045803A /* MessageView.xib */,
+			);
+			name = HowTo;
+			sourceTree = "<group>";
+		};
+		A69184531CB40EAE00A7BC9C /* ArmyGeneralScene */ = {
+			isa = PBXGroup;
+			children = (
+				A69184541CB40F3900A7BC9C /* ArmyGeneralIntroScene.swift */,
+				A691845A1CB4128000A7BC9C /* ArmyGeneralIntroSpriteScene.swift */,
+				A6052BC21CB4142A006BB4EE /* ArmyGeneralIntroSpriteScene.sks */,
+				A69184561CB40FD000A7BC9C /* ArmyGeneralIntro.scn */,
+				A69184581CB40FF700A7BC9C /* ArmyGeneralIntro.sks */,
+				A6052BC41CB41520006BB4EE /* GeneralIntroViewController.swift */,
+			);
+			name = ArmyGeneralScene;
+			sourceTree = "<group>";
+		};
+		A6AD9CFB1CBD36E900112AD3 /* SignUpControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD9CFC1CBD37F500112AD3 /* SignUpTwoViewController.swift */,
+				A613D25E1E5B901C0045803A /* SignUpAgentViewController.swift */,
+				A6AD9CFE1CBD382000112AD3 /* SignUpThreeViewController.swift */,
+				A6AD9D001CBD387100112AD3 /* SignUpViewControllerNew.swift */,
+				A6AD9D061CBD4FCB00112AD3 /* EndUserAgreementViewController.swift */,
+			);
+			name = SignUpControllers;
+			sourceTree = "<group>";
+		};
+		A6B0AFDD1CD0F1F600E09EFF /* CharacterControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B0AFDE1CD0F23600E09EFF /* CharactersViewController.swift */,
+				A6A0E8E91CD0F87E002A8FA2 /* CharacterStatsViewController.swift */,
+			);
+			name = CharacterControllers;
+			sourceTree = "<group>";
+		};
+		A6BE41211CAC0B2000FAA1E7 /* PurchaseItemsData */ = {
+			isa = PBXGroup;
+			children = (
+				A6BE41221CAC0B3700FAA1E7 /* Constants.swift */,
+				A60DFC621CAC16C6001B9070 /* Customer.swift */,
+				A6BE41241CAC0B6500FAA1E7 /* StockItem.swift */,
+				A6BE41281CAC0BB700FAA1E7 /* ProgressBar.swift */,
+				A6BE412A1CAC0BCE00FAA1E7 /* DiscreteProgressBar.swift */,
+				A6BE412C1CAC0BE300FAA1E7 /* ContinuousProgressBar.swift */,
+				A63199641CAC290B0086E876 /* ItemLevelList.plist */,
+				A6BE41261CAC0B9900FAA1E7 /* GameStateDelegate.swift */,
+			);
+			name = PurchaseItemsData;
+			sourceTree = "<group>";
+		};
+		A6C0B02C1CA969F6003033B0 /* PlayerSceneKit.scnassets */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0B02D1CA96C82003033B0 /* PlayerModel.sks */,
+				A6C0B02F1CA96CA6003033B0 /* PlayerModel.swift */,
+				A6BE411F1CAC082400FAA1E7 /* PlayerOverlay.swift */,
+				A6C0B03A1CA976A6003033B0 /* UserPlayerScene.swift */,
+				A604E1F91CA9AEDC00E23AAD /* PlayerScene.scn */,
+			);
+			name = PlayerSceneKit.scnassets;
+			sourceTree = "<group>";
+		};
+		A6C0D77C1E4B5A19008A2350 /* MyPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A613D24F1E573EE20045803A /* SubViews */,
+				A6C0D77D1E4B5B31008A2350 /* MyPlayerScene.scn */,
+				A6C0D77F1E4B7771008A2350 /* MyPlayerView.xib */,
+				A6C0D7811E4B778F008A2350 /* CustomPlayerView.swift */,
+				A6FE54B61E522D250001EF2E /* EnemyPlayer.swift */,
+				A6FE54B81E536F310001EF2E /* HeroPlayer.swift */,
+			);
+			name = MyPlayer;
+			sourceTree = "<group>";
+		};
+		A6C7A0921CAEA91A0068E7F2 /* MapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				A6AD9D081CBD560200112AD3 /* AbilitiesView.xib */,
+				A6C9829D1CB03F7F00C5D9BF /* ItemAnnotationView.xib */,
+				A6C9829F1CB03FA400C5D9BF /* PlayerAnnotationView.xib */,
+				A6C7A0931CAEA9360068E7F2 /* MoneyOverlay.swift */,
+				A6C7A0951CAEA95D0068E7F2 /* MoneyOverlay.sks */,
+			);
+			name = MapOverlay;
+			sourceTree = "<group>";
+		};
+		A6D1229C1E3B7F5D00187A51 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1229D1E3B7F8800187A51 /* PlayerAttackScene.scn */,
+				A6D122A31E3B94A600187A51 /* PlayerAttackScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		A6E7946D1CADA786002A3AA9 /* TrainingView */ = {
+			isa = PBXGroup;
+			children = (
+				A6E7946E1CADA7C1002A3AA9 /* TrainingScene.swift */,
+				A6E794701CADA820002A3AA9 /* TrainingScene.sks */,
+				A6E7946B1CADA765002A3AA9 /* GameViewController.swift */,
+			);
+			name = TrainingView;
+			sourceTree = "<group>";
+		};
+		A6E794721CADA86E002A3AA9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A6E794731CADA879002A3AA9 /* background-music.aiff */,
+				A6E794741CADA879002A3AA9 /* explosion.wav */,
+				A6E794751CADA879002A3AA9 /* missile.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +1025,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 173A048C1B67785C00AA1711 /* Build configuration list for PBXNativeTarget "BattleField" */;
 			buildPhases = (
+				70E3821AAE217417A1D1351A /* [CP] Check Pods Manifest.lock */,
 				173A04661B67785B00AA1711 /* Sources */,
 				173A04671B67785B00AA1711 /* Frameworks */,
 				173A04681B67785B00AA1711 /* Resources */,
+				CF75E1F499E1C949D2216E1B /* [CP] Embed Pods Frameworks */,
+				F59D9A8225A878446C23BFEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,9 +1045,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 173A048F1B67785C00AA1711 /* Build configuration list for PBXNativeTarget "BattleFieldTests" */;
 			buildPhases = (
+				07FD507B8266B4EB7861DBD3 /* [CP] Check Pods Manifest.lock */,
 				173A047E1B67785B00AA1711 /* Sources */,
 				173A047F1B67785B00AA1711 /* Frameworks */,
 				173A04801B67785B00AA1711 /* Resources */,
+				3CA4DA3C3CA455F041E54593 /* [CP] Embed Pods Frameworks */,
+				3DB4BFF279A19E53A909BB62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,14 +1068,30 @@
 		173A04621B67785B00AA1711 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Claven Solutions";
 				TargetAttributes = {
 					173A04691B67785B00AA1711 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3TJ6CWURPH;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					173A04811B67785B00AA1711 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0810;
 						TestTargetID = 173A04691B67785B00AA1711;
 					};
 				};
@@ -195,9 +1120,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C0D77E1E4B5B31008A2350 /* MyPlayerScene.scn in Resources */,
+				A6B1DD421CE0C370002EF9EB /* MyWeaponsView.xib in Resources */,
+				A6A0E8F21CD10A1B002A8FA2 /* BasicItemCollectionViewCell.xib in Resources */,
+				A63199651CAC290B0086E876 /* ItemLevelList.plist in Resources */,
+				A614E4861CB547590022A87B /* buildingLightTexture.png in Resources */,
+				A691844E1CB2F9AA00A7BC9C /* TableViewCell4.xib in Resources */,
+				A6E794771CADA879002A3AA9 /* explosion.wav in Resources */,
 				173A04781B67785B00AA1711 /* Main.storyboard in Resources */,
+				A69184461CB2F97D00A7BC9C /* TableViewCell2.xib in Resources */,
+				A613D2551E5756EC0045803A /* AttributesItemCell.xib in Resources */,
+				A63A9EE61CD2444500016F73 /* MissedItemsCell.xib in Resources */,
+				A690821F1E3BE72A006B4276 /* skyTexture.jpg in Resources */,
+				A69184521CB2FF5F00A7BC9C /* ArmorTableViewCell.xib in Resources */,
+				A6C0B02E1CA96C82003033B0 /* PlayerModel.sks in Resources */,
+				A613D25D1E5B78DE0045803A /* EditBodyItemCell.xib in Resources */,
+				A63A9EE21CD23AF900016F73 /* MissedItemsView.xib in Resources */,
+				A62BEE7F1CCA65E70055FC24 /* ItemOptionsView.xib in Resources */,
+				A6E794781CADA879002A3AA9 /* missile.mp3 in Resources */,
+				A62A34D11CC6AD8700007F75 /* CaptureTerritoryView.xib in Resources */,
+				A62F7BA91CD7982600F4B735 /* Snow.sks in Resources */,
+				A65D95481E2A97DD009E475B /* HowToView.xib in Resources */,
+				A62BE7F51CB84DF900B9B75A /* box2.dae in Resources */,
+				A62A34B51CBE6E6300007F75 /* TreasureView.xib in Resources */,
+				A62A34BA1CBE70DC00007F75 /* TreasureCollectionViewCell.xib in Resources */,
+				A613D2611E5CB71D0045803A /* MessageView.xib in Resources */,
+				A613D2591E5B72380045803A /* EditBodyCell.xib in Resources */,
+				A691843C1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.xib in Resources */,
+				A6D122A01E3B806500187A51 /* PlayerAttackView.xib in Resources */,
+				A6D1229E1E3B7F8800187A51 /* PlayerAttackScene.scn in Resources */,
+				A6814E141E328592007DAC17 /* MissionStatusView.xib in Resources */,
+				A614E4841CB547240022A87B /* Map2.png in Resources */,
 				173A047D1B67785B00AA1711 /* LaunchScreen.xib in Resources */,
+				A6C0D7801E4B7771008A2350 /* MyPlayerView.xib in Resources */,
+				A6B0AFDA1CCEB12400E09EFF /* hammertex1280000.png in Resources */,
+				A60290E11CCE767B0071788F /* MissionMapHammer.png in Resources */,
+				A6C9829C1CB03A6E00C5D9BF /* WeaponMenu.xib in Resources */,
+				A62F7BA31CD7827200F4B735 /* spark.png in Resources */,
+				A6B0AFD81CCEB0EA00E09EFF /* hammer.dae in Resources */,
+				A6C7A0961CAEA95D0068E7F2 /* MoneyOverlay.sks in Resources */,
+				A6259AE31E609C2100537019 /* MiscItemsMenu.xib in Resources */,
+				A6C982A01CB03FA400C5D9BF /* PlayerAnnotationView.xib in Resources */,
+				A62BE7F11CB7E73700B9B75A /* BasicCollectionViewCell.xib in Resources */,
+				A6B1DD461CE0F263002EF9EB /* DistanceAttackView.xib in Resources */,
+				A6D8103F1E31499A00A7DDB2 /* TeamInfoView.xib in Resources */,
+				A6C982A21CB03FF100C5D9BF /* ArmorMenu.xib in Resources */,
+				A62A34C51CBECEAA00007F75 /* PotionMenu.xib in Resources */,
+				A654C0731E40D59B007A3049 /* bullet.dae in Resources */,
+				A6814E361E370FA1007DAC17 /* Map3.png in Resources */,
+				A6AD9D091CBD560200112AD3 /* AbilitiesView.xib in Resources */,
+				A6BA779E1E413F6900E585AF /* animate.scnassets in Resources */,
+				A69184571CB40FD000A7BC9C /* ArmyGeneralIntro.scn in Resources */,
+				A60290D81CCE46DF0071788F /* wood.jpg in Resources */,
+				A6814E321E370722007DAC17 /* WoodFence.png in Resources */,
+				A613D2651E5DEEFD0045803A /* SkillsItemCell.xib in Resources */,
+				A62F7BA71CD78C0100F4B735 /* EffectsOverlay.sks in Resources */,
+				A6E794761CADA879002A3AA9 /* background-music.aiff in Resources */,
+				A614E4881CB547640022A87B /* brickWallTexture.png in Resources */,
+				A62A34BE1CBE73CF00007F75 /* TreasureTableViewCell.xib in Resources */,
+				A62F7BAB1CD914A900F4B735 /* MyCharacterView.xib in Resources */,
+				A614E48A1CB5476B0022A87B /* ceilingTexture.png in Resources */,
+				A6C9829E1CB03F7F00C5D9BF /* ItemAnnotationView.xib in Resources */,
 				173A047A1B67785B00AA1711 /* Images.xcassets in Resources */,
+				A614AC4A1E6725E100C8F22F /* GoogleService-Info.plist in Resources */,
+				A613D2511E573F560045803A /* AttributesView.xib in Resources */,
+				A62F7BA21CD7827200F4B735 /* Rain.sks in Resources */,
+				A6BE412F1CAC0D0800FAA1E7 /* gamedata.plist in Resources */,
+				A6345CBA1E47DA1F007DAEAC /* gunTargetIcon.png in Resources */,
+				17150FB31B6B808800ECCDF7 /* BattleGame.sks in Resources */,
+				A6E794711CADA820002A3AA9 /* TrainingScene.sks in Resources */,
+				A62BE7F31CB819B700B9B75A /* barrelTexture.png in Resources */,
+				A60290D61CCE46D70071788F /* metal.jpg in Resources */,
+				A62BEE811CCBF5360055FC24 /* MessageInfoView.xib in Resources */,
+				A69184591CB40FF700A7BC9C /* ArmyGeneralIntro.sks in Resources */,
+				A6B1DD481CE37F29002EF9EB /* AttackCompleteView.xib in Resources */,
+				A691844A1CB2F99600A7BC9C /* TableViewCell3.xib in Resources */,
+				A62BE7EB1CB7E44100B9B75A /* barrelExplosive.dae in Resources */,
+				A61AC3C61CB6880A00AC5A90 /* box1.dae in Resources */,
+				A604E1FA1CA9AEDC00E23AAD /* PlayerScene.scn in Resources */,
+				A6C982A41CB0401000C5D9BF /* ShieldMenu.xib in Resources */,
+				A6345CB81E45272C007DAEAC /* bloodSplatter.png in Resources */,
+				A690821D1E3BDBBA006B4276 /* grassTexture2.jpg in Resources */,
+				A6C982AC1CB1D93D00C5D9BF /* ItemsCollectionViewCell.xib in Resources */,
+				A6B0AFDC1CCFFF2700E09EFF /* grasstexture.png in Resources */,
+				A613D2571E5B49D40045803A /* SkillsView.xib in Resources */,
+				A6052BC31CB4142A006BB4EE /* ArmyGeneralIntroSpriteScene.sks in Resources */,
+				A69184401CB2F39D00A7BC9C /* TableViewCell1.xib in Resources */,
+				A61AC3C81CB6881900AC5A90 /* DEFbox1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,14 +1219,227 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07FD507B8266B4EB7861DBD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CA4DA3C3CA455F041E54593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BattleFieldTests/Pods-BattleFieldTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DB4BFF279A19E53A909BB62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BattleFieldTests/Pods-BattleFieldTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E3821AAE217417A1D1351A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF75E1F499E1C949D2216E1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BattleField/Pods-BattleField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59D9A8225A878446C23BFEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BattleField/Pods-BattleField-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		173A04661B67785B00AA1711 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63199671CAC2EF20086E876 /* UpdateItemData.swift in Sources */,
+				A62F7BAF1CDA375400F4B735 /* CreatePlayerCareerViewController.swift in Sources */,
+				A65D954A1E2A9806009E475B /* HowToViews.swift in Sources */,
+				A6FE54B71E522D250001EF2E /* EnemyPlayer.swift in Sources */,
+				A6BE41271CAC0B9900FAA1E7 /* GameStateDelegate.swift in Sources */,
+				A61AC3CA1CB68C3600AC5A90 /* ItemsColorCode.swift in Sources */,
+				A6D122A21E3B80A200187A51 /* CustomPlayerAttackView.swift in Sources */,
+				17150F9E1B69A9B700ECCDF7 /* ArmorViewController.swift in Sources */,
+				A613D2631E5CED550045803A /* UserSkills.swift in Sources */,
+				A6C7A0981CAF0FFB0068E7F2 /* VerticalProgressView.swift in Sources */,
+				A6BE41251CAC0B6500FAA1E7 /* StockItem.swift in Sources */,
+				A6A0E8EA1CD0F87E002A8FA2 /* CharacterStatsViewController.swift in Sources */,
+				A691843B1CB2E23500A7BC9C /* ItemsCollectionViewCellSmall.swift in Sources */,
+				17150FA31B6ABEE700ECCDF7 /* GetAllLocations.swift in Sources */,
+				17150F9C1B69A56B00ECCDF7 /* CharacterViewController.swift in Sources */,
+				173A04A81B69145D00AA1711 /* VCMapView.swift in Sources */,
+				A62CAFE21CA30E8A002E8F4A /* StartUpViewController.swift in Sources */,
+				A62CAFE41CA310A6002E8F4A /* MapTabBarViewController.swift in Sources */,
+				A691844D1CB2F9AA00A7BC9C /* TableViewCell4.swift in Sources */,
+				A62A34C91CC111F600007F75 /* UserInventory.swift in Sources */,
+				A6C0B03B1CA976A6003033B0 /* UserPlayerScene.swift in Sources */,
+				A69184451CB2F97D00A7BC9C /* TableViewCell2.swift in Sources */,
+				17150FB51B6B85E000ECCDF7 /* BattleGame.swift in Sources */,
+				173A04981B67795600AA1711 /* JSSAlertView.swift in Sources */,
+				A6AD9CFD1CBD37F500112AD3 /* SignUpTwoViewController.swift in Sources */,
+				A6C982AB1CB1D93D00C5D9BF /* ItemsCollectionViewCell.swift in Sources */,
+				A62A34BD1CBE73CF00007F75 /* TreasureTableViewCell.swift in Sources */,
+				A62A34D91CC8101000007F75 /* UserMissions.swift in Sources */,
+				A60290DD1CCE506D0071788F /* UserProfileViewController.swift in Sources */,
+				A614E47A1CB545FC0022A87B /* Tile.swift in Sources */,
+				A691843F1CB2F39D00A7BC9C /* TableViewCell1.swift in Sources */,
+				A6BE412B1CAC0BCE00FAA1E7 /* DiscreteProgressBar.swift in Sources */,
+				17150FA71B6B04CF00ECCDF7 /* ActionButtons.swift in Sources */,
+				A6A0E8F11CD10A1B002A8FA2 /* BasicItemCollectionViewCell.swift in Sources */,
+				A6E7946A1CADA41A002A3AA9 /* RightMenuViewController.swift in Sources */,
+				A614E4761CB545C70022A87B /* FireGestureRecognizer.swift in Sources */,
+				A6C982A81CB1D78500C5D9BF /* CollectionCells.swift in Sources */,
+				A6D122A41E3B94A600187A51 /* PlayerAttackScene.swift in Sources */,
+				A62BE7F91CBBE45F00B9B75A /* AttackLoadingViewController.swift in Sources */,
+				A62F7BA51CD78BDA00F4B735 /* EffectsOverlay.swift in Sources */,
+				17556B321B6F9F94007937B0 /* ItemLocations.swift in Sources */,
+				A65D95431E28686C009E475B /* HomeBaseViewController.swift in Sources */,
+				A6BE41291CAC0BB700FAA1E7 /* ProgressBar.swift in Sources */,
+				A6BE41231CAC0B3700FAA1E7 /* Constants.swift in Sources */,
+				A6C0B0301CA96CA6003033B0 /* PlayerModel.swift in Sources */,
+				A614E47C1CB546100022A87B /* Entity.swift in Sources */,
+				173A04A21B690EB400AA1711 /* UserPoints.swift in Sources */,
+				17150F8E1B69271300ECCDF7 /* MoveButton.swift in Sources */,
+				A62A34B91CBE70DC00007F75 /* TreasureCollectionViewCell.swift in Sources */,
+				17150F921B693DFF00ECCDF7 /* ItemsCell.swift in Sources */,
 				173A04751B67785B00AA1711 /* ViewController.swift in Sources */,
+				A6BE41201CAC082400FAA1E7 /* PlayerOverlay.swift in Sources */,
+				A6AD9D071CBD4FCB00112AD3 /* EndUserAgreementViewController.swift in Sources */,
+				A62BE7F71CB899E700B9B75A /* EditMapViewController.swift in Sources */,
+				A614E47E1CB546240022A87B /* Map.swift in Sources */,
+				A6AD9D011CBD387100112AD3 /* SignUpViewControllerNew.swift in Sources */,
+				A62A34CB1CC5180E00007F75 /* YSSegmentedControl.swift in Sources */,
+				A6AD9CFF1CBD382000112AD3 /* SignUpThreeViewController.swift in Sources */,
+				17150FAB1B6B140B00ECCDF7 /* OppStatsViewController.swift in Sources */,
+				A63E59EA1E244F1E00FA1E21 /* UserTargets.swift in Sources */,
+				17150FA11B6ABCCA00ECCDF7 /* GetUserLoc.swift in Sources */,
+				A6AD9D031CBD3FAA00112AD3 /* FileFunctions.swift in Sources */,
+				173A04A01B690C4800AA1711 /* MapViewController.swift in Sources */,
 				173A04731B67785B00AA1711 /* BattleField.xcdatamodeld in Sources */,
+				A6B1DD441CE0C393002EF9EB /* CustomUIViewsCont.swift in Sources */,
+				173A04931B6778A800AA1711 /* SignupViewController.swift in Sources */,
+				A69184491CB2F99600A7BC9C /* TableViewCell3.swift in Sources */,
+				A62F7BAD1CDA2E6900F4B735 /* CreatePlayerViewController2.swift in Sources */,
+				A6C982A61CB0598300C5D9BF /* ItemAnnotationViewController.swift in Sources */,
+				A613D2531E5743530045803A /* PlayerSubViews.swift in Sources */,
+				A60DFC631CAC16C6001B9070 /* Customer.swift in Sources */,
+				173A04951B6778C800AA1711 /* LoginViewController.swift in Sources */,
+				A6C7A0941CAEA9360068E7F2 /* MoneyOverlay.swift in Sources */,
+				A6BE412D1CAC0BE300FAA1E7 /* ContinuousProgressBar.swift in Sources */,
+				A62A34C21CBEC91300007F75 /* CreatePlayerViewController.swift in Sources */,
+				A62A34D31CC7F2C200007F75 /* MissionListViewController.swift in Sources */,
+				A61AC3C31CB5858400AC5A90 /* MapEditFunctions.swift in Sources */,
+				A69184551CB40F3900A7BC9C /* ArmyGeneralIntroScene.swift in Sources */,
+				A6B0AFDF1CD0F23600E09EFF /* CharactersViewController.swift in Sources */,
+				17556B361B725C2A007937B0 /* AttackTimerViewController.swift in Sources */,
+				17150FAF1B6B228E00ECCDF7 /* PushAttackNotice.swift in Sources */,
+				A63CEF0D1CAAD945007D131B /* MKMapView+ZoomLevel.m in Sources */,
+				A6C0D7841E4F9CE2008A2350 /* Character.swift in Sources */,
+				A63CEF101CAAE7C9007D131B /* MKMapViewExtension.swift in Sources */,
+				A6E7946F1CADA7C1002A3AA9 /* TrainingScene.swift in Sources */,
+				17556B381B72F397007937B0 /* DBAlertController.swift in Sources */,
+				17556B341B6FF304007937B0 /* ShieldViewController.swift in Sources */,
+				A62A34CF1CC67F0200007F75 /* UserTerritories.swift in Sources */,
+				A62F7B9E1CD772E500F4B735 /* Solar.swift in Sources */,
+				173A049A1B67798E00AA1711 /* SwiftyJSON.swift in Sources */,
+				A62CAFF01CA58693002E8F4A /* SVPulsingAnnotationView.m in Sources */,
+				A6E7946C1CADA765002A3AA9 /* GameViewController.swift in Sources */,
+				A693B1A01CB4230800B34F71 /* GameFunctions.swift in Sources */,
+				A6D810371E2D11D300A7DDB2 /* SettingsViewController.swift in Sources */,
+				17150F9A1B69A4F100ECCDF7 /* SWRevealViewController.m in Sources */,
+				A614E4811CB5468E0022A87B /* AttackMapViewController.swift in Sources */,
 				173A04701B67785B00AA1711 /* AppDelegate.swift in Sources */,
+				A6D8103D1E31120000A7DDB2 /* TeamMembersViewController.swift in Sources */,
+				A613D25B1E5B72770045803A /* EditBodyCell.swift in Sources */,
+				17150FA91B6B0FED00ECCDF7 /* AttackPlayer.swift in Sources */,
+				A69184511CB2FF5F00A7BC9C /* ArmorTableViewCell.swift in Sources */,
+				17150F901B69367900ECCDF7 /* WeaponsViewController.swift in Sources */,
+				A6052BC51CB41520006BB4EE /* GeneralIntroViewController.swift in Sources */,
+				17150F941B69A11400ECCDF7 /* StatsViewController.swift in Sources */,
+				17150FAD1B6B1FAB00ECCDF7 /* RemoteNotificationDeepLink.swift in Sources */,
+				A62CAFE61CA41B0D002E8F4A /* LocationUpdateManager.swift in Sources */,
+				A65D95451E2A712A009E475B /* NewsViewController.swift in Sources */,
+				A6AA764B1EB792D7003CFCD5 /* ServerInfo.swift in Sources */,
+				A6C9829A1CB039CF00C5D9BF /* CustomUIViews.swift in Sources */,
+				A691845B1CB4128000A7BC9C /* ArmyGeneralIntroSpriteScene.swift in Sources */,
+				A63A9EE51CD2444500016F73 /* MissedItemsCell.swift in Sources */,
+				A6D810391E2D4B7000A7DDB2 /* TeamFunctions.swift in Sources */,
+				A6D8103B1E2E7B4000A7DDB2 /* SwiftAccordionCells.swift in Sources */,
+				A63E59E81E24406900FA1E21 /* HitListViewController.swift in Sources */,
+				A6826BA71E27DCEE00EED807 /* Pulsator.swift in Sources */,
+				A6C0D7821E4B778F008A2350 /* CustomPlayerView.swift in Sources */,
+				A6FE54B91E536F310001EF2E /* HeroPlayer.swift in Sources */,
+				173A049C1B6779B800AA1711 /* ConfirmNetwork.swift in Sources */,
+				A62BE7F01CB7E73700B9B75A /* BasicCollectionViewCell.swift in Sources */,
+				17150F961B69A39500ECCDF7 /* AllianceViewController.swift in Sources */,
+				A62A34D71CC8051A00007F75 /* ADVSegmentedControl.swift in Sources */,
+				A613D25F1E5B901C0045803A /* SignUpAgentViewController.swift in Sources */,
+				17150FA51B6AC3DD00ECCDF7 /* SaveLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +1517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +1556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,26 +1566,54 @@
 		};
 		173A048D1B67785C00AA1711 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750CF4E46EA809DD9883B3B2 /* Pods-BattleField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BattleField/BattleField.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TJ6CWURPH;
 				INFOPLIST_FILE = BattleField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Stevens.BattleField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BattleField/BattleField-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		173A048E1B67785C00AA1711 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E4415F37612EB385CED316 /* Pods-BattleField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BattleField/BattleField.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3TJ6CWURPH;
 				INFOPLIST_FILE = BattleField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Stevens.BattleField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BattleField/BattleField-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		173A04901B67785C00AA1711 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF5BE33953722CFFA88D3EA /* Pods-BattleFieldTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -377,12 +1627,14 @@
 				INFOPLIST_FILE = BattleFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleField.app/BattleField";
 			};
 			name = Debug;
 		};
 		173A04911B67785C00AA1711 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A13853AFA141D3EE75F3CC2 /* Pods-BattleFieldTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -392,6 +1644,7 @@
 				INFOPLIST_FILE = BattleFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BattleField.app/BattleField";
 			};
 			name = Release;
@@ -415,6 +1668,7 @@
 				173A048E1B67785C00AA1711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		173A048F1B67785C00AA1711 /* Build configuration list for PBXNativeTarget "BattleFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +1677,7 @@
 				173A04911B67785C00AA1711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

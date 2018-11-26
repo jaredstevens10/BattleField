@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MessageInfoView" id="YCT-Cb-Iaf" customClass="MissionStatusView" customModule="BattleField" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gk-Ks-zsr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZXd-QQ-z2w"/>
+                        <constraint firstAttribute="width" constant="200" id="hu8-Oj-keV"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hu8-Oj-keV"/>
+                            <exclude reference="ZXd-QQ-z2w"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHn-Fh-GL5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4a-Aa-R6S">
+                            <rect key="frame" x="67" y="154" width="240" height="240"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37S-C3-Za0">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mission Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASB-Of-gGj">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.21507221379999999" green="0.62630171199999995" blue="0.88023684089999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="dHa-8A-EBY"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="681-Hc-zdn">
+                                    <rect key="frame" x="95" y="178" width="50" height="50"/>
+                                    <color key="backgroundColor" red="0.56862745100000001" green="0.14901960780000001" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="c6N-GZ-ubO"/>
+                                        <constraint firstAttribute="width" secondItem="681-Hc-zdn" secondAttribute="height" multiplier="1:1" id="fvt-RO-WFW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                    <state key="normal" title="Ok">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hideBTN:" destination="YCT-Cb-Iaf" eventType="touchUpInside" id="RXz-sp-Y51"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-yy-3e0">
+                                    <rect key="frame" x="96" y="62" width="136" height="97"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g5g-X1-aQo">
+                                    <rect key="frame" x="8" y="62" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="g5g-X1-aQo" secondAttribute="height" multiplier="1:1" id="Z5c-e7-7s8"/>
+                                        <constraint firstAttribute="width" constant="80" id="yoi-Qq-7ai"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="CS8-yy-3e0" firstAttribute="leading" secondItem="g5g-X1-aQo" secondAttribute="trailing" constant="8" id="Fc7-Y3-7HA"/>
+                                <constraint firstItem="37S-C3-Za0" firstAttribute="leading" secondItem="u4a-Aa-R6S" secondAttribute="leading" id="IuK-w3-Gux"/>
+                                <constraint firstAttribute="trailing" secondItem="37S-C3-Za0" secondAttribute="trailing" id="ZXF-vj-blm"/>
+                                <constraint firstItem="CS8-yy-3e0" firstAttribute="top" secondItem="37S-C3-Za0" secondAttribute="bottom" constant="22" id="aVO-kg-RW2"/>
+                                <constraint firstAttribute="trailing" secondItem="CS8-yy-3e0" secondAttribute="trailing" constant="8" id="gcI-2q-cEg"/>
+                                <constraint firstItem="681-Hc-zdn" firstAttribute="centerX" secondItem="u4a-Aa-R6S" secondAttribute="centerX" id="iT9-GO-LBf"/>
+                                <constraint firstItem="37S-C3-Za0" firstAttribute="top" secondItem="u4a-Aa-R6S" secondAttribute="top" id="kK2-Ty-rNt"/>
+                                <constraint firstItem="g5g-X1-aQo" firstAttribute="top" secondItem="37S-C3-Za0" secondAttribute="bottom" constant="22" id="lE6-k4-ccC"/>
+                                <constraint firstItem="g5g-X1-aQo" firstAttribute="leading" secondItem="u4a-Aa-R6S" secondAttribute="leading" constant="8" id="lna-ka-OFi"/>
+                                <constraint firstItem="681-Hc-zdn" firstAttribute="top" secondItem="CS8-yy-3e0" secondAttribute="bottom" constant="19" id="msh-cQ-RSO"/>
+                                <constraint firstAttribute="bottom" secondItem="681-Hc-zdn" secondAttribute="bottom" constant="12" id="uPP-uZ-v5d"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="u4a-Aa-R6S" firstAttribute="top" secondItem="ZHn-Fh-GL5" secondAttribute="top" constant="154" id="2pw-P8-sCu"/>
+                        <constraint firstAttribute="bottom" secondItem="u4a-Aa-R6S" secondAttribute="bottom" constant="273" id="EGh-iL-Th4"/>
+                        <constraint firstItem="u4a-Aa-R6S" firstAttribute="leading" secondItem="ZHn-Fh-GL5" secondAttribute="leading" constant="67" id="Llo-rh-C41"/>
+                        <constraint firstAttribute="trailing" secondItem="u4a-Aa-R6S" secondAttribute="trailing" constant="68" id="mch-S1-qMu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6Gk-Ks-zsr" firstAttribute="centerX" secondItem="YCT-Cb-Iaf" secondAttribute="centerX" id="2uc-hf-TZD"/>
+                <constraint firstItem="6Gk-Ks-zsr" firstAttribute="top" secondItem="YCT-Cb-Iaf" secondAttribute="top" id="AJv-v8-9GV"/>
+                <constraint firstItem="6Gk-Ks-zsr" firstAttribute="centerY" secondItem="YCT-Cb-Iaf" secondAttribute="centerY" id="Dr0-Hx-BeB"/>
+                <constraint firstAttribute="bottom" secondItem="6Gk-Ks-zsr" secondAttribute="bottom" id="Ese-aV-QpD"/>
+                <constraint firstAttribute="trailing" secondItem="ZHn-Fh-GL5" secondAttribute="trailing" id="HGG-iv-Fym"/>
+                <constraint firstAttribute="trailing" secondItem="6Gk-Ks-zsr" secondAttribute="trailing" id="NMh-4w-agC"/>
+                <constraint firstAttribute="bottom" secondItem="ZHn-Fh-GL5" secondAttribute="bottom" id="awo-2I-2JC"/>
+                <constraint firstItem="ZHn-Fh-GL5" firstAttribute="leading" secondItem="YCT-Cb-Iaf" secondAttribute="leading" id="d22-YH-OOB"/>
+                <constraint firstItem="ZHn-Fh-GL5" firstAttribute="top" secondItem="YCT-Cb-Iaf" secondAttribute="top" id="x0z-MF-sa4"/>
+                <constraint firstItem="6Gk-Ks-zsr" firstAttribute="leading" secondItem="YCT-Cb-Iaf" secondAttribute="leading" id="x1J-oC-941"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2uc-hf-TZD"/>
+                    <exclude reference="Dr0-Hx-BeB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="BGView" destination="6Gk-Ks-zsr" id="yv4-dn-hYy"/>
+                <outlet property="MessageLBL" destination="CS8-yy-3e0" id="INu-Bd-vk1"/>
+                <outlet property="hideBTN" destination="681-Hc-zdn" id="eut-58-NdC"/>
+                <outlet property="itemImage" destination="g5g-X1-aQo" id="7w1-lq-ds0"/>
+                <outlet property="missionHolderView" destination="u4a-Aa-R6S" id="yae-9e-rhp"/>
+                <outlet property="missionStatusLBL" destination="ASB-Of-gGj" id="im1-5d-iWE"/>
+            </connections>
+            <point key="canvasLocation" x="129.5" y="176.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MessageInfoView" id="iN0-l3-epB" customClass="MessageInfoView" customModule="BattleField" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3w-Ex-DSN">
+                    <rect key="frame" x="87" y="308" width="200" height="50"/>
+                    <subviews>
+                        <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9a-vd-qKl">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Range Exceeded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-w7-plF">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="TIw-Sk-QUV"/>
+                        <constraint firstAttribute="bottom" secondItem="cd9-w7-plF" secondAttribute="bottom" id="VJ3-WY-VE3"/>
+                        <constraint firstAttribute="trailing" secondItem="cd9-w7-plF" secondAttribute="trailing" id="Wg2-1W-bHs"/>
+                        <constraint firstItem="cd9-w7-plF" firstAttribute="leading" secondItem="R3w-Ex-DSN" secondAttribute="leading" id="asb-8a-pNy"/>
+                        <constraint firstAttribute="height" constant="50" id="tkp-dP-ilc"/>
+                        <constraint firstItem="cd9-w7-plF" firstAttribute="top" secondItem="R3w-Ex-DSN" secondAttribute="top" id="wVS-AJ-KAl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="R3w-Ex-DSN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZSM-DK-cG3"/>
+                <constraint firstItem="R3w-Ex-DSN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v3A-Nw-R7N"/>
+            </constraints>
+            <connections>
+                <outlet property="BGView" destination="R3w-Ex-DSN" id="Z30-kl-RKm"/>
+                <outlet property="messageLBL" destination="cd9-w7-plF" id="BfD-gB-jN1"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="177"/>
+        </view>
+    </objects>
+</document>
