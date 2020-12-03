@@ -110,13 +110,13 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
             MyTeamName = prefs.value(forKey: "MyTeamName") as! String
         }
         
-        myteamMG.contentMode = UIViewContentMode.scaleAspectFit
+        myteamMG.contentMode = UIView.ContentMode.scaleAspectFit
         UITabBar.appearance().backgroundColor = UIColor(red: 249.0, green: 148.0, blue: 148.0, alpha: 1.0)
         
         navigationController!.navigationBar.barTintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
         //navigationController!.navigationBar.barTintColor = UIColor(red: 1.0, green: 0.6, blue: 0.6, alpha: 1.0)
 
-        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Verdana", size: 25)!, NSForegroundColorAttributeName: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]       // navigationController!.navigationItem.ba
+        navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "Verdana", size: 25)!, NSAttributedString.Key.foregroundColor: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]       // navigationController!.navigationItem.ba
 
         
       //  self.revealViewController().rearViewRevealWidth = 200
@@ -324,7 +324,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
         //RefreshTableTeams()()
     }
     
-    func TeamSelected(_ sender: AnyObject) {
+    @objc  func TeamSelected(_ sender: AnyObject) {
         
         let row = sender.tag
        // var TargetPicked: TeamMembersInfo
@@ -402,7 +402,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
         
         cell.itemInfoBTN.tag = indexPath.row
         
-        cell.itemInfoBTN.addTarget(self, action: #selector(AllianceViewController.TeamSelected(_:)), for: UIControlEvents.touchUpInside)
+        cell.itemInfoBTN.addTarget(self, action: #selector(AllianceViewController.TeamSelected(_:)), for: UIControl.Event.touchUpInside)
         cell.distanceLBL.text = "mi: \(teamSelected.milesaway.description)"
         
         
@@ -416,7 +416,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
         
         cell.mapBTN.tag = indexPath.row
         
-        cell.mapBTN.addTarget(self, action: #selector(TeamMembersViewController.TargetSelected(_:)), for: UIControlEvents.touchUpInside)
+        cell.mapBTN.addTarget(self, action: #selector(TeamMembersViewController.TargetSelected(_:)), for: UIControl.Event.touchUpInside)
         
         
         // print("Date Time Stamp one: \(datetimeTemp)")
@@ -498,7 +498,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
                 self.TableViewHolder.isHidden = false
                 self.RefreshTableTeams()
                
-               // self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControlState.normal)
+               // self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControl.State.normal)
                 // self.TableViewTOP.constant = 100
             })
             
@@ -581,7 +581,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
                 
                 self.ShowingTable = false
                // self.hideTableBTN.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-                //   self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControlState.normal)
+                //   self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControl.State.normal)
                 
                 
                 UIView.animate(withDuration: 0.5, animations: { () -> Void in
@@ -999,7 +999,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
                 
                 self.ShowingTable = false
               //  self.hideTableBTN.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-                //   self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControlState.normal)
+                //   self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControl.State.normal)
                 
                 
                 UIView.animate(withDuration: 0.5, animations: { () -> Void in
@@ -1024,7 +1024,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
             
             self.ShowingTable = false
             self.hideTableBTN.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-         //   self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControlState.normal)
+         //   self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControl.State.normal)
             
             
             UIView.animate(withDuration: 0.5, animations: { () -> Void in
@@ -1056,7 +1056,7 @@ class AllianceViewController: UIViewController, UITextFieldDelegate, UITableView
             
             self.ShowingTable = true
             self.hideTableBTN.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-       //     self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControlState.normal)
+       //     self.hideTableBTN.setImage(UIImage(named: "whiteArrowDown"), forState: UIControl.State.normal)
             
             
             

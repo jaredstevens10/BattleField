@@ -160,7 +160,7 @@ class MissionListViewController: UIViewController, UITableViewDelegate, UITableV
         cell.titleLabel.text = itemSelected.name
         cell.mapBTN.tag = row
         
-        cell.mapBTN.addTarget(self, action: #selector(MissionListViewController.UpdateMissionLocation(_:)), for: UIControlEvents.touchUpInside)
+        cell.mapBTN.addTarget(self, action: #selector(MissionListViewController.UpdateMissionLocation(_:)), for: UIControl.Event.touchUpInside)
         
        // cell.mapBTN.layer.cornerRadius = 20
         
@@ -177,7 +177,7 @@ class MissionListViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-    func UpdateMissionLocation(_ sender: AnyObject) {
+    @objc func UpdateMissionLocation(_ sender: AnyObject) {
         
         let row = sender.tag
         var MissionSelected: MissionInfo
@@ -212,8 +212,8 @@ class MissionListViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
-    
-    func segmentValueChanged(_ sender: AnyObject?){
+      
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         
         if segmentControl.selectedIndex == 0 {
             print("incomplete")

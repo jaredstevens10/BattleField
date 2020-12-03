@@ -9,10 +9,12 @@
 import UIKit
 import CoreData
 import UserNotifications
-import GoogleSignIn
+//import GoogleSignIn
+
+//GIDSignInDelegate //SHOULD BE PART OF CLASS BELOW
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
    let prefs:UserDefaults = UserDefaults.standard
     
@@ -197,16 +199,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 //      //  return GIDSignIn.sharedInstance().handleURL(url as URL!, sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String, annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
 //    }
     
+    //JARED REMOVED 12-3-2020
+    /*
     func application(application: UIApplication,
                      openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
-        var options: [String: AnyObject] = [UIApplicationOpenURLOptionsKey.sourceApplication.rawValue: sourceApplication as AnyObject,
-                                            UIApplicationOpenURLOptionsKey.annotation.rawValue: annotation!]
+        var options: [String: AnyObject] = [UIApplication.OpenURLOptionsKey.sourceApplication.rawValue: sourceApplication as AnyObject,
+                                            UIApplication.OpenURLOptionsKey.annotation.rawValue: annotation!]
+        
+        
         return GIDSignIn.sharedInstance().handle(url as URL!,
                                                     sourceApplication: sourceApplication,
                                                     annotation: annotation)
     }
+    */
     
-    
+    //JARED REMOVED 12-3-2020
+    /*
     public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         //Code
         if (error == nil) {
@@ -228,12 +236,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         //print did disconnect
     }
     
-    
+    */
     
     
     func applicationHandleRemoteNotification(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any])
     {
-        if application.applicationState == UIApplicationState.background || application.applicationState == UIApplicationState.inactive
+        if application.applicationState == UIApplication.State.background || application.applicationState == UIApplication.State.inactive
         {
             var canDoNow = loadedEnoughToDeepLink
             
@@ -260,7 +268,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
   //  var locationController: LocationController = LocationController() as LocationController;
     
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
         let testBadge = prefs.integer(forKey: "NEARITEMBADGE")
@@ -314,10 +322,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
         
+        //JARED REMOVED 12-3-2020
+        /*
         GIDSignIn.sharedInstance().clientID = "753257567954-dsj16lu6s2p97jri30t0bhngvsgv6bvg.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
-        
-        
+        */
         
         
         
@@ -337,7 +346,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         case UIBackgroundRefreshStatus.available:
             print("background fresh status is Available")
             
-            if launchOptions?[UIApplicationLaunchOptionsKey.location] != nil {
+            if launchOptions?[UIApplication.LaunchOptionsKey.location] != nil {
                 
                 
                 
@@ -370,12 +379,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             break
         }
         
-        if application.applicationState != UIApplicationState.background {
+        if application.applicationState != UIApplication.State.background {
             let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
             let oldPushHandlerOnly = !self.responds(to: "application:didReceiveRemoteNotification")
             var pushPayload = false
             if let options = launchOptions {
-                pushPayload = options[UIApplicationLaunchOptionsKey.remoteNotification] != nil
+                pushPayload = options[UIApplication.LaunchOptionsKey.remoteNotification] != nil
             }
             if (preBackgroundPush || oldPushHandlerOnly || pushPayload) {
                 //   PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
@@ -623,7 +632,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         
         
-        if application.applicationState == UIApplicationState.inactive || application.applicationState == UIApplicationState.background {
+        if application.applicationState == UIApplication.State.inactive || application.applicationState == UIApplication.State.background {
             
             print("App opened from local notification while in background")
             

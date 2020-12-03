@@ -267,7 +267,7 @@ class AttributesView: UIView, UITableViewDelegate,  UITableViewDataSource {
         
         self.TableView.allowsSelection = false
         self.TableView.backgroundColor = UIColor.clear
-        self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         
         
@@ -613,7 +613,7 @@ class AttributesView: UIView, UITableViewDelegate,  UITableViewDataSource {
         
         
         cell.itemStepper.tag = indexPath.row
-        cell.itemStepper.addTarget(self, action: #selector(AttributesView.attributeStepperValueChanged(_:)), for: UIControlEvents.valueChanged)
+        cell.itemStepper.addTarget(self, action: #selector(AttributesView.attributeStepperValueChanged(_:)), for: UIControl.Event.valueChanged)
         
        // cell.itemStepper.addTarget(self, action:)
         
@@ -623,10 +623,10 @@ class AttributesView: UIView, UITableViewDelegate,  UITableViewDataSource {
         
         
       //  cell.itemImage.image = UIImage(data:theImageData!)!
-      //  cell.selectionStyle = UITableViewCellSelectionStyle.none
+      //  cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
       //  cell.findItemBTN.tag = indexPath.row
-      //  cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControlEvents.touchUpInside)
+      //  cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControl.Event.touchUpInside)
         
         return cell
         
@@ -688,7 +688,7 @@ class AttributesView: UIView, UITableViewDelegate,  UITableViewDataSource {
 //    }
 
     
-    func attributeStepperValueChanged(_ sender: UIStepper) {
+    @objc func attributeStepperValueChanged(_ sender: UIStepper) {
         
         var ShowMessageAlert = Bool()
         
@@ -1220,7 +1220,7 @@ class SkillsView: UIView, UITableViewDelegate,  UITableViewDataSource {
         
         
         self.TableView.backgroundColor = UIColor.clear
-        self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.TableView.allowsSelection = false
         
         
@@ -1335,7 +1335,7 @@ class SkillsView: UIView, UITableViewDelegate,  UITableViewDataSource {
         
         let dirpath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
         
-       // cell.itemStepper.addTarget(self, action: #selector(AttributesView.attributeStepperValueChanged(_:)), for: UIControlEvents.valueChanged)
+       // cell.itemStepper.addTarget(self, action: #selector(AttributesView.attributeStepperValueChanged(_:)), for: UIControl.Event.valueChanged)
         
         // cell.itemStepper.addTarget(self, action:)
         
@@ -1345,10 +1345,10 @@ class SkillsView: UIView, UITableViewDelegate,  UITableViewDataSource {
         
         
         //  cell.itemImage.image = UIImage(data:theImageData!)!
-        //  cell.selectionStyle = UITableViewCellSelectionStyle.none
+        //  cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         //  cell.findItemBTN.tag = indexPath.row
-        //  cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControlEvents.touchUpInside)
+        //  cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControl.Event.touchUpInside)
         
         return cell
         

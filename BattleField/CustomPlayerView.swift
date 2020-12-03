@@ -304,7 +304,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
         
         
         self.TableView.backgroundColor = UIColor.clear
-        self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         
         /*
@@ -442,12 +442,12 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
         
     }
     
-    func UpdateGestureRecognizers(_ notification: Notification) {
+    @objc func UpdateGestureRecognizers(_ notification: Notification) {
         
      self.RotatePlayerGesture.isEnabled = true
     }
     
-    func ShowNewMessageView(_ notification: Notification) {
+    @objc func ShowNewMessageView(_ notification: Notification) {
         
         
         print("SHOWING NEW MESSAGE VIEW NOTIFICATION")
@@ -503,7 +503,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
     
     
     
-    func UpdatePulsing(_ notification: Notification) {
+    @objc func UpdatePulsing(_ notification: Notification) {
         
         print("UPDATING PULSE VIEW NOTIFICATION")
         
@@ -603,7 +603,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
     }
     
     
-    func UpdateEditBodyLayout(_ notification: Notification){
+    @objc func UpdateEditBodyLayout(_ notification: Notification){
     
         
         self.isViewingHair = false
@@ -1186,7 +1186,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
         return TempImage
     }
     
-    func pinchGesture(_ gesture: UIPinchGestureRecognizer) {
+    @objc func pinchGesture(_ gesture: UIPinchGestureRecognizer) {
         let zoom = gesture.scale
 //        var z = camNode.position.z  * Float(1.0 / zoom)
 ////        z = fmaxf(zoomLimits.min, z)
@@ -1221,7 +1221,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
     }
     
     
-    func panGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func panGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: gesture.view!)
         
         
@@ -1245,7 +1245,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
         //enemyNode.eulerAngles.x = newAngleX
         enemyNode.eulerAngles.y = newAngleY
         
-        if(gesture.state == UIGestureRecognizerState.ended) {
+        if(gesture.state == UIGestureRecognizer.State.ended) {
             currentAngleX = newAngleX
             currentAngleY = newAngleY
         }
@@ -2403,7 +2403,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
         return true
     }
     
-    func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
         //  print("Look Gesture recognized")
         
@@ -2478,9 +2478,9 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
     
     
     
-    func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
-        if gesture.state == UIGestureRecognizerState.ended || gesture.state == UIGestureRecognizerState.cancelled {
+        if gesture.state == UIGestureRecognizer.State.ended || gesture.state == UIGestureRecognizer.State.cancelled {
             
             
             gesture.setTranslation(CGPoint.zero, in: self)
@@ -2494,12 +2494,12 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
             
             // print("CGPointZero = \(CGPointZero)")
             let pos = heroNode.position
-            print("Hero position: \(pos)")
+            print("Hero position:@objc  \(pos)")
             
         }
     }
     
-    func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
+    @objc func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
         
         //update timestamp
         
@@ -2538,7 +2538,7 @@ class MyPlayerView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDelega
         
     }
     
-    func handleTap(_ gesture: UITapGestureRecognizer) {
+    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
         
         //func handleTap(gestureRecognize: UIGestureRecognizer) {
         

@@ -15,17 +15,21 @@
 //
 
 import UIKit
-import GoogleSignIn
+//JARED REMOVED 12-2-2020
+//import GoogleSignIn
+
 //import GIDSignIn
 //import GoogleSignIn
 
-class SignUpThreeViewController: UIViewController, GIDSignInUIDelegate {
+class SignUpThreeViewController: UIViewController {
+    //class SignUpThreeViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet var txtEmail : UITextField!
     @IBOutlet weak var signupButton: UIButton!
     let prefs = UserDefaults.standard
     
-    @IBOutlet weak var signInButton: GIDSignInButton!
+    @IBOutlet weak var signInButton: UIButton!
+    //@IBOutlet weak var signInButton: GIDSignInButton!
     
     var token = Data()
     
@@ -33,13 +37,13 @@ class SignUpThreeViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         
         
-        GIDSignIn.sharedInstance().uiDelegate = self
+        //GIDSignIn.sharedInstance().uiDelegate = self
         
         
         self.title = "Agent ID"
         
         if let font = UIFont(name: "Verdana", size: 25.0) {
-            self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]
         }
         
         // navigationController!.navigationBar.barTintColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
@@ -66,7 +70,7 @@ class SignUpThreeViewController: UIViewController, GIDSignInUIDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func UpdateThreeTextResponder(_ notification:Notification) {
+    @objc func UpdateThreeTextResponder(_ notification:Notification) {
         txtEmail.becomeFirstResponder()
     }
     
@@ -324,14 +328,21 @@ class SignUpThreeViewController: UIViewController, GIDSignInUIDelegate {
     
     // Stop the UIActivityIndicatorView animation that was started when the user
     // pressed the Sign In button
+    
+    //JARED REMOVED 12-3-2020
+    /*
     func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
         
         print("sign in will dispatch")
         //myActivityIndicator.stopAnimating()
     }
+    */
     
     
     // Present a view that prompts the user to sign in with Google
+    
+    //JARED REMOVED 12-3-2020
+    /*
     func signIn(signIn: GIDSignIn!,
                 presentViewController viewController: UIViewController!) {
         self.present(viewController, animated: true, completion: nil)
@@ -342,7 +353,7 @@ class SignUpThreeViewController: UIViewController, GIDSignInUIDelegate {
                 dismissViewController viewController: UIViewController!) {
         self.dismiss(animated: true, completion: nil)
     }
-    
+    */
     
     
     /*

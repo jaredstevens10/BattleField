@@ -79,8 +79,8 @@ class TreasureTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
         cell.imageView.image = DiamondsImage[indexPath.row]
         print("Product = \(product)")
         cell.purchaseBTN.tag = indexPath.row
-        cell.purchaseBTN.setTitle("$\(product.price)", for: UIControlState())
-        cell.purchaseBTN.addTarget(self, action: #selector(TreasureTableViewCell.PurchaseDiamonds(_:)), for: UIControlEvents.touchUpInside)
+        cell.purchaseBTN.setTitle("$\(product.price)", for: UIControl.State())
+        cell.purchaseBTN.addTarget(self, action: #selector(TreasureTableViewCell.PurchaseDiamonds(_:)), for: UIControl.Event.touchUpInside)
         
         cell.backgroundColor = UIColor.clear
         //cell.imageView.image = UIImage(named: "knife.png")
@@ -226,20 +226,20 @@ class TreasureTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     
     func newBuyButton() -> UIButton {
         let button = UIButton(type: .system)
-        button.setTitleColor(tintColor, for: UIControlState())
-        button.setTitle("Buy", for: UIControlState())
+        button.setTitleColor(tintColor, for: UIControl.State())
+        button.setTitle("Buy", for: UIControl.State())
         button.addTarget(self, action: #selector(TreasureTableViewCell.buyButtonTapped(_:)), for: .touchUpInside)
         button.sizeToFit()
         
         return button
     }
     
-    func buyButtonTapped(_ sender: AnyObject) {
+    @objc func buyButtonTapped(_ sender: AnyObject) {
         buyButtonHandler?(product!)
     }
     
     
-    func PurchaseDiamonds(_ sender: AnyObject) {
+    @objc func PurchaseDiamonds(_ sender: AnyObject) {
         print("Purchase Button Tapped")
         
         

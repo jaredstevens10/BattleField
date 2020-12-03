@@ -1402,7 +1402,7 @@ class ItemAnnotationView: UIView, MKMapViewDelegate {
     func FocusOnMissionLocation(_ missionLat: Double, missionLong: Double) {
         
 
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: missionLat, longitude: missionLong).coordinate, 5000.0, 5000.0)
+        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: missionLat, longitude: missionLong).coordinate, latitudinalMeters: 5000.0, longitudinalMeters: 5000.0)
 
         missionMapView.setRegion(coordinateRegion, animated: true)
         
@@ -2428,7 +2428,7 @@ class WeaponMenu: UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
              cell.alertBTN.setImage(UIImage(named: "AlertOff.png"), for: .normal)
             }
             cell.alertBTN.tag = indexPath.row
-            cell.alertBTN.addTarget(self, action: #selector(WeaponMenu.ChangeItemAlert(_:)), for: UIControlEvents.touchUpInside)
+            cell.alertBTN.addTarget(self, action: #selector(WeaponMenu.ChangeItemAlert(_:)), for: UIControl.Event.touchUpInside)
             cell.alertBTN.isHidden = false
             
             print("\(imageName) unlocked = \(itemTemp.unlocked)")
@@ -2491,7 +2491,7 @@ class WeaponMenu: UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
     
 
     
-        func ChangeItemAlert (_ sender: AnyObject) {
+    @objc func ChangeItemAlert (_ sender: AnyObject) {
             
          
             
@@ -4225,7 +4225,7 @@ class MissedItemsView: UIView, UITableViewDelegate, UITableViewDataSource {
         TableView.register(UINib(nibName: "MissedItemsCell", bundle: nil), forCellReuseIdentifier: "MissedCell")
         
         self.TableView.backgroundColor = UIColor.clear
-        self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         BGView.layer.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.9).cgColor
         
     }
@@ -4337,17 +4337,17 @@ class MissedItemsView: UIView, UITableViewDelegate, UITableViewDataSource {
 
 
         cell.itemImage.image = UIImage(data:theImageData!)!
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         cell.findItemBTN.tag = indexPath.row
-        cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControlEvents.touchUpInside)
+        cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControl.Event.touchUpInside)
         
         return cell
 
         
     }
     
-    func LocateItemBTN (_ sender: AnyObject) {
+    @objc func LocateItemBTN (_ sender: AnyObject) {
         
         let row = sender.tag
         
@@ -4790,7 +4790,7 @@ class MissionStatusView: UIView {
         self.hideBTN.layer.masksToBounds = true
         self.hideBTN.clipsToBounds = true
         
-        self.itemImage.contentMode = UIViewContentMode.scaleAspectFit
+        self.itemImage.contentMode = UIView.ContentMode.scaleAspectFit
        // self.itemImage.content = .aspect
         //Custom manually positioning layout goes here (auto-layout pass has already run first pass)
     }
@@ -5704,7 +5704,7 @@ class PotionMenu: UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     
-    func BuyMorePotion(_ sender: AnyObject) {
+    @objc func BuyMorePotion(_ sender: AnyObject) {
     
     
     let itemTag = sender.tag
@@ -5814,7 +5814,7 @@ class PotionMenu: UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
     
     }
     
-    func UsePotion(_ sender: AnyObject) {
+    @objc func UsePotion(_ sender: AnyObject) {
         
     let itemTag = sender.tag
     let useItem: ItemInventorySortedPotion
@@ -5938,11 +5938,11 @@ class PotionMenu: UIView, UICollectionViewDataSource, UICollectionViewDelegateFl
         cell.costLBL.text = "$\(itemTemp.Cost.description)"
         cell.costViewLBL.text = "Buy More"
         cell.costViewBTN.tag = indexPath.row
-        cell.costViewBTN.addTarget(self, action: #selector(PotionMenu.BuyMorePotion(_:)), for: UIControlEvents.touchUpInside)
+        cell.costViewBTN.addTarget(self, action: #selector(PotionMenu.BuyMorePotion(_:)), for: UIControl.Event.touchUpInside)
         
         
         cell.useBTN.tag = indexPath.row
-        cell.useBTN.addTarget(self, action: #selector(PotionMenu.UsePotion(_:)), for: UIControlEvents.touchUpInside)
+        cell.useBTN.addTarget(self, action: #selector(PotionMenu.UsePotion(_:)), for: UIControl.Event.touchUpInside)
         
         
         if itemTemp.Count <= 0 {
@@ -7276,7 +7276,7 @@ class TreasureView: UIView, UITableViewDelegate, UITableViewDataSource {
         print("SHOULD GET CELL TYPE 1")
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(identifier0)") as! TreasureTableViewCell
         cell.backgroundColor = UIColor.clear
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         return cell
     
@@ -7385,7 +7385,7 @@ class MapPin: MKAnnotationView {
             super.setSelected(selected, animated: animated)
         }
         
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
         
         if (calloutView == nil) {
             
@@ -7598,7 +7598,7 @@ class CameraViewPin: MKAnnotationView {
             super.setSelected(selected, animated: animated)
         }
         
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
         
         if (calloutView == nil) {
             
@@ -7806,7 +7806,7 @@ class OtherCameraViewPin: MKAnnotationView {
             super.setSelected(selected, animated: animated)
         }
         
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
         
         if (calloutView == nil) {
             
@@ -8015,7 +8015,7 @@ class HomePin: MKAnnotationView {
             super.setSelected(selected, animated: animated)
         }
         
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
         
         if (calloutView == nil) {
             
@@ -8149,7 +8149,7 @@ class MapPinPlayer: MKAnnotationView {
             super.setSelected(selected, animated: animated)
         }
         
-        self.superview?.bringSubview(toFront: self)
+        self.superview?.bringSubviewToFront(self)
         
         if (calloutViewPlayer == nil) {
             
@@ -8329,7 +8329,7 @@ class TeamInfoView: UIView, UITableViewDelegate, UITableViewDataSource {
         TableView.register(UINib(nibName: "MissedItemsCell", bundle: nil), forCellReuseIdentifier: "MissedCell")
         
         self.TableView.backgroundColor = UIColor.clear
-        self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         //BGView.layer.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.7).cgColor
         
     }
@@ -8451,10 +8451,10 @@ class TeamInfoView: UIView, UITableViewDelegate, UITableViewDataSource {
         
         
         cell.itemImage.image = UIImage(data:theImageData!)!
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         cell.findItemBTN.tag = indexPath.row
-        cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControlEvents.touchUpInside)
+        cell.findItemBTN.addTarget(self, action: #selector(MissedItemsView.LocateItemBTN(_:)), for: UIControl.Event.touchUpInside)
         
         */
         

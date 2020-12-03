@@ -198,7 +198,7 @@ class PlayerOverlay: SKScene, GameStateDelegate {
     
     // MARK: Load and save plist file
     
-    func UpdateItemTextLevel(_ notification: Notification) {
+    @objc func UpdateItemTextLevel(_ notification: Notification) {
         
         var info = notification.userInfo
         
@@ -222,7 +222,7 @@ class PlayerOverlay: SKScene, GameStateDelegate {
     }
     
     
-    func saveGameData() {
+    @objc func saveGameData() {
         let path = documentFilePath(fileName: "gamedata.plist")
         let stockItemData = NSMutableArray()
         for stockItem : StockItem in stockItems {
@@ -384,7 +384,7 @@ class PlayerOverlay: SKScene, GameStateDelegate {
         UIApplication.shared.scheduleLocalNotification(localNotification)
     }
     
-    func scheduleNotifications() {
+    @objc func scheduleNotifications() {
         let itemsSortedByNotificationTime = stockItems.sorted(by: {$0.notificationTime() < $1.notificationTime()})
         var count = 1
         for stockItem in itemsSortedByNotificationTime {

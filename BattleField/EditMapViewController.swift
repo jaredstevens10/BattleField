@@ -238,7 +238,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         return PlaceItemInventory.count
     }
     
-    func SelectedPlaceItem(_ sender: AnyObject) {
+    @objc func SelectedPlaceItem(_ sender: AnyObject) {
         
         var ItemToPlace: PlaceItemInfo!
         let itemTag = sender.tag
@@ -328,10 +328,10 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         cell.countLBL.clipsToBounds = true
         cell.backgroundColor = UIColor.clear
         cell.itemIMG.image = ItemToPlace.itemImage
-        cell.itemIMG.contentMode = UIViewContentMode.scaleAspectFit
+        cell.itemIMG.contentMode = UIView.ContentMode.scaleAspectFit
         cell.countLBL.text = "\(ItemToPlace.itemCount.description)"
         cell.selectItemBTN.tag = indexPath.row
-        cell.selectItemBTN.addTarget(self, action: #selector(EditMapViewController.SelectedPlaceItem(_:)), for: UIControlEvents.touchUpInside)
+        cell.selectItemBTN.addTarget(self, action: #selector(EditMapViewController.SelectedPlaceItem(_:)), for: UIControl.Event.touchUpInside)
         //cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
         return cell
@@ -752,7 +752,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         return true
     }
     
-    func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
         //get translation and convert to rotation
         let translation = gesture.translation(in: self.view)
@@ -772,9 +772,9 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
     
     
     
-    func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
-        if gesture.state == UIGestureRecognizerState.ended || gesture.state == UIGestureRecognizerState.cancelled {
+        if gesture.state == UIGestureRecognizer.State.ended || gesture.state == UIGestureRecognizer.State.cancelled {
             
             
             gesture.setTranslation(CGPoint.zero, in: self.view)
@@ -793,18 +793,18 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         }
     }
     
-    func moveItemGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func moveItemGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
         //   var startPoint = CGPoint()
         //   var endPoint = CGPoint()
         
-        if gesture.state == UIGestureRecognizerState.began {
+        if gesture.state == UIGestureRecognizer.State.began {
             
             ObjectStartPoint =  gesture.location(in: self.view)
             
         }
         
-        if gesture.state == UIGestureRecognizerState.ended {
+        if gesture.state == UIGestureRecognizer.State.ended {
             
             ObjectEndPoint =  gesture.location(in: self.view)
             
@@ -845,7 +845,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         
         //   if MovingObject {
         print("is Moving Object from Move item Gesture")
-        if gesture.state == UIGestureRecognizerState.ended || gesture.state == UIGestureRecognizerState.cancelled {
+        if gesture.state == UIGestureRecognizer.State.ended || gesture.state == UIGestureRecognizer.State.cancelled {
             gesture.setTranslation(CGPoint.zero, in: self.view)
             
             
@@ -956,7 +956,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
     }
     
     
-    func deleteNodeSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
+    @objc func deleteNodeSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
         
         print("Swipe gesture started")
         
@@ -989,7 +989,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         
     }
     
-    func dismissAddItemTapped(_ gesture: UITapGestureRecognizer) {
+    @objc func dismissAddItemTapped(_ gesture: UITapGestureRecognizer) {
         
         if AddingObject {
             
@@ -1001,7 +1001,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         }
     }
     
-    func doubletapped(_ gesture: UITapGestureRecognizer) {
+    @objc func doubletapped(_ gesture: UITapGestureRecognizer) {
         //print("Double Tapped")
         
         
@@ -1102,7 +1102,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         
     }
     
-    func selectItemGestureRecognized(_ gesture: UILongPressGestureRecognizer) {
+    @objc func selectItemGestureRecognized(_ gesture: UILongPressGestureRecognizer) {
         
         
         
@@ -1248,7 +1248,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
             
         }
         
-        if gesture.state == UIGestureRecognizerState.changed {
+        if gesture.state == UIGestureRecognizer.State.changed {
             
             let location = gesture.location(in: self.sceneView)
             // let previousLocation = gesture.
@@ -1284,7 +1284,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         }
         
         
-        if gesture.state == UIGestureRecognizerState.ended {
+        if gesture.state == UIGestureRecognizer.State.ended {
             canDeleteObject = false
             print("Can delete object = \(canDeleteObject)")
             TouchScreenX = 0
@@ -1367,7 +1367,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
     }
     
     
-    func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
+    @objc func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
         
         //update timestamp
         
@@ -1517,7 +1517,7 @@ class EditMapViewController: UIViewController, UIGestureRecognizerDelegate, SCNS
         
     }
     
-    override func didMove(toParentViewController parent: UIViewController?) {
+    override func didMove(toParent parent: UIViewController?) {
         
         print("Did move to parent view")
         // self.physicsWorld.contactDelegate = self

@@ -151,7 +151,8 @@ func UploadGameFile(_ UploadImage: UIImage, FileName: String, Type: String)
     request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
     
     
-    let imageData = UIImageJPEGRepresentation(UploadImage, 1)
+    //let imageData = UIImageJPEGRepresentation(UploadImage, 1)
+    let imageData = UploadImage.jpegData(compressionQuality: 1)
     
     if(imageData==nil)  { return; }
     

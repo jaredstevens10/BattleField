@@ -1542,13 +1542,13 @@ class PlayerAttackView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDe
         
         
         
-        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIView.AnimationOptions.curveEaseIn, animations: {
             
             self.EnemyNodeScene.GotHit(location: "\(location)", isDead: isDead, stopWalking: stopWalking)
             
         }, completion: { finish in
             
-            UIView.animate(withDuration: 0.1, delay: 0.4, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            UIView.animate(withDuration: 0.1, delay: 0.4, options: UIView.AnimationOptions.curveEaseIn, animations: {
                 print("Completion complete: EnemyWalkingAway is now true")
                 //DO 2ND ANIMATION
                 self.EnemyWalkingAway = true
@@ -1962,7 +1962,7 @@ class PlayerAttackView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDe
         return true
     }
     
-    func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
       //  print("Look Gesture recognized")
         
@@ -2039,9 +2039,9 @@ class PlayerAttackView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDe
     
     
     
-    func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
-        if gesture.state == UIGestureRecognizerState.ended || gesture.state == UIGestureRecognizerState.cancelled {
+        if gesture.state == UIGestureRecognizer.State.ended || gesture.state == UIGestureRecognizer.State.cancelled {
             
             
             gesture.setTranslation(CGPoint.zero, in: self)
@@ -2060,7 +2060,7 @@ class PlayerAttackView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDe
         }
     }
     
-    func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
+    @objc func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
         
         //update timestamp
         
@@ -2099,7 +2099,7 @@ class PlayerAttackView: UIView, SCNPhysicsContactDelegate, UIGestureRecognizerDe
         
     }
     
-    func handleTap(_ gesture: UITapGestureRecognizer) {
+    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
     
     //func handleTap(gestureRecognize: UIGestureRecognizer) {
         

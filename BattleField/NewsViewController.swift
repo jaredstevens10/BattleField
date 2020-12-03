@@ -184,7 +184,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    func segmentValueChanged(_ sender: AnyObject?){
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         
         if segmentControl.selectedIndex == 0 {
             print("incomplete")

@@ -179,7 +179,7 @@ let url = NSURL.fileURLWithPath(path)
         itemSpeedInfo = itemInfo[7] as! [(NSString)]
         itemViewRangeInfo = itemInfo[8] as! [(NSString)]
         */
-       self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
+       self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.TableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")        // Do any additional setup after loading the view.
     }
     
@@ -296,7 +296,7 @@ let url = NSURL.fileURLWithPath(path)
         
         }
     
-    func DropItem(_ sender: AnyObject) {
+    @objc func DropItem(_ sender: AnyObject) {
         
         //var ItemToDrop: PlaceItemInfo!
         let itemTag = sender.tag
@@ -489,7 +489,7 @@ let url = NSURL.fileURLWithPath(path)
 
     }
     
-    func LevelUpItem(_ sender: AnyObject){
+    @objc func LevelUpItem(_ sender: AnyObject){
      
         let itemTag = sender.tag
         var itemSelected: MyWeaponsInventory
@@ -506,7 +506,7 @@ let url = NSURL.fileURLWithPath(path)
         
     }
     
-    func AddAmmo(_ sender: AnyObject) {
+    @objc func AddAmmo(_ sender: AnyObject) {
         
         let itemTag = sender.tag
         var itemSelected: MyWeaponsInventory
@@ -523,7 +523,7 @@ let url = NSURL.fileURLWithPath(path)
         
     }
     
-    func GetItemInfo(_ sender: AnyObject) {
+    @objc func GetItemInfo(_ sender: AnyObject) {
         
         let itemTag = sender.tag
         var itemSelected: MyWeaponsInventory
@@ -547,7 +547,7 @@ let url = NSURL.fileURLWithPath(path)
         let row = indexPath.row
         
         //let selectedResult = indexPath.item
-        //cell.selectionStyle = UITableViewCellSelectionStyle.None
+        //cell.selectionStyle = UITableViewCell.SelectionStyle.None
         
         itemSelected = MyWeaponsInventoryArray[row]
         
@@ -585,17 +585,17 @@ let url = NSURL.fileURLWithPath(path)
         cell.dropBTN.layer.cornerRadius = 5
         cell.dropBTN.layer.masksToBounds = true
         cell.dropBTN.tag = indexPath.row
-        cell.dropBTN.addTarget(self, action: #selector(WeaponsViewController.DropItem(_:)), for: UIControlEvents.touchUpInside)
+        cell.dropBTN.addTarget(self, action: #selector(WeaponsViewController.DropItem(_:)), for: UIControl.Event.touchUpInside)
         cell.levelLBL.text = "Level: \(itemSelected.itemLevel)"
         
         
-        cell.levelUpBTN.addTarget(self, action: #selector(WeaponsViewController.LevelUpItem(_:)), for: UIControlEvents.touchUpInside)
+        cell.levelUpBTN.addTarget(self, action: #selector(WeaponsViewController.LevelUpItem(_:)), for: UIControl.Event.touchUpInside)
         cell.levelUpBTN.layer.cornerRadius = 5
         cell.levelUpBTN.layer.masksToBounds = true
         cell.levelUpBTN.tag = indexPath.row
         
         
-        cell.itemInfoBTN.addTarget(self, action: #selector(WeaponsViewController.GetItemInfo(_:)), for: UIControlEvents.touchUpInside)
+        cell.itemInfoBTN.addTarget(self, action: #selector(WeaponsViewController.GetItemInfo(_:)), for: UIControl.Event.touchUpInside)
         cell.itemInfoBTN.layer.cornerRadius = 5
         cell.itemInfoBTN.layer.masksToBounds = true
         cell.itemInfoBTN.tag = indexPath.row
@@ -607,7 +607,7 @@ let url = NSURL.fileURLWithPath(path)
             cell.ammoLBL.isHidden = false
             cell.addAmmoBTN.isHidden = false
             cell.addAmmoBTN.tag = indexPath.row
-            cell.addAmmoBTN.addTarget(self, action: #selector(WeaponsViewController.AddAmmo(_:)), for: UIControlEvents.touchUpInside)
+            cell.addAmmoBTN.addTarget(self, action: #selector(WeaponsViewController.AddAmmo(_:)), for: UIControl.Event.touchUpInside)
         } else {
             if itemSelected.itemAmmoCount == "0" {
                 cell.ammoLBL.textColor = UIColor(red: 255/255, green: 95/255, blue: 92/255, alpha: 1.0)

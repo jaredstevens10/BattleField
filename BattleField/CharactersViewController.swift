@@ -72,7 +72,7 @@ class CharactersViewController: UIViewController, UICollectionViewDataSource, UI
         cell.imageView.image = JobSelected.jobImage
         cell.titleLBL.text = JobSelected.jobtitle
         cell.theButton.tag = indexPath.row
-        cell.theButton.addTarget(self, action: #selector(CharactersViewController.JobSelected(_:)), for: UIControlEvents.touchUpInside)
+        cell.theButton.addTarget(self, action: #selector(CharactersViewController.JobSelected(_:)), for: UIControl.Event.touchUpInside)
         
         return cell
         
@@ -100,7 +100,7 @@ class CharactersViewController: UIViewController, UICollectionViewDataSource, UI
         
     }
     
-    func JobSelected(_ sender: AnyObject) {
+    @objc func JobSelected(_ sender: AnyObject) {
         
         let row = sender.tag
         var JobSelected: CharacterJobInfo

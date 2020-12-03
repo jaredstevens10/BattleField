@@ -130,8 +130,8 @@ class MyWeaponsView: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         TestImage = UIImage(data:theImageData!)!
         let KnifeImage = UIImage(data:theImageDataKnife!)!
         
-        knifeBTN.setImage(KnifeImage, for: UIControlState())
-        gunBTN.setImage(GunImage, for: UIControlState())
+        knifeBTN.setImage(KnifeImage, for: UIControl.State())
+        gunBTN.setImage(GunImage, for: UIControl.State())
         /*
          print("view 5 y awake = \(self.view5.center.y)")
          
@@ -581,7 +581,7 @@ class MyWeaponsView: UIView, UICollectionViewDataSource, UICollectionViewDelegat
             cell.imageView.image  = UIImage(data: theImageData!)!
             cell.itemName.text = itemTemp.name
             cell.useBTN.tag = indexPath.row
-            cell.useBTN.addTarget(self, action: #selector(MyWeaponsView.SelectTheItem(_:)), for: UIControlEvents.touchUpInside)
+            cell.useBTN.addTarget(self, action: #selector(MyWeaponsView.SelectTheItem(_:)), for: UIControl.Event.touchUpInside)
         
         
             cell.levelLBL.text = "Level: \(itemTemp.level)"
@@ -589,7 +589,7 @@ class MyWeaponsView: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         
         
             cell.costViewBTN.tag = indexPath.row
-            cell.costViewBTN.addTarget(self, action: #selector(MyWeaponsView.UpgradeItem(_:)), for: UIControlEvents.touchUpInside)
+            cell.costViewBTN.addTarget(self, action: #selector(MyWeaponsView.UpgradeItem(_:)), for: UIControl.Event.touchUpInside)
         
         
             cell.lockView.isHidden = itemTemp.available
@@ -624,7 +624,7 @@ class MyWeaponsView: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         
     }
     
-    func SelectTheItem(_ sender: AnyObject) {
+    @objc func SelectTheItem(_ sender: AnyObject) {
         
         print("Selected Weapon")
         
@@ -649,7 +649,7 @@ class MyWeaponsView: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         
     }
     
-    func UpgradeItem(_ sender: AnyObject) {
+    @objc func UpgradeItem(_ sender: AnyObject) {
         let itemTag = sender.tag
         
         let alertView:UIAlertView = UIAlertView()
@@ -898,7 +898,7 @@ class DistanceAttackView: UIView, MKMapViewDelegate {
         
         let TargetAnnotation  = TargetLabel(title: "Unknown", userHealth: "100", discipline: "Target", stealth: "stealth", coordinate: CLLocationCoordinate2D(latitude: missionLat, longitude: missionLong), image: ImageTemp, PinType: "player", GoldAmount: "0", isMission: false, missionID: "0", altitude: missionAlt)
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: missionLat, longitude: missionLong).coordinate, 5000.0, 5000.0)
+        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: missionLat, longitude: missionLong).coordinate, latitudinalMeters: 5000.0, longitudinalMeters: 5000.0)
         missionMapView.addAnnotation(TargetAnnotation)
         missionMapView.setRegion(coordinateRegion, animated: true)
         

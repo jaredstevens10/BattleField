@@ -952,7 +952,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
   
 
     
-    func timeString(_ time:TimeInterval) -> String {
+   @objc func timeString(_ time:TimeInterval) -> String {
         let minutes = Int(time) / 60
         //let seconds = Int(time) % 60
         let seconds = time - Double(minutes) * 60
@@ -961,7 +961,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
     }
     
    // func UpdateBootsTime(timer: NSTimer){
-    func UpdateHelmetTime(){
+    @objc func UpdateHelmetTime(){
         let item = "Helmet"
         let itemKey = "ARMORLEVELHELMET"
         
@@ -1039,7 +1039,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
         HelmetStartTime = Date.timeIntervalSinceReferenceDate
     }
     
-    func UpdateBodyTime(){
+    @objc func UpdateBodyTime(){
         let item = "Body"
         let itemKey = "ARMORLEVELBODY"
         
@@ -1116,10 +1116,9 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
         BodyStartTime = Date.timeIntervalSinceReferenceDate
     }
     
+
     
-    
-    
-    func UpdateShieldTime(){
+    @objc func UpdateShieldTime(){
         let item = "Shield"
         let itemKey = "SHIELDLEVEL"
         
@@ -1199,7 +1198,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
     
     
     
-   func UpdateBootsTime(){
+    @objc func UpdateBootsTime(){
     
     let item = "Boots"
     var itemKey = "ARMORLEVELBOOTS"
@@ -1386,9 +1385,9 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
         
         //navigationController!.navigationBar.barTintColor = UIColor(red: 1.0, green: 0.6, blue: 0.6, alpha: 1.0)
         
-       //   navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: (UIFont(name: "Verdana", size: 25)!)?, NSForegroundColorAttributeName: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]
+       //   navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: (UIFont(name: "Verdana", size: 25)!)?, NSAttributedString.Key.foregroundColor: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]
         
-         navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont.init(name: "Verdana", size: 25)!, NSForegroundColorAttributeName: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]
+         navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont.init(name: "Verdana", size: 25)!, NSAttributedString.Key.foregroundColor: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]
         
         let device = UIScreen.main.bounds
         let width = device.size.width
@@ -1546,9 +1545,9 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
 
     
     
-    // var attacktimercontroller: BattleViewController = BattleViewController()
+    // var attacktimercontroller: BattleViewControll@objc er = BattleViewController()
     
-    func UpgradeNotification(_ notification: Notification) {
+    @objc func UpgradeNotification(_ notification: Notification) {
         
         var info = notification.userInfo
         
@@ -1626,7 +1625,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    func updateCounter() {
+    @objc func updateCounter() {
     
     if counter != 0 {
     TimerLBL.text = "\(String(describing: counter -= 1)) Seconds"
@@ -2262,7 +2261,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
 //            
 //        }
 //        
-//        if gesture.state == UIGestureRecognizerState.changed {
+//        if gesture.state == UIGestureRecognizer.State.changed {
 //            
 //            let location = gesture.location(in: self.SceneHolder)
 //            // let previousLocation = gesture.
@@ -2295,7 +2294,7 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
 //        }
 //        
 //        
-//        if gesture.state == UIGestureRecognizerState.ended {
+//        if gesture.state == UIGestureRecognizer.State.ended {
 //            canDeleteObject = false
 //            print("Can delete object = \(canDeleteObject)")
 //            TouchScreenX = 0
@@ -2523,14 +2522,14 @@ class StatsViewController: UIViewController, UIScrollViewDelegate {
     if UIDevice.current.userInterfaceIdiom == .phone {
     return UIInterfaceOrientationMask.allButUpsideDown
     } else {
-    return UIInterfaceOrientationMask.all
+        return UIInterfaceOrientationMask.all
     }
     }
     
     
     
     
-    func MoneyUpdateTimerUser(_ timer: Timer) {
+    @objc func MoneyUpdateTimerUser(_ timer: Timer) {
         
         let userInfo = timer.userInfo as! NSDictionary
         let previousAmountTemp = userInfo["previousAmount"] as! String

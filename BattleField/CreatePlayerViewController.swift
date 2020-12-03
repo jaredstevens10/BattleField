@@ -163,7 +163,7 @@ class CreatePlayerViewController: UIViewController, UICollectionViewDataSource, 
         GetHairTraits()
         
         if let font = UIFont(name: "Verdana", size: 25.0) {
-            self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]
         }
         
         // navigationController!.navigationBar.barTintColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
@@ -633,19 +633,19 @@ class CreatePlayerViewController: UIViewController, UICollectionViewDataSource, 
         if collectionView == collectionView1 {
             TraitSelected = SkinTraitArray[indexPath.row]
             cell.theButton.tag = indexPath.row
-            cell.theButton.addTarget(self, action: #selector(CreatePlayerViewController.UpdateTraitSelectedSkin(_:)), for: UIControlEvents.touchUpInside)
+            cell.theButton.addTarget(self, action: #selector(CreatePlayerViewController.UpdateTraitSelectedSkin(_:)), for: UIControl.Event.touchUpInside)
             
         } else if collectionView == collectionView2 {
             
             TraitSelected = HairTraitArray[indexPath.row]
             cell.theButton.tag = indexPath.row
-            cell.theButton.addTarget(self, action: #selector(CreatePlayerViewController.UpdateTraitSelectedHair(_:)), for: UIControlEvents.touchUpInside)
+            cell.theButton.addTarget(self, action: #selector(CreatePlayerViewController.UpdateTraitSelectedHair(_:)), for: UIControl.Event.touchUpInside)
             
         } else {
             TraitSelected = EyeTraitArray[indexPath.row]
             
             cell.theButton.tag = indexPath.row
-            cell.theButton.addTarget(self, action: #selector(CreatePlayerViewController.UpdateTraitSelectedEye(_:)), for: UIControlEvents.touchUpInside)
+            cell.theButton.addTarget(self, action: #selector(CreatePlayerViewController.UpdateTraitSelectedEye(_:)), for: UIControl.Event.touchUpInside)
             
         }
 
@@ -666,7 +666,7 @@ class CreatePlayerViewController: UIViewController, UICollectionViewDataSource, 
         
         
       //  cell.theButton.tag = indexPath.row
-      //  cell.theButton.addTarget(self, action: "UpdateTraitSelected:", forControlEvents: UIControlEvents.TouchUpInside)
+      //  cell.theButton.addTarget(self, action: "UpdateTraitSelected:", forControlEvents: UIControl.Event.TouchUpInside)
         
         return cell
         
@@ -695,7 +695,7 @@ class CreatePlayerViewController: UIViewController, UICollectionViewDataSource, 
     }
 
     
-    func UpdateTraitSelectedSkin(_ sender: AnyObject) {
+    @objc func UpdateTraitSelectedSkin(_ sender: AnyObject) {
         
         let row = sender.tag
         
@@ -791,7 +791,7 @@ class CreatePlayerViewController: UIViewController, UICollectionViewDataSource, 
         
     }
     
-    func UpdateTraitSelectedHair(_ sender: AnyObject) {
+    @objc func UpdateTraitSelectedHair(_ sender: AnyObject) {
         
         let row = sender.tag
         
@@ -823,7 +823,7 @@ class CreatePlayerViewController: UIViewController, UICollectionViewDataSource, 
         
     }
     
-    func UpdateTraitSelectedEye(_ sender: AnyObject) {
+    @objc func UpdateTraitSelectedEye(_ sender: AnyObject) {
         
         let row = sender.tag
         

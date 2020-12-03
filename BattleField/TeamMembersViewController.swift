@@ -151,7 +151,7 @@ class TeamMembersViewController: UIViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    func TargetSelected(_ sender: AnyObject) {
+    @objc func TargetSelected(_ sender: AnyObject) {
         
         let row = sender.tag
         var TargetPicked: TeamMembersInfo
@@ -212,7 +212,7 @@ class TeamMembersViewController: UIViewController, UITableViewDelegate, UITableV
         
         cell.mapBTN.tag = indexPath.row
         
-        cell.mapBTN.addTarget(self, action: #selector(TeamMembersViewController.TargetSelected(_:)), for: UIControlEvents.touchUpInside)
+        cell.mapBTN.addTarget(self, action: #selector(TeamMembersViewController.TargetSelected(_:)), for: UIControl.Event.touchUpInside)
         
         
         // print("Date Time Stamp one: \(datetimeTemp)")

@@ -499,7 +499,7 @@ class LoginViewController: UIViewController, CLLocationManagerDelegate {
         textField.resignFirstResponder()
         return true
     }
-    func DismissKeyboard(){
+    @objc func DismissKeyboard(){
         view.endEditing(true)
     }
     

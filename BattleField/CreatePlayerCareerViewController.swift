@@ -114,7 +114,7 @@ class CreatePlayerCareerViewController: UIViewController, UICollectionViewDataSo
         self.Body_Job_Clothes.isHidden = true
 
         if let font = UIFont(name: "Verdana", size: 25.0) {
-            self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]
         }
         
         // navigationController!.navigationBar.barTintColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
@@ -305,7 +305,7 @@ class CreatePlayerCareerViewController: UIViewController, UICollectionViewDataSo
         cell.imageView.image = JobSelected.jobImage
         cell.titleLBL.text = JobSelected.jobtitle
         cell.theButton.tag = indexPath.row
-        cell.theButton.addTarget(self, action: #selector(CreatePlayerCareerViewController.JobSelected(_:)), for: UIControlEvents.touchUpInside)
+        cell.theButton.addTarget(self, action: #selector(CreatePlayerCareerViewController.JobSelected(_:)), for: UIControl.Event.touchUpInside)
         
         return cell
         
@@ -333,7 +333,7 @@ class CreatePlayerCareerViewController: UIViewController, UICollectionViewDataSo
         
     }
     
-    func JobSelected(_ sender: AnyObject) {
+    @objc func JobSelected(_ sender: AnyObject) {
         
         let row = sender.tag
         var JobSelected: CharacterJobInfo

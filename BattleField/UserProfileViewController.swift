@@ -103,9 +103,9 @@ class UserProfileViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UserProfileViewController.DismissKeyboard))
         view.addGestureRecognizer(tap)
 
-        NotificationCenter.default.addObserver(self, selector: #selector(UserProfileViewController.keyboardWasShown(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(UserProfileViewController.keyboardWasShown(_:)), name:UIResponder.keyboardWillShowNotification, object: nil);
         
-        NotificationCenter.default.addObserver(self, selector: #selector(UserProfileViewController.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(UserProfileViewController.keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil);
         
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         if prefs.value(forKey: "USERNAME") != nil {
@@ -243,7 +243,7 @@ class UserProfileViewController: UIViewController {
             
     }
     
-    func segmentValueChanged(_ sender: AnyObject?){
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         
         if segmentControl.selectedIndex == 0 {
             print("selected 0")
@@ -428,7 +428,7 @@ class UserProfileViewController: UIViewController {
         }
     }
     
-    func keyboardWasShown(_ notification: Notification) {
+    @objc func keyboardWasShown(_ notification: Notification) {
         print("KeyboardShown1")
         //EditingGameTitle = false
         
@@ -437,7 +437,7 @@ class UserProfileViewController: UIViewController {
         var info = notification.userInfo!
         
         
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
@@ -460,10 +460,10 @@ class UserProfileViewController: UIViewController {
         
     }
     
-    func keyboardWillHide(_ notification: Notification) {
+    @objc func keyboardWillHide(_ notification: Notification) {
         
         var info = notification.userInfo!
-        var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        var keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
@@ -654,7 +654,7 @@ class UserProfileViewController: UIViewController {
         
     }
     
-    func DismissKeyboard(){
+    @objc func DismissKeyboard(){
         view.endEditing(true)
         
         if ShowingCreateMessageView {

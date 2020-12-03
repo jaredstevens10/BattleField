@@ -114,7 +114,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         
         
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(MapViewController.ScrollViewSwipeDown(_:)))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
        // self.ScrollItemsView.addGestureRecognizer(swipeDown)
         
         self.mapView.delegate = self
@@ -148,7 +148,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         // Do any additional setup after loading the view.
     }
     
-    func segmentValueChanged(_ sender: AnyObject?){
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         
         if segmentControl.selectedIndex == 0 {
            
@@ -172,7 +172,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             var spanTemp = MKCoordinateSpan()
             
             
-            spanTemp = MKCoordinateSpanMake (0.003, 0.003)
+            spanTemp = MKCoordinateSpan (latitudeDelta: 0.003, longitudeDelta: 0.003)
             
             restrictedRegion = MKCoordinateRegion(center: locationTemp, span: spanTemp)
             
@@ -238,7 +238,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             var spanTemp = MKCoordinateSpan()
             
             
-            spanTemp = MKCoordinateSpanMake (0.003, 0.003)
+            spanTemp = MKCoordinateSpan (latitudeDelta: 0.003, longitudeDelta: 0.003)
             
             restrictedRegion = MKCoordinateRegion(center: locationTemp, span: spanTemp)
             
@@ -278,7 +278,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         }
     }
     
-    func HQTransferMoneyNotification(_ notification:Notification) {
+    @objc func HQTransferMoneyNotification(_ notification:Notification) {
     
         
         let alertController = UIAlertController(
@@ -766,7 +766,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             
             self.CenterOnUser = false
             
-           // self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControlState())
+           // self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControl.State())
             
             //  print("user WILL change map.")
         }
@@ -780,7 +780,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         //  Look through gesture recognizers to determine whether this region change is from user interaction
         if let gestureRecognizers = view.gestureRecognizers {
             for recognizer in gestureRecognizers {
-                if( recognizer.state == UIGestureRecognizerState.began || recognizer.state == UIGestureRecognizerState.ended ) {
+                if( recognizer.state == UIGestureRecognizer.State.began || recognizer.state == UIGestureRecognizer.State.ended ) {
                     // print("map region changed by user gesture")
                     return true
                 }
@@ -814,7 +814,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             //     print("Center Map on User - Region Radius = \(regionRadius)")
             
             
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, regionRadius * 5.0, regionRadius * 5.0)
+            let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
             
             // mapView.setCenterCoordinate(location.coordinate, animated: true)
             
@@ -1022,7 +1022,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             */
             
             
-            spanTemp = MKCoordinateSpanMake (0.001, 0.001)
+            spanTemp = MKCoordinateSpan (latitudeDelta: 0.001, longitudeDelta: 0.001)
             
             restrictedRegion = MKCoordinateRegion(center: locationTemp, span: spanTemp)
             
@@ -1122,9 +1122,9 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             
             
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.right:
+            case UISwipeGestureRecognizer.Direction.right:
                 print("Swiped right")
-            case UISwipeGestureRecognizerDirection.down:
+            case UISwipeGestureRecognizer.Direction.down:
                 print("Swiped down")
                 
                 
@@ -1149,9 +1149,9 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
                     */
                 })
                 
-            case UISwipeGestureRecognizerDirection.left:
+            case UISwipeGestureRecognizer.Direction.left:
                 print("Swiped left")
-            case UISwipeGestureRecognizerDirection.up:
+            case UISwipeGestureRecognizer.Direction.up:
                 print("Swiped up")
             default:
                 break
@@ -1215,7 +1215,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
         
             let TargetAnnotation  = HomeLabel(title: homename, objective: objective, discipline: "", level: level, coordinate: missionCoordinate, image: itemImage, PinType: "home", xp: xp, mapURL: missionMapURL, objectURL: missionObjectURL, isMission: false, missionID: homeID, missionLevel: missionLevel, imageName: imageName, TotalPlayerAttributesTemp: TotalPlayerAttributesTemp, killcount: killcount, killedcount: killedcount, altitude: missionAlt)
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: missionLat, longitude: missionLong).coordinate, 5000.0, 5000.0)
+            let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: missionLat, longitude: missionLong).coordinate, latitudinalMeters: 5000.0, longitudinalMeters: 5000.0)
             
         mapView.addAnnotation(TargetAnnotation)
         mapView.setRegion(coordinateRegion, animated: true)
@@ -1228,7 +1228,7 @@ class HomeBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMan
             
             let TargetAnnotation  = TargetLabel(title: "Unknown", userHealth: "100", discipline: "Target", stealth: "stealth", coordinate: CLLocationCoordinate2D(latitude: missionLat, longitude: missionLong), image: ImageTemp, PinType: "player", GoldAmount: "0", isMission: false, missionID: "0", altitude: missionAlt)
             
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: missionLat, longitude: missionLong).coordinate, 5000.0, 5000.0)
+            let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: missionLat, longitude: missionLong).coordinate, latitudinalMeters: 5000.0, longitudinalMeters: 5000.0)
             mapView.addAnnotation(TargetAnnotation)
             mapView.setRegion(coordinateRegion, animated: true)
             

@@ -623,7 +623,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         
     }
     
-    func AttackUpdateCountNotification(_ notification: Notification) {
+    @objc func AttackUpdateCountNotification(_ notification: Notification) {
         print("Update Count called by notification")
         
       //  enemyHitCount += 1
@@ -669,7 +669,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
     }
     
     
-    func AttackUpdateAmmoNotification(_ notification: Notification) {
+    @objc func AttackUpdateAmmoNotification(_ notification: Notification) {
         
         
         
@@ -698,7 +698,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         return PlaceItemInventory.count
     }
     
-    func SelectedPlaceItem(_ sender: AnyObject) {
+    @objc func SelectedPlaceItem(_ sender: AnyObject) {
         
         var ItemToPlace: PlaceItemInfo!
         let itemTag = sender.tag
@@ -790,10 +790,10 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         cell.countLBL.clipsToBounds = true
         cell.backgroundColor = UIColor.clear
         cell.itemIMG.image = ItemToPlace.itemImage
-        cell.itemIMG.contentMode = UIViewContentMode.scaleAspectFit
+        cell.itemIMG.contentMode = UIView.ContentMode.scaleAspectFit
         cell.countLBL.text = "\(ItemToPlace.itemCount.description)"
         cell.selectItemBTN.tag = indexPath.row
-        cell.selectItemBTN.addTarget(self, action: #selector(AttackMapViewController.SelectedPlaceItem(_:)), for: UIControlEvents.touchUpInside)
+        cell.selectItemBTN.addTarget(self, action: #selector(AttackMapViewController.SelectedPlaceItem(_:)), for: UIControl.Event.touchUpInside)
         //cell.backgroundColor = UIColor.blackColor()
         // Configure the cell
         return cell
@@ -1713,7 +1713,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         return true
     }
     
-    func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func lookGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
         //get translation and convert to rotation
         let translation = gesture.translation(in: self.view)
@@ -1744,9 +1744,9 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
     
 
     
-    func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func walkGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
-        if gesture.state == UIGestureRecognizerState.ended || gesture.state == UIGestureRecognizerState.cancelled {
+        if gesture.state == UIGestureRecognizer.State.ended || gesture.state == UIGestureRecognizer.State.cancelled {
             
             
             gesture.setTranslation(CGPoint.zero, in: self.view)
@@ -1765,18 +1765,18 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         }
     }
     
-    func moveItemGestureRecognized(_ gesture: UIPanGestureRecognizer) {
+    @objc func moveItemGestureRecognized(_ gesture: UIPanGestureRecognizer) {
         
      //   var startPoint = CGPoint()
      //   var endPoint = CGPoint()
         
-        if gesture.state == UIGestureRecognizerState.began {
+        if gesture.state == UIGestureRecognizer.State.began {
             
            ObjectStartPoint =  gesture.location(in: self.view)
             
         }
         
-        if gesture.state == UIGestureRecognizerState.ended {
+        if gesture.state == UIGestureRecognizer.State.ended {
             
             ObjectEndPoint =  gesture.location(in: self.view)
             
@@ -1817,7 +1817,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         
      //   if MovingObject {
         print("is Moving Object from Move item Gesture")
-        if gesture.state == UIGestureRecognizerState.ended || gesture.state == UIGestureRecognizerState.cancelled {
+        if gesture.state == UIGestureRecognizer.State.ended || gesture.state == UIGestureRecognizer.State.cancelled {
             gesture.setTranslation(CGPoint.zero, in: self.view)
             
             
@@ -1964,7 +1964,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
     }
     
     
-    func deleteNodeSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
+    @objc func deleteNodeSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
         
         print("Swipe gesture started")
         
@@ -1997,7 +1997,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         
     }
     
-    func dismissAddItemTapped(_ gesture: UITapGestureRecognizer) {
+    @objc func dismissAddItemTapped(_ gesture: UITapGestureRecognizer) {
         
         if AddingObject {
             
@@ -2009,7 +2009,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         }
     }
     
-    func doubletapped(_ gesture: UITapGestureRecognizer) {
+    @objc func doubletapped(_ gesture: UITapGestureRecognizer) {
         //print("Double Tapped")
         
         //playWalkAnimation(theNodes: EnemyNodesToAnimate, theAnimations: EnemyWalkingAnimations)
@@ -2130,7 +2130,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         
     }
     
-    func selectItemGestureRecognized(_ gesture: UILongPressGestureRecognizer) {
+    @objc func selectItemGestureRecognized(_ gesture: UILongPressGestureRecognizer) {
         
         var nodeMaterial: SCNMaterial?
 
@@ -2295,7 +2295,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
             
         }
         
-        if gesture.state == UIGestureRecognizerState.changed {
+        if gesture.state == UIGestureRecognizer.State.changed {
             
             let location = gesture.location(in: self.sceneView)
            // let previousLocation = gesture.
@@ -2328,7 +2328,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         }
         
         
-        if gesture.state == UIGestureRecognizerState.ended {
+        if gesture.state == UIGestureRecognizer.State.ended {
             canDeleteObject = false
             print("Can delete object = \(canDeleteObject)")
             TouchScreenX = 0
@@ -2428,7 +2428,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
     }
     
     
-    func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
+    @objc func fireGestureRecognized(_ gesture: FireGestureRecognizer) {
         
         //update timestamp
         
@@ -3222,7 +3222,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         
     }
     
-    override func didMove(toParentViewController parent: UIViewController?) {
+    override func didMove(toParent parent: UIViewController?) {
         
         print("Did move to parent view")
        // self.physicsWorld.contactDelegate = self
@@ -3967,7 +3967,7 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
         return String(format:"%02i:%02i.%01i",minutes,Int(seconds),Int(secondsFraction * 10.0))
     }
     
-    func UpdateAttackTime(){
+    @objc func UpdateAttackTime(){
         let item = "Body"
         var itemKey = "ARMORLEVELBODY"
         
@@ -4247,8 +4247,8 @@ class AttackMapViewController: UIViewController, UIGestureRecognizerDelegate, SC
 //    }
 //    
 //    
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        if(event?.subtype == UIEventSubtype.motionShake) {
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if(event?.subtype == UIEvent.EventSubtype.motionShake) {
             print("You shook me, now what")
         }
     }

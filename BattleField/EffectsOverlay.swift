@@ -124,7 +124,7 @@ class EffectsOverlay: SKScene {
         
     }
     
-    func RefreshClouds(_ notification: Notification) {
+    @objc func RefreshClouds(_ notification: Notification) {
         
         
         GenerateCloudsLeft(10)
@@ -148,7 +148,7 @@ class EffectsOverlay: SKScene {
  
     
     
-    func UpdateClouds(_ notification: Notification) {
+    @objc func UpdateClouds(_ notification: Notification) {
      
        // self.removeAllChildren()
         
@@ -405,7 +405,7 @@ class EffectsOverlay: SKScene {
     
     
     
-    func UpdateMapEffect(_ notification: Notification) {
+    @objc func UpdateMapEffect(_ notification: Notification) {
         
        // self.removeAllChildren()
         self.RemoveWeatherNodes()

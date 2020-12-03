@@ -413,19 +413,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         switch stealth_state {
         case 0:
-        stealthBTN.setImage(UIImage(named: "stealth_on"), for: UIControlState())
+        stealthBTN.setImage(UIImage(named: "stealth_on"), for: UIControl.State())
             stealth_state = 1
             prefs.set(true, forKey: "STEALTHMODE")
         
         let StealthSuccess = UpdateStealthMode(self.username, stealth: "yes")
          //  let StealthSuccess = StealthMode(self.username, stealth: "yes")
         case 1:
-            stealthBTN.setImage(UIImage(named: "stealth_off"), for: UIControlState())
+            stealthBTN.setImage(UIImage(named: "stealth_off"), for: UIControl.State())
             prefs.set(false, forKey: "STEALTHMODE")
             stealth_state = 0
             let StealthSuccess = UpdateStealthMode(self.username, stealth: "no")
         default:
-            stealthBTN.setImage(UIImage(named: "stealth_off"), for: UIControlState())
+            stealthBTN.setImage(UIImage(named: "stealth_off"), for: UIControl.State())
             prefs.set(false, forKey: "STEALTHMODE")
             stealth_state = 0
             let StealthSuccess = UpdateStealthMode(self.username, stealth: "yes")
@@ -529,7 +529,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
 
         
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(MapViewController.ScrollViewSwipeDown(_:)))
-        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
         self.ScrollItemsView.addGestureRecognizer(swipeDown)
         
         //HIDE TAB BAR
@@ -565,11 +565,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         self.StealthMode = prefs.bool(forKey: "STEALTHMODE")
         
         if StealthMode {
-            stealthBTN.setImage(UIImage(named: "stealth_on"), for: UIControlState())
+            stealthBTN.setImage(UIImage(named: "stealth_on"), for: UIControl.State())
             stealth_state = 1
             
         } else  {
-            stealthBTN.setImage(UIImage(named: "stealth_off"), for: UIControlState())
+            stealthBTN.setImage(UIImage(named: "stealth_off"), for: UIControl.State())
             stealth_state = 0
         }
         
@@ -766,13 +766,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
          NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.UpdateWeapon(_:)), name: NSNotification.Name(rawValue: "UpdateWeapon"),  object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.appMovedToBackground(_:)), name: NSNotification.Name.UIApplicationWillResignActive,  object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.appMovedToBackground(_:)), name: UIApplication.willResignActiveNotification,  object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.UpdateMessageLBL(_:)), name: NSNotification.Name(rawValue: "UpdateMessageLBL"),  object: nil)
         
           NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.DoNotUpdateMap(_:)), name: NSNotification.Name(rawValue: "DoNotUpdateMap"),  object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.displayForegroundDetails), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.displayForegroundDetails), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(MapViewController.PlotPointNew(_:)), name: NSNotification.Name(rawValue: "PlotPointNew"),  object: nil)
 
@@ -809,7 +809,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
         navigationController!.navigationBar.barTintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
         
-        navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont.init(name: "Verdana", size: 25)!, NSForegroundColorAttributeName: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]
+        navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont.init(name: "Verdana", size: 25)!, NSAttributedString.Key.foregroundColor: UIColor(red: 0.7, green: 0.1, blue: 0.1, alpha: 1.0)]
         
         tabBarController?.tabBar.barTintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
         
@@ -842,7 +842,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
 
             
             
-            let MenuButtonNew = UIButton(type: UIButtonType.system) as UIButton
+            let MenuButtonNew = UIButton(type: UIButton.ButtonType.system) as UIButton
            // var msgLBL = UILabel()
             msgLBL.frame = CGRect(x: 20, y: 5, width: 18, height: 18)
             msgLBL.backgroundColor = UIColor.red
@@ -856,12 +856,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             msgLBL.font = msgLBL.font.withSize(10)
             
             MenuButtonNew.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-            MenuButtonNew.setImage(UIImage(named: "message-7.png"), for: UIControlState())
+            MenuButtonNew.setImage(UIImage(named: "message-7.png"), for: UIControl.State())
             MenuButtonNew.imageView!.tintColor = UIColor(red: 145/255, green: 28/255, blue: 37/255, alpha: 1.0)
             //MenuButtonNew.tintColor = UIColor(red: 145/255, green: 28/255, blue: 37/255, alpha: 1.0)
             //MenuButtonNew.imageView.t
             MenuButtonNew.addSubview(msgLBL)
-            MenuButtonNew.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: UIControlEvents.touchUpInside)
+            MenuButtonNew.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: UIControl.Event.touchUpInside)
         
             menuButton = UIBarButtonItem(customView: MenuButtonNew)
             
@@ -881,7 +881,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             }
 
             
-            let RightMenuButtonNew = UIButton(type: UIButtonType.system) as UIButton
+            let RightMenuButtonNew = UIButton(type: UIButton.ButtonType.system) as UIButton
             // var msgLBL = UILabel()
             RightmsgLBL.frame = CGRect(x: 20, y: 5, width: 18, height: 18)
             RightmsgLBL.backgroundColor = UIColor.red
@@ -894,11 +894,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
             RightmsgLBL.font = msgLBL.font.withSize(10)
             RightMenuButtonNew.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-              RightMenuButtonNew.setImage(UIImage(named: "album-simple-7.png"), for: UIControlState())
+              RightMenuButtonNew.setImage(UIImage(named: "album-simple-7.png"), for: UIControl.State())
 
             RightMenuButtonNew.imageView!.tintColor = UIColor(red: 145/255, green: 28/255, blue: 37/255, alpha: 1.0)
             RightMenuButtonNew.addSubview(RightmsgLBL)
-            RightMenuButtonNew.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: UIControlEvents.touchUpInside)
+            RightMenuButtonNew.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), for: UIControl.Event.touchUpInside)
             
             
             rightmenuButton = UIBarButtonItem(customView: RightMenuButtonNew)
@@ -1960,13 +1960,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func UpdateGoldProductionTimePulse() {
+    @objc func UpdateGoldProductionTimePulse() {
         
         MoneyPulse(moneyProgressView, scale:1.3)
         
     }
     
-    func UpdateGoldProductionTime(){
+    @objc func UpdateGoldProductionTime(){
         //  var item = "Helmet"
         //   var itemKey = "ARMORLEVELHELMET"
         
@@ -2155,7 +2155,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func UpdateStaminaProductionTime(){
+    @objc func UpdateStaminaProductionTime(){
         //  var item = "Helmet"
         //   var itemKey = "ARMORLEVELHELMET"
         
@@ -2364,7 +2364,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func UpdateHealthProductionTime(){
+    @objc func UpdateHealthProductionTime(){
       //  var item = "Helmet"
      //   var itemKey = "ARMORLEVELHELMET"
         
@@ -2796,7 +2796,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     }
     
     
-    func appMovedToBackground(_ notification:Notification) {
+    @objc func appMovedToBackground(_ notification:Notification) {
         print("App moved to background!")
         
         
@@ -2818,7 +2818,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func displayForegroundDetails() {
+    @objc func displayForegroundDetails() {
         print("APP ENTERED THE FOREGROUND")
         
         
@@ -2965,7 +2965,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
             self.CenterOnUser = false
             
-            self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControlState())
+            self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControl.State())
             
           //  print("user WILL change map.")
         }
@@ -2979,7 +2979,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         //  Look through gesture recognizers to determine whether this region change is from user interaction
         if let gestureRecognizers = view.gestureRecognizers {
             for recognizer in gestureRecognizers {
-                if( recognizer.state == UIGestureRecognizerState.began || recognizer.state == UIGestureRecognizerState.ended ) {
+                if( recognizer.state == UIGestureRecognizer.State.began || recognizer.state == UIGestureRecognizer.State.ended ) {
                    // print("map region changed by user gesture")
                     return true
                 }
@@ -3075,7 +3075,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
        //     print("Center Map on User - Region Radius = \(regionRadius)")
             
             
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, regionRadius * 5.0, regionRadius * 5.0)
+
+            
+            let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
+            
+            
             
             // mapView.setCenterCoordinate(location.coordinate, animated: true)
             
@@ -3879,6 +3883,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         myDiamondsAmount = Int(prefs.value(forKey: "DIAMONDSAMOUNT") as! String)!
         diamondsLBL.text = "\(myDiamondsAmount.description)"
         
+        
+        //TrackingOn = checkLocationAuthorizationStatus(LocManager, status: CLLocationManager.authorizationStatus() )
+        //JARED REMOVED 12-3-2020
+        
         if !prefs.bool(forKey: "TRACKINGON") {
             TrackingOn = checkLocationAuthorizationStatus(LocManager, status: CLLocationManager.authorizationStatus() )
         } else {
@@ -4073,15 +4081,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         
                         // let url = NSURL.fileURLWithPath(path)
                         let CurrentWeaponImage = UIImage(data: CurrentWeaponImageData!)
-                        ToolsBTN.setImage(CurrentWeaponImage, for:UIControlState());
+                        ToolsBTN.setImage(CurrentWeaponImage, for:UIControl.State());
                             
                         } else {
-                            ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControlState());
+                            ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControl.State());
                         }
                         
                     } else {
                         
-                        ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControlState());
+                        ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControl.State());
                         
                     }
                     
@@ -4092,9 +4100,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         
                         // let url = NSURL.fileURLWithPath(path)
                         let CurrentArmorImage = UIImage(data: CurrentArmorImageData!)
-                        armorBTN.setImage(CurrentArmorImage, for:UIControlState());
+                        armorBTN.setImage(CurrentArmorImage, for:UIControl.State());
                     } else {
-                        armorBTN.setImage(UIImage(named: "ArmorIconNA.png")!, for:UIControlState());
+                        armorBTN.setImage(UIImage(named: "ArmorIconNA.png")!, for:UIControl.State());
                     }
                     
                     
@@ -4105,10 +4113,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         
                         // let url = NSURL.fileURLWithPath(path)
                         let CurrentShieldImage = UIImage(data: CurrentShieldImageData!)
-                        //shieldBTN.setImage(CurrentShieldImage, for:UIControlState());
+                        //shieldBTN.setImage(CurrentShieldImage, for:UIControl.State());
                     } else {
                         
-                        //shieldBTN.setImage(UIImage(named: "ShieldIconNA.png"), for:UIControlState());
+                        //shieldBTN.setImage(UIImage(named: "ShieldIconNA.png"), for:UIControl.State());
                         
                     }
                     
@@ -4231,19 +4239,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                     if (prefs.value(forKey: "SELECTEDWEAPON") != nil) {
                         var defaultWeapon =  prefs.value(forKey: "SELECTEDWEAPON") as! UIImage
                         
-                        self.armorBTN.setImage(defaultWeapon, for:UIControlState())
+                        self.armorBTN.setImage(defaultWeapon, for:UIControl.State())
                     }
                     
                     if (prefs.value(forKey: "SELECTEDSHIELD") != nil) {
                         var defaultShield =  prefs.value(forKey: "SELECTEDSHIELD") as! UIImage
                         
-                        self.armorBTN.setImage(defaultShield, for:UIControlState())
+                        self.armorBTN.setImage(defaultShield, for:UIControl.State())
                     }
                     
                     if (prefs.value(forKey: "SELECTEDARMOR") != nil) {
                         var defaultArmor =  prefs.value(forKey: "SELECTEDARMOR") as! UIImage
                         
-                        self.armorBTN.setImage(defaultArmor, for:UIControlState())
+                        self.armorBTN.setImage(defaultArmor, for:UIControl.State())
                     }
                     
                     
@@ -4449,7 +4457,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         
                         // let url = NSURL.fileURLWithPath(path)
                         let CurrentWeaponImage = UIImage(data: CurrentWeaponImageData!)
-                        ToolsBTN.setImage(CurrentWeaponImage, for:UIControlState());
+                        ToolsBTN.setImage(CurrentWeaponImage, for:UIControl.State());
                             
                         } else {
 
@@ -4458,13 +4466,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
 
                         
                         // print("\(CurrentWeapon)ImageIcon IS Nil")
-                         ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControlState());
+                         ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControl.State());
 
                         }
                         
                     } else {
                         
-                        ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControlState());
+                        ToolsBTN.setImage(UIImage(named: "Fist.png"), for:UIControl.State());
                         
                     }
                     print("Current Armor = \(CurrentArmor)")
@@ -4475,9 +4483,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         
                         // let url = NSURL.fileURLWithPath(path)
                         let CurrentArmorImage = UIImage(data: CurrentArmorImageData!)
-                        armorBTN.setImage(CurrentArmorImage, for:UIControlState());
+                        armorBTN.setImage(CurrentArmorImage, for:UIControl.State());
                     } else {
-                        armorBTN.setImage(UIImage(named: "ArmorIconNA.png")!, for:UIControlState());
+                        armorBTN.setImage(UIImage(named: "ArmorIconNA.png")!, for:UIControl.State());
                     }
                     
                     
@@ -4488,10 +4496,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                         
                         // let url = NSURL.fileURLWithPath(path)
                         let CurrentShieldImage = UIImage(data: CurrentShieldImageData!)
-                       // shieldBTN.setImage(CurrentShieldImage, for:UIControlState());
+                       // shieldBTN.setImage(CurrentShieldImage, for:UIControl.State());
                     } else {
                         
-                       // shieldBTN.setImage(UIImage(named: "ShieldIconNA.png"), for:UIControlState());
+                       // shieldBTN.setImage(UIImage(named: "ShieldIconNA.png"), for:UIControl.State());
                         
                     }
                     
@@ -4593,19 +4601,19 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                     if (prefs.value(forKey: "SELECTEDWEAPON") != nil) {
                         var defaultWeapon =  prefs.value(forKey: "SELECTEDWEAPON") as! UIImage
                         
-                        self.armorBTN.setImage(defaultWeapon, for:UIControlState())
+                        self.armorBTN.setImage(defaultWeapon, for:UIControl.State())
                     }
                     
                     if (prefs.value(forKey: "SELECTEDSHIELD") != nil) {
                         var defaultShield =  prefs.value(forKey: "SELECTEDSHIELD") as! UIImage
                         
-                        self.armorBTN.setImage(defaultShield, for:UIControlState())
+                        self.armorBTN.setImage(defaultShield, for:UIControl.State())
                     }
                     
                     if (prefs.value(forKey: "SELECTEDARMOR") != nil) {
                         var defaultArmor =  prefs.value(forKey: "SELECTEDARMOR") as! UIImage
                         
-                        self.armorBTN.setImage(defaultArmor, for:UIControlState())
+                        self.armorBTN.setImage(defaultArmor, for:UIControl.State())
                     }
                     
                     
@@ -4644,7 +4652,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                       //  alertController.addAction(cancelAction)
                         
                         let openAction = UIAlertAction(title: "Location Settings", style: .default) { (action) in
-                            if let url = URL(string:UIApplicationOpenSettingsURLString) {
+                            if let url = URL(string:UIApplication.openSettingsURLString) {
                                 UIApplication.shared.openURL(url)
                             }
                         }
@@ -4669,7 +4677,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                     var alertController = UIAlertController (title: "Location Error", message: "Update Settings", preferredStyle: .alert)
                     
                     var settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
-                        let settingsUrl = URL(string: UIApplicationOpenSettingsURLString)
+                        let settingsUrl = URL(string: UIApplication.openSettingsURLString)
                         
                         let LocationUrl = URL(string:"prefs:root=LOCATION_SERVICES")
                         
@@ -4758,8 +4766,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         if OpenedFromLocalNotification {
             
             self.CenterOnUser = false
-            // self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), forState: UIControlState.Selected)
-            self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControlState())
+            // self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), forState: UIControl.State.Selected)
+            self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControl.State())
             
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Should Center Now"
@@ -4785,7 +4793,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
         } else {
             
-            self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControlState())
+            self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControl.State())
             self.CenterOnUser = true
         }
         
@@ -5209,7 +5217,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         //maskLayer.backgroundColor = UIColor.blackColor().CGColor
         
         maskLayer.path = path;
-        maskLayer.fillRule = kCAFillRuleEvenOdd
+        maskLayer.fillRule = CAShapeLayerFillRule.evenOdd
        // overlayView.layer.m
         // Release the path since it's not covered by ARC.
         overlayView.layer.mask = maskLayer
@@ -5353,7 +5361,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func UpdateTabBarItems(_ notification: Notification)
+    @objc func UpdateTabBarItems(_ notification: Notification)
     {
         
         let attPointDouble = prefs.double(forKey: "MyAttributePoints")
@@ -5386,8 +5394,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             (arrayOfTabBarItems[1] as! UITabBarItem).badgeValue = "\(attPointCount)"
             }
             
-//           // let tabBarItemPlayerNew = UIButton(type: UIButtonType.system) as UIButton
-//            let tabBarItemPlayerNew = UIButton(type: UIButtonType.system) as UITabBarItem
+//           // let tabBarItemPlayerNew = UIButton(type: UIButton.ButtonType.system) as UIButton
+//            let tabBarItemPlayerNew = UIButton(type: UIButton.ButtonType.system) as UITabBarItem
 //            
 //            let attPointDouble = prefs.double(forKey: "MyAttributePoints")
 //            let attPoinCount = round(attPointDouble)
@@ -5404,13 +5412,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
 //            attmsgLBL.font = attmsgLBL.font.withSize(10)
 //            
 //            tabBarItemPlayerNew.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-//            tabBarItemPlayerNew.setImage(UIImage(named: "message-7.png"), for: UIControlState())
+//            tabBarItemPlayerNew.setImage(UIImage(named: "message-7.png"), for: UIControl.State())
 //            tabBarItemPlayerNew.imageView!.tintColor = UIColor(red: 145/255, green: 28/255, blue: 37/255, alpha: 1.0)
 //            //MenuButtonNew.tintColor = UIColor(red: 145/255, green: 28/255, blue: 37/255, alpha: 1.0)
 //            //MenuButtonNew.imageView.t
 //            tabBarItemPlayerNew.addSubview(attmsgLBL)
 //            
-//            tabBarItemPlayerNew.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: UIControlEvents.touchUpInside)
+//            tabBarItemPlayerNew.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: UIControl.Event.touchUpInside)
 //            
 //            menuButton = UIBarButtonItem(customView: tabBarItemPlayerNew)
             
@@ -5433,7 +5441,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     }
     
     
-    func EnableTabBarItems(_ notification: Notification) 
+    @objc func EnableTabBarItems(_ notification: Notification)
     {
         
         tabBarItemPlayer.isEnabled = true
@@ -5832,7 +5840,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
             print("Center Map on User - Region Radius = \(regionRadius)")
 
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, regionRadius * 5.0, regionRadius * 5.0)
+            let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
             
             ZoomLevel = self.UserZoomRadius
             mapView.setRegion(coordinateRegion, animated: true)
@@ -5876,7 +5884,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
             self.CenterOnUser = false
             
-            self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControlState())
+            self.CenterUserBTN.setImage(UIImage(named: "Center Direction-50.png"), for: UIControl.State())
             
             
            // print("user CHANGED map.")
@@ -5971,10 +5979,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             if CapturingTerritory {
                 print("IS CAPTURIN TERRITORY")
                  print("Span should be 0.001")
-            spanTemp = MKCoordinateSpanMake (0.003, 0.003)
+                spanTemp = MKCoordinateSpan (latitudeDelta: 0.003, longitudeDelta: 0.003)
             } else {
               //  print("Span should be 0.005")
-            spanTemp = MKCoordinateSpanMake (0.005, 0.005)
+                spanTemp = MKCoordinateSpan (latitudeDelta: 0.005, longitudeDelta: 0.005)
             }
             
             //print("REGION DID CHANGE Loc Temp: \(locationTemp)")
@@ -6071,7 +6079,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         print("Center Map on Item Name: \(itemName) - Region Radius:\(regionRadius) Lat:\(latitude) Long:\(longitude)")
         
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: latitude, longitude: longitude).coordinate, regionRadius * 5.0, regionRadius * 5.0)
+        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: latitude, longitude: longitude).coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
         
         // mapView.setCenterCoordinate(location.coordinate, animated: true)
         
@@ -6090,7 +6098,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     
     @IBAction func CenterUserLocation(_ sender: AnyObject) {
         
-        self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControlState())
+        self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControl.State())
         self.CenterOnUser = true
         
         regionRadius = 200
@@ -6100,7 +6108,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         print("Center Map on User - Region Radius = \(regionRadius)")
         
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, regionRadius * 5.0, regionRadius * 5.0)
+        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
         
         // mapView.setCenterCoordinate(location.coordinate, animated: true)
         
@@ -6134,7 +6142,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         } else {
         */
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, regionRadius * 5.0, regionRadius * 5.0)
+        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: regionRadius * 5.0, longitudinalMeters: regionRadius * 5.0)
       //  }
        // mapView.setCenterCoordinate(location.coordinate, animated: true)
 
@@ -6181,7 +6189,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-   func ScrollViewSwipeDown(_ gesture: UIGestureRecognizer) {
+    @objc func ScrollViewSwipeDown(_ gesture: UIGestureRecognizer) {
   
     
     
@@ -6190,9 +6198,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         
         switch swipeGesture.direction {
-        case UISwipeGestureRecognizerDirection.right:
+        case UISwipeGestureRecognizer.Direction.right:
             print("Swiped right")
-        case UISwipeGestureRecognizerDirection.down:
+        case UISwipeGestureRecognizer.Direction.down:
             print("Swiped down")
             
             
@@ -6214,9 +6222,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             }
             })
             
-        case UISwipeGestureRecognizerDirection.left:
+        case UISwipeGestureRecognizer.Direction.left:
             print("Swiped left")
-        case UISwipeGestureRecognizerDirection.up:
+        case UISwipeGestureRecognizer.Direction.up:
             print("Swiped up")
         default:
             break
@@ -6717,7 +6725,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         return LocationData
     }
-    
+    @objc    
     func CenterMap(_ notification: Notification) {
         
         var info = notification.userInfo
@@ -6737,7 +6745,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     }
     
     
-    
+    @objc    
     func AttackCompleteStats(_ notification: Notification) {
         
         
@@ -6804,7 +6812,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
         }
     }
-    
+    @objc    
     func PickUpItemNotification(_ notification: Notification) {
         
         
@@ -7030,7 +7038,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         }
         
     }
-    
+    @objc    
     func StartMissionNotification(_ notification: Notification) {
         
         
@@ -7277,7 +7285,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         }
     
     
-    func UpdateMessageLBL(_ notification:Notification) {
+    @objc func UpdateMessageLBL(_ notification:Notification) {
      
         /*
         let userInfo = notification.userInfo
@@ -7293,7 +7301,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func DoNotUpdateMap(_ notification: Notification) {
+    @objc func DoNotUpdateMap(_ notification: Notification) {
         
         DoNotUpdateMapBool = true
         
@@ -7302,7 +7310,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
    
 
     
-    func UpdateMissionMessageLBL(_ notification:Notification) {
+    @objc func UpdateMissionMessageLBL(_ notification:Notification) {
         
         /*
          let userInfo = notification.userInfo
@@ -7317,7 +7325,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         self.RightmsgLBL.isHidden = true
         
     }
-    func UnwindToStart(_ notification:Notification) {
+    @objc func UnwindToStart(_ notification:Notification) {
         
         print("unwind to start")
         
@@ -7343,7 +7351,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     //self.per
     }
     
-    func UpdateMissionNotification(_ notification:Notification) {
+    @objc func UpdateMissionNotification(_ notification:Notification) {
         
         
         let userInfo = notification.userInfo
@@ -7396,7 +7404,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func ShowMessage(_ notification:Notification) {
+    @objc func ShowMessage(_ notification:Notification) {
         let userInfo = notification.userInfo
          //  print("Money UserInfo = \(userInfo)")
         let messageTitle = userInfo!["msgTitle"] as! String
@@ -7436,12 +7444,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                     let cancelAction = UIAlertAction(title: "Ok", style: .default) { (action) in
                         UserDefaults.standard.set(true, forKey: "SecuritySet")
                         
-                        self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControlState())
+                        self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControl.State())
                         self.CenterOnUser = true
                         
                         self.regionRadius = 200
                         
-                        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude).coordinate, self.regionRadius * 5.0, self.regionRadius * 5.0)
+                        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: self.mapView.userLocation.coordinate.latitude, longitude: self.mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: self.regionRadius * 5.0, longitudinalMeters: self.regionRadius * 5.0)
                         
                         self.ZoomLevel = self.UserZoomRadius
                         self.mapView.setRegion(coordinateRegion, animated: true)
@@ -7511,7 +7519,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
                 
                 let regionDistance:CLLocationDistance = 10000
                 let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
-                let regionSpan = MKCoordinateRegionMakeWithDistance(coordinates, regionDistance, regionDistance)
+                let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
                 let options = [
                     MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
                     MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)]
@@ -7565,13 +7573,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     }
     
     
-    func UpdateCaptureTerritoryBool(_ notification: Notification) {
+    @objc func UpdateCaptureTerritoryBool(_ notification: Notification) {
         
         self.CapturingTerritory = false
         
     }
     
-    func PlotPointNew(_ notification: Notification) {
+    @objc func PlotPointNew(_ notification: Notification) {
        
          let userInfo = notification.userInfo
         
@@ -7712,7 +7720,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     
     }
 
-     func UpdateMap(_ notification:Notification) {
+    @objc func UpdateMap(_ notification:Notification) {
         
         UpdateMap()
         
@@ -7725,7 +7733,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func MoneyUpdateTimer(_ timer: Timer) {
+    @objc func MoneyUpdateTimer(_ timer: Timer) {
         
         let userInfo = timer.userInfo as! NSDictionary
         let previousAmountTemp = userInfo["previousAmount"] as! String
@@ -7789,7 +7797,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    func StaminaUpdateTimer(_ timer: Timer) {
+    @objc func StaminaUpdateTimer(_ timer: Timer) {
         
         let userInfo = timer.userInfo as! NSDictionary
         let previousAmountTemp = userInfo["previousAmount"] as! String
@@ -7869,7 +7877,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
 //        staminaTimer.invalidate()
 //    }
     
-    func HealthUpdateTimer(_ timer: Timer) {
+    @objc func HealthUpdateTimer(_ timer: Timer) {
         
         let userInfo = timer.userInfo as! NSDictionary
         let previousAmountTemp = userInfo["previousAmount"] as! String
@@ -7940,7 +7948,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     
     
     
-    func ViewUserProfileNotification(_ notification: Notification) {
+    @objc func ViewUserProfileNotification(_ notification: Notification) {
         
         let userInfo = notification.userInfo
         
@@ -7968,7 +7976,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         self.performSegue(withIdentifier: "ViewUserProfile", sender: self)
         
     }
-    
+    @objc    
     func AttackPlayer(_ notification: Notification) {
         
          let userInfo = notification.userInfo
@@ -8044,7 +8052,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     
     
     
-    
+    @objc    
     func UpdateHealthStamina(_ notification: Notification) {
        
         
@@ -8165,7 +8173,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         
     }
-    
+    @objc    
     func CollectGoldNotification(_ notification:Notification) {
         
         
@@ -8196,7 +8204,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         CollectGoldProductionNow()
     }
     
-     func HideAnnotations(_ notification:Notification) {
+    @objc func HideAnnotations(_ notification:Notification) {
         
         var view = MKAnnotationView()
         
@@ -8207,7 +8215,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
     }
     
     
-    func UpdateWeapon(_ notification:Notification) {
+    @objc func UpdateWeapon(_ notification:Notification) {
       
         UIView.animate(withDuration: 0.5, animations: { () -> Void in
             //self.GoldAmountView.transform = CGAffineTransformIdentity
@@ -8254,7 +8262,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
             
             //     self.WeaponItem.image = settingsViewController.weaponPKimage
             
-            self.ToolsBTN.setImage(ItemImageTemp, for:UIControlState())
+            self.ToolsBTN.setImage(ItemImageTemp, for:UIControl.State())
             
             switch itemNameTemp {
             case "Brass Knuckles":
@@ -8337,7 +8345,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         
         }
-    
+    @objc    
     func UpdateMoney(_ notification:Notification) {
         
         MoneyChangeCount = 0
@@ -8442,7 +8450,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         
     }
-    func UpdateHealth(_ notification:Notification) {
+   //     @objc   }
+   @objc func UpdateHealth(_ notification:Notification) {
         
         MoneyChangeCount = 0
         
@@ -8558,7 +8567,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
     }
     
-    
+    @objc    
     func UpdateStamina(_ notification:Notification) {
         
         MoneyChangeCount = 0
@@ -8674,7 +8683,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         
     }
-    
+    @objc    
     func HandleViewItem(_ notification:Notification) {
         
         OpenedFromLocalNotification = true
@@ -8714,7 +8723,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UIPopoverP
         
         
     }
-    
+    @objc    
     func HandleAttackMessage(_ notification:Notification) {
     
     print("Did Receive Remote Notification While In Game")
@@ -9746,7 +9755,7 @@ var itemAlt = 0.0
         
         
       //  mapView.addOverlay(overlay, level: MKOverlayLevel.AboveLabels)
-         mapView.add(polygon)
+        mapView.addOverlay(polygon)
         // mapView.addOverlay(overlay)
       //  mapView.addOverlayImage(self.mapView, rendererForOverlay: overlay)
         
@@ -9764,7 +9773,7 @@ var itemAlt = 0.0
         
          //  print("Overlay Polygon: \(polygon)")
         
-        mapView.add(polygon)
+        mapView.addOverlay(polygon)
         
         
         /*
@@ -9921,7 +9930,7 @@ var itemAlt = 0.0
         
         
 
-        self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControlState())
+        self.CenterUserBTN.setImage(UIImage(named: "CenterMapIconColor.png"), for: UIControl.State())
         self.CenterOnUser = true
         
         regionRadius = 200
@@ -9933,7 +9942,7 @@ var itemAlt = 0.0
         
       //  let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, regionRadius * 1.0, regionRadius * 1.0)
         
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, 0.0168, 0.0168)
+        let coordinateRegion = MKCoordinateRegion(center: CLLocation(latitude: mapView.userLocation.coordinate.latitude, longitude: mapView.userLocation.coordinate.longitude).coordinate, latitudinalMeters: 0.0168, longitudinalMeters: 0.0168)
         
         
         let NewZoomRadius = ConvertZoomRadius(UserZoomRadius)
@@ -10292,7 +10301,7 @@ var itemAlt = 0.0
     
     
     
-    func DismissKeyboard(){
+    @objc func DismissKeyboard(){
         view.endEditing(true)
     }
     
@@ -10428,7 +10437,7 @@ extension MapViewController {
         
    //     self.WeaponItem.image = settingsViewController.weaponPKimage
         
-        self.ToolsBTN.setImage(settingsViewController.weaponPKimage, for:UIControlState())
+        self.ToolsBTN.setImage(settingsViewController.weaponPKimage, for:UIControl.State())
         
         switch settingsViewController.weaponPKLabel {
         case "Brass Knuckles":
@@ -10515,7 +10524,7 @@ extension MapViewController  {
     
    // self.WeaponItem.image = ArmorViewController.armorPKimage
     
-    self.armorBTN.setImage(armorviewController.armorPKimage, for:UIControlState())
+    self.armorBTN.setImage(armorviewController.armorPKimage, for:UIControl.State())
         
         
         switch armorviewController.armorPKLabel {
@@ -10545,7 +10554,7 @@ extension MapViewController {
         
         // self.WeaponItem.image = ArmorViewController.armorPKimage
         
-        //self.shieldBTN.setImage(shieldviewController.armorPKimage, for:UIControlState())
+        //self.shieldBTN.setImage(shieldviewController.armorPKimage, for:UIControl.State())
         
         switch shieldviewController.armorPKLabel {
         case "Wood Armor":
@@ -10642,11 +10651,11 @@ class ImageMapOverlayView: MKOverlayRenderer {
         
         print("Drawing Land")
         
-        let theLandRegion = MKCoordinateRegionForMapRect(LandRect)
+        let theLandRegion = MKCoordinateRegion(LandRect)
         print("theland region: \(theLandRegion)")
         
         
-        let theLandRect = mapView.convertRegion(theLandRegion, toRectTo: mainView)
+        let theLandRect = mapView.convert(theLandRegion, toRectTo: mainView)
         
         let LandView = drawShapeLayer(LandImage, theLandRect: theLandRect)
         
@@ -10776,7 +10785,7 @@ class ImageMapOverlayView: MKOverlayRenderer {
         
         let imageView = UIImageView(image: LandImage)
         imageView.frame = view.bounds
-        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.contentMode = UIView.ContentMode.scaleAspectFill
         view.addSubview(imageView)
         
         
@@ -10785,7 +10794,7 @@ class ImageMapOverlayView: MKOverlayRenderer {
         view.layer.addSublayer(shape)
         shape.opacity = 0.5
         shape.lineWidth = 2
-        shape.lineJoin = kCALineJoinMiter
+        shape.lineJoin = CAShapeLayerLineJoin.miter
         shape.strokeColor = UIColor(hue: 0.786, saturation: 0.79, brightness: 0.53, alpha: 1.0).cgColor
         shape.fillColor = UIColor(hue: 0.786, saturation: 0.15, brightness: 0.89, alpha: 1.0).cgColor
         
@@ -10896,18 +10905,18 @@ class ImageIconForMap {
     
     var overlayBoundingMapRect: MKMapRect {
         get {
-            let topLeft = MKMapPointForCoordinate(overlayTopLeftCoordinate)
-            let topRight = MKMapPointForCoordinate(overlayTopRightCoordinate)
-            let bottomLeft = MKMapPointForCoordinate(overlayBottomLeftCoordinate)
+            let topLeft = MKMapPoint(overlayTopLeftCoordinate)
+            let topRight = MKMapPoint(overlayTopRightCoordinate)
+            let bottomLeft = MKMapPoint(overlayBottomLeftCoordinate)
             
           //  print("TOP LEFT: \(overlayTopLeftCoordinate)")
           //  print("TOP RIGHT: \(overlayTopRightCoordinate)")
           //  print("BOTTOM LEFT: \(overlayBottomLeftCoordinate)")
             
-            return MKMapRectMake(topLeft.x,
-                                 topLeft.y,
-                                 fabs(topLeft.x-topRight.x),
-                                 fabs(topLeft.y - bottomLeft.y))
+            return MKMapRect(x: topLeft.x,
+                             y: topLeft.y,
+                             width: fabs(topLeft.x-topRight.x),
+                             height: fabs(topLeft.y - bottomLeft.y))
         }
     }
  
@@ -10986,7 +10995,7 @@ class ImageIconForMap {
         
         
         for i in 0...boundaryPointsCount-1 {
-            let p = CGPointFromString(boundaryPoints[i] )
+            let p = NSCoder.cgPoint(for: boundaryPoints[i] )
            // print("Boundary P X:\(p.x)")
            // print("Boundary P Y:\(p.y)")
             boundary += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]

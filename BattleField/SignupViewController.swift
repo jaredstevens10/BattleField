@@ -222,7 +222,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func DismissKeyboard(){
+    @objc func DismissKeyboard(){
         view.endEditing(true)
     }
     

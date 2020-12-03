@@ -9,10 +9,16 @@
 
 //#import <Google/SignIn.h>
 //#import <Google/SignIn.h>
-#import <GoogleSignIn/GIDSignIn.h>
-#import <GoogleSignIn/GIDGoogleUser.h>
-#import <GoogleSignIn/GIDAuthentication.h>
-#import <GoogleSignIn/GIDProfileData.h>
+
+
+//JARED REMOVED 12-2-2020
+//#import "Alamofire-Swift.h"
+//#import <GoogleSignIn/GIDSignIn.h>
+//#import <GoogleSignIn/GIDGoogleUser.h>
+//#import <GoogleSignIn/GIDAuthentication.h>
+//#import <GoogleSignIn/GIDProfileData.h>
+
+
 
 //#import <GooglePlus/GooglePlus.h>
 //#import <GoogleOpenSource/GoogleOpenSource.h>

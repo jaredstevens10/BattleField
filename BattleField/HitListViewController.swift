@@ -149,7 +149,7 @@ class HitListViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-    func TargetSelected(_ sender: AnyObject) {
+    @objc func TargetSelected(_ sender: AnyObject) {
         
         let row = sender.tag
         var TargetPicked: HitInfo
@@ -210,7 +210,7 @@ class HitListViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         cell.mapBTN.tag = indexPath.row
         
-        cell.mapBTN.addTarget(self, action: #selector(HitListViewController.TargetSelected(_:)), for: UIControlEvents.touchUpInside)
+        cell.mapBTN.addTarget(self, action: #selector(HitListViewController.TargetSelected(_:)), for: UIControl.Event.touchUpInside)
         
         
         // print("Date Time Stamp one: \(datetimeTemp)")
@@ -243,7 +243,7 @@ class HitListViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-    func segmentValueChanged(_ sender: AnyObject?){
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         
         if segmentControl.selectedIndex == 0 {
             print("incomplete")

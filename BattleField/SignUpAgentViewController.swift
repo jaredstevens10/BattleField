@@ -38,7 +38,7 @@ class SignUpAgentViewController: UIViewController {
         self.title = "New Agent"
         
         if let font = UIFont(name: "Verdana", size: 25.0) {
-            self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]
         }
         
         // navigationController!.navigationBar.barTintColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
@@ -65,7 +65,7 @@ class SignUpAgentViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func AgentProfileComplete(_ notification: Notification) {
+    @objc func AgentProfileComplete(_ notification: Notification) {
         
         
         var info = notification.userInfo

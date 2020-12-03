@@ -238,14 +238,14 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         self.submitBTN.layer.masksToBounds = true
         self.submitBTN.clipsToBounds = true
         
-        self.TableView.separatorStyle = UITableViewCellSeparatorStyle.none
-        self.refreshControl.addTarget(self, action: #selector(CharacterViewController.RefreshCommentData(_:)), for: UIControlEvents.valueChanged)
+        self.TableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        self.refreshControl.addTarget(self, action: #selector(CharacterViewController.RefreshCommentData(_:)), for: UIControl.Event.valueChanged)
         self.TableView.addSubview(refreshControl)
         
        
         self.TableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.TableView.estimatedRowHeight = 80
-        self.TableView.rowHeight = UITableViewAutomaticDimension
+        self.TableView.rowHeight = UITableView.automaticDimension
         self.TableView.reloadData()
 
         
@@ -254,9 +254,9 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         view.addGestureRecognizer(tap)
         
         
-        NotificationCenter.default.addObserver(self, selector: #selector(CharacterViewController.keyboardWasShown(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(CharacterViewController.keyboardWasShown(_:)), name:UIResponder.keyboardWillShowNotification, object: nil);
         
-        NotificationCenter.default.addObserver(self, selector: #selector(CharacterViewController.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(CharacterViewController.keyboardWillHide(_:)), name:UIResponder.keyboardWillHideNotification, object: nil);
       //  titleLabel.text = prefs.valueForKey("USERNAME") as! NSString as String
         // Do any additional setup after loading the view.
         
@@ -269,7 +269,7 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
     }
     
     
-    func keyboardWasShown(_ notification: Notification) {
+    @objc func keyboardWasShown(_ notification: Notification) {
         print("KeyboardShown1")
         //EditingGameTitle = false
         
@@ -278,7 +278,7 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         var info = notification.userInfo!
         
         
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
@@ -301,10 +301,10 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         
     }
     
-    func keyboardWillHide(_ notification: Notification) {
+    @objc func keyboardWillHide(_ notification: Notification) {
         
         var info = notification.userInfo!
-        var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        var keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
@@ -331,7 +331,7 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
     }
     
     
-     func RefreshCommentData(_ sender:AnyObject) {
+    @objc func RefreshCommentData(_ sender:AnyObject) {
        
         if self.segementIDString == "team" {
         refreshDataTeam()
@@ -631,7 +631,7 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         cell.dateLabel?.text = "\(FromTime)"
         
         cell.replyBTN.tag = indexPath.row
-        cell.replyBTN.addTarget(self, action: #selector(CharacterViewController.ReplyToMessage(_:)), for: UIControlEvents.touchUpInside)
+        cell.replyBTN.addTarget(self, action: #selector(CharacterViewController.ReplyToMessage(_:)), for: UIControl.Event.touchUpInside)
         cell.replyBTN.layer.cornerRadius = 5
         cell.replyBTN.layer.borderWidth = 1
         cell.replyBTN.layer.borderColor = UIColor.white.cgColor
@@ -645,10 +645,10 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         return cell
     }
     
-    func DismissKeyboard(){
+    @objc func DismissKeyboard(){
         view.endEditing(true)
     }
-    func ReplyToMessage(_ sender: AnyObject) {
+    @objc func ReplyToMessage(_ sender: AnyObject) {
         
         let tag = sender.tag
         
@@ -666,7 +666,7 @@ class CharacterViewController: UIViewController, YSSegmentedControlDelegate, UIT
         
     }
     
-    func segmentValueChanged(_ sender: AnyObject?){
+    @objc func segmentValueChanged(_ sender: AnyObject?){
         
         if segmentControl.selectedIndex == 0 {
            print("User Selected")

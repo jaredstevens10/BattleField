@@ -48,54 +48,54 @@ extension MapViewController {
            
             
             
-            let AttackButton: UIButton = UIButton(type: UIButtonType.system)
-            AttackButton.setTitle("Attack", for: UIControlState())
+            let AttackButton: UIButton = UIButton(type: UIButton.ButtonType.system)
+            AttackButton.setTitle("Attack", for: UIControl.State())
             AttackButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
             AttackButton.backgroundColor = UIColor.red
             AttackButton.titleLabel?.textColor = UIColor.black
-           // AttackButton.addTarget(self, action: "AttackClicked:", forControlEvents: UIControlEvents.TouchUpInside)
-            AttackButton.setTitleColor(UIColor.white, for: UIControlState())
+           // AttackButton.addTarget(self, action: "AttackClicked:", forControlEvents: UIControl.Event.TouchUpInside)
+            AttackButton.setTitleColor(UIColor.white, for: UIControl.State())
             
-            let StatsButton : UIButton = UIButton(type: UIButtonType.system)
+            let StatsButton : UIButton = UIButton(type: UIButton.ButtonType.system)
             StatsButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
             StatsButton.backgroundColor = UIColor.blue
-            StatsButton.setTitle("Player Info", for: UIControlState())
-         //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            StatsButton.setTitle("Player Info", for: UIControl.State())
+         //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
             
-            StatsButton.setTitleColor(UIColor.white, for: UIControlState())
+            StatsButton.setTitleColor(UIColor.white, for: UIControl.State())
             
             
-            let itemPickUpButton : UIButton = UIButton(type: UIButtonType.system)
+            let itemPickUpButton : UIButton = UIButton(type: UIButton.ButtonType.system)
             itemPickUpButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
             itemPickUpButton.backgroundColor = UIColor.darkGray
-            itemPickUpButton.setTitle("Pick Up Item", for: UIControlState())
-            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            itemPickUpButton.setTitle("Pick Up Item", for: UIControl.State())
+            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
             
-            itemPickUpButton.setTitleColor(UIColor.white, for: UIControlState())
+            itemPickUpButton.setTitleColor(UIColor.white, for: UIControl.State())
             
-            let itemInfoButton : UIButton = UIButton(type: UIButtonType.system)
+            let itemInfoButton : UIButton = UIButton(type: UIButton.ButtonType.system)
             itemInfoButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
             itemInfoButton.backgroundColor = UIColor.gray
-            itemInfoButton.setTitle("Item Info", for: UIControlState())
-            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            itemInfoButton.setTitle("Item Info", for: UIControl.State())
+            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
             
-            itemInfoButton.setTitleColor(UIColor.white, for: UIControlState())
+            itemInfoButton.setTitleColor(UIColor.white, for: UIControl.State())
             
-            let MyInfoButton : UIButton = UIButton(type: UIButtonType.system)
+            let MyInfoButton : UIButton = UIButton(type: UIButton.ButtonType.system)
             MyInfoButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
             MyInfoButton.backgroundColor = UIColor.blue
-            MyInfoButton.setTitle("Info", for: UIControlState())
-            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            MyInfoButton.setTitle("Info", for: UIControl.State())
+            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
             
-            MyInfoButton.setTitleColor(UIColor.white, for: UIControlState())
+            MyInfoButton.setTitleColor(UIColor.white, for: UIControl.State())
             
-            let MyStatsButton : UIButton = UIButton(type: UIButtonType.system)
+            let MyStatsButton : UIButton = UIButton(type: UIButton.ButtonType.system)
             MyStatsButton.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
             MyStatsButton.backgroundColor = UIColor.blue
-            MyStatsButton.setTitle("Stats", for: UIControlState())
-            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            MyStatsButton.setTitle("Stats", for: UIControl.State())
+            //   StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
             
-            MyStatsButton.setTitleColor(UIColor.white, for: UIControlState())
+            MyStatsButton.setTitleColor(UIColor.white, for: UIControl.State())
             
             
             
@@ -256,12 +256,12 @@ extension MapViewController {
                 } else {
                     // 3
                     /*
-                    let AttackButton : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-                    AttackButton.addTarget(self, action: "AttackClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+                    let AttackButton : UIButton = UIButton.buttonWithType(UIButton.ButtonType.Custom) as! UIButton
+                    AttackButton.addTarget(self, action: "AttackClicked:", forControlEvents: UIControl.Event.TouchUpInside)
                     AttackButton.setTitleColor(UIColor.redColor(), forState: .Normal)
                     
-                    let StatsButton : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-                    StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+                    let StatsButton : UIButton = UIButton.buttonWithType(UIButton.ButtonType.Custom) as! UIButton
+                    StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
                     StatsButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
                     */
                     //view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
@@ -447,12 +447,12 @@ extension MapViewController {
                 } else {
                     // 3
                     /*
-                    let AttackButton : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-                    AttackButton.addTarget(self, action: "AttackClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+                    let AttackButton : UIButton = UIButton.buttonWithType(UIButton.ButtonType.Custom) as! UIButton
+                    AttackButton.addTarget(self, action: "AttackClicked:", forControlEvents: UIControl.Event.TouchUpInside)
                     AttackButton.setTitleColor(UIColor.redColor(), forState: .Normal)
                     
-                    let StatsButton : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-                    StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+                    let StatsButton : UIButton = UIButton.buttonWithType(UIButton.ButtonType.Custom) as! UIButton
+                    StatsButton.addTarget(self, action: "StatsClicked:", forControlEvents: UIControl.Event.TouchUpInside)
                     StatsButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
                     */
                     myview = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)

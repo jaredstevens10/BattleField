@@ -145,7 +145,7 @@ class AttackTimerViewController: UIViewController  {
         
 
     }
-    func updateCounter() {
+    @objc func updateCounter() {
         
         if counter != 0 {
         TimerLBL.text = "\(String(describing: counter -= 1)) Seconds"
@@ -258,7 +258,7 @@ class AttackTimerViewController: UIViewController  {
       */
     }
     
-    func CloseAttackGame() {
+    @objc func CloseAttackGame() {
         print("received close notification")
         
         DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async {

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GoogleSignIn
+//import GoogleSignIn
 //import GIDSignIn
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, YSSegmentedControlDelegate {
@@ -47,8 +47,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.setup()
        // self.TableView.estimatedRowHeight = 45
-        self.TableView.rowHeight = UITableViewAutomaticDimension
-        print("UITableViewAutomaticDimension = \(UITableViewAutomaticDimension)")
+        self.TableView.rowHeight = UITableView.automaticDimension
+        print("UITableViewAutomaticDimension = \(UITableView.automaticDimension)")
        // self.TableView.allowsMultipleSelection = true
         
         TableView.delegate = self
@@ -371,7 +371,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.TableImage.isHidden = true
         cell.segmentControl.tag = indexPath.row
-        cell.segmentControl.addTarget(self, action: #selector(SettingsViewController.segmentValueChangedClicked(_:)), for: UIControlEvents.valueChanged)
+        cell.segmentControl.addTarget(self, action: #selector(SettingsViewController.segmentValueChangedClicked(_:)), for: UIControl.Event.valueChanged)
         
         /*
         
@@ -401,7 +401,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             
             //self.navigationController?.popToRootViewController(animated: true)
             
-            GIDSignIn.sharedInstance().signOut()
+            //JARED REMOVED 12-3-2020
+            //GIDSignIn.sharedInstance().signOut()
             
             
             self.dismiss(animated: true, completion: {
@@ -426,7 +427,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    func segmentValueChangedClicked(_ sender: AnyObject){
+    @objc  func segmentValueChangedClicked(_ sender: AnyObject){
         
        
         let row = sender.tag
@@ -611,11 +612,11 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         } else {
             if (indexPath as NSIndexPath).row != self.selectedItemIndex {
                 let cell = self.TableView.cellForRow(at: indexPath)
-                cell?.accessoryType = UITableViewCellAccessoryType.checkmark
+                cell?.accessoryType = UITableViewCell.AccessoryType.checkmark
                 
                 if let selectedItemIndex = self.selectedItemIndex {
                     let previousCell = self.TableView.cellForRow(at: IndexPath(row: selectedItemIndex, section: 0))
-                    previousCell?.accessoryType = UITableViewCellAccessoryType.none
+                    previousCell?.accessoryType = UITableViewCell.AccessoryType.none
                     cells.items[selectedItemIndex].isChecked = false
                 }
                 

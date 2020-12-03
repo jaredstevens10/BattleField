@@ -25,7 +25,9 @@
 //
 
 import Foundation
-import Alamofire
+
+//JARED REMOVED 12-2-2020
+//import Alamofire
 
 
 func GetTargets(_ email: NSString, level: NSString, status: NSString) -> Data {
@@ -801,6 +803,11 @@ func ManageHomeInfo(_ email: NSString, username: NSString, level: NSString, stat
     ]
   //  Alamofire.request("http://\(ServerInfo.sharedInstance)/Apps/BattleField/HomeInfoManage.php", method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { (response:DataResponse<Any>) in
     
+    
+    //JARED COMMENTED OUT 12-2-2020 - ALAMOFIRE ISSUE
+    manageSuccess = false;
+    /*
+    
     Alamofire.request("http://\(ServerInfo.sharedInstance)/Apps/BattleField/HomeInfoManage.php", method: .post, parameters: params).responseJSON { (response:DataResponse<Any>) in
         
         switch(response.result) {
@@ -818,6 +825,9 @@ func ManageHomeInfo(_ email: NSString, username: NSString, level: NSString, stat
             
         }
     }
+    
+    
+    */
     
     
     

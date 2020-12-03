@@ -28,7 +28,7 @@ class SignUpViewControllerNew: UIViewController, UIImagePickerControllerDelegate
     var email = NSString()
     var fullname = NSString()
     @IBOutlet weak var cancelButton: UIButton!
-    var localPlayer = GKLocalPlayer.localPlayer()
+    var localPlayer = GKLocalPlayer.local
     var ProfilePictureAdded = Bool()
     @IBOutlet weak var ProfileImage: UIImageView!
     var ShootingPhoto = Bool()
@@ -84,7 +84,7 @@ class SignUpViewControllerNew: UIViewController, UIImagePickerControllerDelegate
         self.title = "New Agent"
         
         if let font = UIFont(name: "Verdana", size: 25.0) {
-            self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.white]
+            self.navigationController!.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColor.white]
         }
         
         // navigationController!.navigationBar.barTintColor = UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1.0)
@@ -102,7 +102,7 @@ class SignUpViewControllerNew: UIViewController, UIImagePickerControllerDelegate
         // Do any additional setup after loading the view.
     }
     
-    func UpdateTextResponder(_ notification:Notification) {
+    @objc func UpdateTextResponder(_ notification:Notification) {
         txtUsername.becomeFirstResponder()
     }
     
@@ -298,7 +298,8 @@ override func viewDidAppear(_ animated: Bool) {
         if ProfilePictureAdded {
             let image = self.ProfileImage.image
             
-            let imageData = UIImageJPEGRepresentation(image!, 1.0)
+            //let imageData = UIImageJPEGRepresentation(image!, 1.0)
+            let imageData = image!.jpegData(compressionQuality: 1.0)
             
             
             if MediaType == "gif" {
@@ -516,7 +517,7 @@ override func viewDidAppear(_ animated: Bool) {
         return true
     }
     
-    func DismissKeyboard(){
+    @objc func DismissKeyboard(){
         view.endEditing(true)
     }
     
@@ -533,8 +534,8 @@ override func viewDidAppear(_ animated: Bool) {
         
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage //2
         
         ShowingProfileView = true
         
@@ -609,7 +610,7 @@ override func viewDidAppear(_ animated: Bool) {
         
         if UIImagePickerController.availableCaptureModes(for: .rear) != nil {
             picker.allowsEditing = false
-            picker.sourceType = UIImagePickerControllerSourceType.camera
+            picker.sourceType = UIImagePickerController.SourceType.camera
             picker.cameraCaptureMode = .photo
             present(picker, animated: true, completion: nil)
             // mainImageView.image =

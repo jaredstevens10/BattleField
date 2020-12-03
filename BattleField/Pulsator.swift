@@ -103,7 +103,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     open var pulseInterval: TimeInterval = 0
     
     /// A function describing a timing curve of the animation.
-    open var timingFunction: CAMediaTimingFunction? = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault) {
+    open var timingFunction: CAMediaTimingFunction? = CAMediaTimingFunction(name: CAMediaTimingFunctionName.default) {
         didSet {
             if let animationGroup = animationGroup {
                 animationGroup.timingFunction = timingFunction
@@ -131,7 +131,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(recreate),
-                                               name: NSNotification.Name.UIApplicationDidBecomeActive,
+                                               name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
     }
     
@@ -193,7 +193,7 @@ open class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     
     // MARK: - Internal Methods
     
-    internal func recreate() {
+    @objc     internal func recreate() {
         guard animationGroup != nil else { return }        // Not need to be recreated.
         stop()
         let when = DispatchTime.now() + Double(Int64(0.2 * double_t(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)

@@ -125,7 +125,7 @@ class GPSTrackingManager: NSObject, CLLocationManagerDelegate {
     func sendBackgroundLocationToServer(_ location: CLLocation) {
         
         
-        let BGT: UIBackgroundTaskIdentifier = 0
+        let BGT: UIBackgroundTaskIdentifier = UIBackgroundTaskIdentifier(rawValue: 0)
         
         let bgTask = UIApplication.shared.beginBackgroundTask( expirationHandler: {
             
@@ -135,9 +135,9 @@ class GPSTrackingManager: NSObject, CLLocationManagerDelegate {
         
         
         
-        if (bgTask != UIBackgroundTaskInvalid) {
+        if (bgTask != UIBackgroundTaskIdentifier.invalid) {
             
-            UIApplication.shared.endBackgroundTask(0)
+            UIApplication.shared.endBackgroundTask(UIBackgroundTaskIdentifier(rawValue: 0))
            // bgTask = UIApplicationTaskInvalid
             
         }

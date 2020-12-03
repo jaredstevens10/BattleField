@@ -896,7 +896,7 @@ class ViewController: UIViewController {
     }
     
     
-    func RefreshItemInfo(_ notification: Notification)
+    @objc func RefreshItemInfo(_ notification: Notification)
     {
         
         if Reachability.isConnectedToNetwork() {
